@@ -1,0 +1,86 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ItemGallery from "../components/ItemGallery";
+import { Sparkles } from "lucide-react";
+
+// Import data
+import itemsData from "../data/arc_raiders_all_items.json";
+
+// Ensure data is array (in case it's wrapped or empty)
+const items = Array.isArray(itemsData) ? itemsData : [];
+---
+
+<Layout title="ARC Raiders Database">
+    <main class="min-h-screen relative overflow-hidden">
+        {/* Hero Section */}
+        <div class="relative pt-8 pb-4 text-center z-10">
+            <div
+                class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-arc-orange/20 blur-[120px] rounded-full opacity-40 pointer-events-none"
+            >
+            </div>
+
+            <h1
+                class="text-4xl md:text-6xl font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white to-white/50 mb-2 drop-shadow-2xl animate-fade-in font-sans"
+            >
+                ARC RAIDERS
+            </h1>
+
+            <div class="flex flex-wrap justify-center gap-4 mb-8">
+                <a
+                    href="/workshop"
+                    class="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 hover:border-arc-orange/50 transition-all text-sm font-bold text-gray-300 hover:text-white uppercase tracking-wider group"
+                >
+                    <span>🛠️ Mejoras de Taller</span>
+                    <span class="group-hover:translate-x-1 transition-transform"
+                        >→</span
+                    >
+                </a>
+                <a
+                    href="/hideout"
+                    class="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 hover:border-emerald-500/50 transition-all text-sm font-bold text-gray-300 hover:text-white uppercase tracking-wider group"
+                >
+                    <span>🏠 Mejoras de Escondite</span>
+                    <span class="group-hover:translate-x-1 transition-transform"
+                        >→</span
+                    >
+                </a>
+            </div>
+            <div
+                class="flex items-center justify-center gap-3 text-arc-orange font-mono text-lg md:text-xl tracking-[0.2em] font-bold animate-slide-up opacity-0"
+                style={{
+                    animationDelay: "0.2s",
+                    animationFillMode: "forwards",
+                }}
+            >
+                <Sparkles className="w-5 h-5" />
+                MASTER DATABASE
+                <Sparkles className="w-5 h-5" />
+            </div>
+
+            <p
+                class="mt-6 text-gray-400 max-w-2xl mx-auto text-lg animate-slide-up opacity-0"
+                style={{
+                    animationDelay: "0.4s",
+                    animationFillMode: "forwards",
+                }}
+            >
+                La base de datos más completa y actualizada. {items.length} objetos
+                clasificados y listos para tu próxima incursión.
+            </p>
+        </div>
+
+        {/* Gallery */}
+        <div
+            class="animate-slide-up opacity-0"
+            style={{ animationDelay: "0.6s", animationFillMode: "forwards" }}
+        >
+            <ItemGallery client:load items={items} />
+        </div>
+
+        {/* Footer */}
+        <footer class="text-center py-12 text-gray-600 font-mono text-xs">
+            <p>DATA SOURCED FROM COMMUNITY REPOSITORIES</p>
+            <p class="mt-2">BUILT WITH ASTRO & REACT</p>
+        </footer>
+    </main>
+</Layout>

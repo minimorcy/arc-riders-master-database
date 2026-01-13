@@ -1,0 +1,43 @@
+---
+import Layout from "../layouts/Layout.astro";
+import HideoutGallery from "../components/HideoutGallery";
+import allItems from "../data/arc_raiders_all_items.json";
+
+// Use Astro's import.meta.glob to load all JSONs from hideout directory
+const hideoutFiles = import.meta.glob("../data/hideout/*.json", {
+    eager: true,
+});
+const stations = Object.values(hideoutFiles).map(
+    (file: any) => file.default || file,
+);
+---
+
+<Layout title="Hideout Upgrades | ARC Raiders Database">
+    <main class="min-h-screen relative bg-[#0f111a]">
+        {/* Background Effects */}
+        <div class="fixed inset-0 pointer-events-none">
+            <div
+                class="absolute top-0 left-0 w-[500px] h-[500px] bg-emerald-500/10 blur-[120px] rounded-full opacity-30"
+            >
+            </div>
+            <div
+                class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-purple-500/10 blur-[120px] rounded-full opacity-30"
+            >
+            </div>
+        </div>
+
+        <div class="relative pt-12 pb-8 text-center px-4">
+            <h1
+                class="text-4xl md:text-5xl font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 mb-2 font-display uppercase"
+            >
+                Mejoras de Escondite
+            </h1>
+            <p class="text-gray-400 max-w-2xl mx-auto">
+                Requisitos para mejorar las estaciones de tu base (Armería,
+                Taller, etc).
+            </p>
+        </div>
+
+        <HideoutGallery client:load stations={stations} allItems={allItems} />
+    </main>
+</Layout>

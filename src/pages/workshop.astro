@@ -1,0 +1,43 @@
+---
+import Layout from "../layouts/Layout.astro";
+import WorkshopGallery from "../components/WorkshopGallery";
+import categorizedData from "../data/arc_raiders_categorized.json";
+import allItems from "../data/arc_raiders_all_items.json";
+
+// Get workshop items
+const workshopItems = categorizedData.workshop || [];
+---
+
+<Layout title="Workshop Upgrades | ARC Raiders Database">
+    <main class="min-h-screen relative bg-[#0f111a]">
+        {/* Background Effects */}
+        <div class="fixed inset-0 pointer-events-none">
+            <div
+                class="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-500/10 blur-[120px] rounded-full opacity-30"
+            >
+            </div>
+            <div
+                class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-arc-orange/10 blur-[120px] rounded-full opacity-30"
+            >
+            </div>
+        </div>
+
+        <div class="relative pt-12 pb-8 text-center px-4">
+            <h1
+                class="text-4xl md:text-5xl font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400 mb-2 font-display uppercase"
+            >
+                Mejoras de Taller
+            </h1>
+            <p class="text-gray-400 max-w-2xl mx-auto">
+                Consulta los materiales necesarios para fabricar y mejorar tu
+                equipamiento.
+            </p>
+        </div>
+
+        <WorkshopGallery
+            client:load
+            items={workshopItems}
+            allItems={allItems}
+        />
+    </main>
+</Layout>
