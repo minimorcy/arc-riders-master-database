@@ -1,7 +1,6 @@
-
 import React, { useState, useMemo } from 'react';
 import { createPortal } from 'react-dom';
-import { Search, X, Settings2, Grid3X3, StretchHorizontal } from 'lucide-react';
+import { Search, X, Grid, List, ArrowUpDown, LayoutGrid } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import categorizedData from '../data/arc_raiders_categorized.json';
 import ItemCard from './ItemCard';
@@ -33,16 +32,30 @@ const CATEGORIES = [
     { id: 'expedition', label: '🎒 Expedición', color: 'yellow' },
 ];
 
+const ALPHABET = ['ALL', '#', ...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')];
+
+type ViewMode = 'grid' | 'list' | 'dense';
+type SortMode = 'name' | 'rarity' | 'value';
+
 export default function ItemGallery({ items }: ItemGalleryProps) {
     const [searchQuery, setSearchQuery] = useState('');
     const [activeCategory, setActiveCategory] = useState('all');
+    const [activeLetter, setActiveLetter] = useState('ALL');
     const [selectedItem, setSelectedItem] = useState<Item | null>(null);
     const [visibleCount, setVisibleCount] = useState(50);
-    const [isCompact, setIsCompact] = useState(false);
+    const [viewMode, setViewMode] = useState<ViewMode>('grid');
+    const [sortBy, setSortBy] = useState<SortMode>('name');
+    const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('asc');
 
-    const gridClasses = isCompact
-        ? "grid grid-cols-3 md:grid-cols-5 lg:grid-cols-7 xl:grid-cols-8 gap-3 pb-20"
-        : "grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 pb-20";
+    const gridClasses = useMemo(() => {
+        switch (viewMode) {
+            case 'grid': return "grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 pb-20";
+            case 'list': return "space-y-2 pb-20";
+            // Windows style: Dense columns
+            case 'dense': return "grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-8 gap-x-2 gap-y-1 pb-20";
+            default: return "grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 pb-20";
+        }
+    }, [viewMode]);
 
     const filteredItems = useMemo(() => {
         let result = items;
@@ -57,6 +70,18 @@ export default function ItemGallery({ items }: ItemGalleryProps) {
             }
         }
 
+        // Letter Filter
+        if (activeLetter !== 'ALL') {
+            result = result.filter(item => {
+                const name = (item.name.es || item.name.en || '').toUpperCase();
+                const firstChar = name.charAt(0);
+                if (activeLetter === '#') {
+                    return !/^[A-Z]/.test(firstChar);
+                }
+                return firstChar === activeLetter;
+            });
+        }
+
         // Search Filter
         if (searchQuery) {
             const q = searchQuery.toLowerCase();
@@ -65,92 +90,289 @@ export default function ItemGallery({ items }: ItemGalleryProps) {
             );
         }
 
-        return result;
-    }, [items, searchQuery, activeCategory]);
+        return [...result].sort((a, b) => {
+            let valA: any, valB: any;
+
+            if (sortBy === 'rarity') {
+                const rarityOrder = ['common', 'uncommon', 'rare', 'epic', 'legendary'];
+                valA = rarityOrder.indexOf((a.rarity || 'common').toLowerCase());
+                valB = rarityOrder.indexOf((b.rarity || 'common').toLowerCase());
+            } else if (sortBy === 'value') {
+                valA = a.value || 0;
+                valB = b.value || 0;
+            } else {
+                valA = (a.name.es || a.name.en || '').toLowerCase();
+                valB = (b.name.es || b.name.en || '').toLowerCase();
+            }
+
+            if (valA < valB) return sortDirection === 'asc' ? -1 : 1;
+            if (valA > valB) return sortDirection === 'asc' ? 1 : -1;
+            return 0;
+        });
+    }, [items, searchQuery, activeCategory, sortBy, sortDirection, activeLetter]);
 
     // Reset pagination when filters change
     React.useEffect(() => {
         setVisibleCount(50);
-    }, [searchQuery, activeCategory]);
+        // Reset letter if searching or changing category to avoid confusion
+        if (searchQuery) setActiveLetter('ALL');
+    }, [searchQuery, activeCategory, sortBy, sortDirection, activeLetter]);
+
+    const toggleSort = (mode: SortMode) => {
+        if (sortBy === mode) {
+            setSortDirection(prev => prev === 'asc' ? 'desc' : 'asc');
+        } else {
+            setSortBy(mode);
+            setSortDirection('asc');
+        }
+    };
 
     return (
-        <div className="w-full max-w-7xl mx-auto px-4">
-            {/* Controls */}
-            <div className="sticky top-4 z-40 bg-arc-dark/80 backdrop-blur-md p-4 rounded-2xl border border-white/10 shadow-2xl mb-8">
-                <div className="flex flex-col md:flex-row gap-4 items-center justify-between">
+        <div className="w-full max-w-[95%] mx-auto px-4">
+            {/* Sticky Compact Navbar */}
+            <div className="sticky top-4 z-40 bg-arc-dark/95 backdrop-blur-md p-3 rounded-2xl border border-white/10 shadow-2xl mb-8 flex flex-col md:flex-row gap-4 items-center justify-between">
 
-                    {/* Search */}
-                    <div className="relative w-full md:w-96">
-                        <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
+                {/* Left: Search & Category */}
+                <div className="flex flex-col md:flex-row items-center gap-3 w-full md:w-auto flex-1">
+                    <div className="relative w-full md:w-64">
+                        <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
                         <input
                             type="text"
                             placeholder="Buscar objetos..."
                             value={searchQuery}
                             onChange={(e) => setSearchQuery(e.target.value)}
-                            className="w-full bg-black/40 border border-white/10 rounded-full py-3 pl-12 pr-4 text-white focus:outline-none focus:border-arc-orange focus:ring-1 focus:ring-arc-orange transition-all"
+                            className="w-full bg-black/40 border border-white/10 rounded-lg py-2 pl-10 pr-4 text-sm text-white focus:outline-none focus:border-arc-orange focus:ring-1 focus:ring-arc-orange transition-all"
                         />
                         {searchQuery && (
                             <button
                                 onClick={() => setSearchQuery('')}
                                 className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-white"
                             >
-                                <X className="w-4 h-4" />
+                                <X className="w-3 h-3" />
                             </button>
                         )}
                     </div>
 
-                    {/* Filters */}
-                    <div className="flex flex-wrap gap-3 justify-center w-full md:w-auto">
+                    {/* Compact Categories */}
+                    <div className="flex gap-1 overflow-x-auto pb-1 md:pb-0 w-full md:w-auto mask-gradient-right px-1 no-scrollbar">
                         {CATEGORIES.map(cat => (
                             <button
                                 key={cat.id}
                                 onClick={() => setActiveCategory(cat.id)}
-                                className={`px-5 py-2 rounded-full text-sm font-bold uppercase tracking-wider transition-all duration-300 ${activeCategory === cat.id
-                                    ? 'bg-gradient-to-r from-arc-orange to-arc-orange-light text-white shadow-lg scale-105'
-                                    : 'bg-white/5 text-gray-400 hover:bg-white/10 hover:text-gray-200 hover:-translate-y-0.5'
+                                className={`flex-shrink-0 px-3 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wide transition-all ${activeCategory === cat.id
+                                    ? 'bg-arc-orange text-white shadow-lg'
+                                    : 'bg-white/5 text-gray-400 hover:bg-white/10 hover:text-gray-200'
                                     }`}
                             >
                                 {cat.label}
                             </button>
                         ))}
                     </div>
+                </div>
 
-                    <div className="flex items-center gap-3">
+                {/* Right: Controls */}
+                <div className="flex items-center gap-3 w-full md:w-auto justify-end">
+                    {/* Sort */}
+                    <div className="flex items-center gap-2 bg-black/40 rounded-lg p-1 border border-white/5">
                         <button
-                            onClick={() => setIsCompact(!isCompact)}
-                            className={`p-2 rounded-lg transition-all ${isCompact ? 'bg-arc-orange text-white' : 'bg-white/5 text-gray-400 hover:text-white'}`}
-                            title={isCompact ? "Vista Normal" : "Vista Compacta"}
+                            onClick={() => toggleSort('name')}
+                            className={`px-3 py-1 text-[10px] md:text-xs font-bold uppercase tracking-wider rounded transition-all flex items-center gap-1 ${sortBy === 'name' ? 'bg-white/10 text-white' : 'text-gray-500 hover:text-gray-300'}`}
                         >
-                            {isCompact ? <Grid3X3 className="w-5 h-5" /> : <StretchHorizontal className="w-5 h-5" />}
+                            Nombre {sortBy === 'name' && <ArrowUpDown className="w-3 h-3" />}
                         </button>
+                        <button
+                            onClick={() => toggleSort('rarity')}
+                            className={`px-3 py-1 text-[10px] md:text-xs font-bold uppercase tracking-wider rounded transition-all flex items-center gap-1 ${sortBy === 'rarity' ? 'bg-white/10 text-white' : 'text-gray-500 hover:text-gray-300'}`}
+                        >
+                            Rareza {sortBy === 'rarity' && <ArrowUpDown className="w-3 h-3" />}
+                        </button>
+                        <button
+                            onClick={() => toggleSort('value')}
+                            className={`px-3 py-1 text-[10px] md:text-xs font-bold uppercase tracking-wider rounded transition-all flex items-center gap-1 ${sortBy === 'value' ? 'bg-white/10 text-white' : 'text-gray-500 hover:text-gray-300'}`}
+                        >
+                            Valor {sortBy === 'value' && <ArrowUpDown className="w-3 h-3" />}
+                        </button>
+                    </div>
 
-                        <div className="text-gray-400 text-sm font-mono bg-black/30 px-4 py-2 rounded-lg border border-white/5">
-                            {filteredItems.length} ITEMS
-                        </div>
+                    {/* View Toggle */}
+                    <div className="flex bg-black/40 rounded-lg p-1 border border-white/5">
+                        <button
+                            onClick={() => setViewMode('grid')}
+                            className={`p-2 rounded-md transition-all ${viewMode === 'grid' ? 'bg-white/10 text-white' : 'text-gray-500 hover:text-gray-300'}`}
+                            title="Cuadrícula"
+                        >
+                            <Grid className="w-4 h-4" />
+                        </button>
+                        <button
+                            onClick={() => setViewMode('dense')}
+                            className={`p-2 rounded-md transition-all ${viewMode === 'dense' ? 'bg-white/10 text-white' : 'text-gray-500 hover:text-gray-300'}`}
+                            title="Compacto"
+                        >
+                            <LayoutGrid className="w-4 h-4" />
+                        </button>
+                        <button
+                            onClick={() => setViewMode('list')}
+                            className={`p-2 rounded-md transition-all ${viewMode === 'list' ? 'bg-white/10 text-white' : 'text-gray-500 hover:text-gray-300'}`}
+                            title="Lista"
+                        >
+                            <List className="w-4 h-4" />
+                        </button>
+                    </div>
+
+                    <div className="text-xs font-mono text-gray-500 hidden md:block">
+                        {filteredItems.length}
                     </div>
                 </div>
             </div>
 
-            {/* Grid */}
-            <motion.div
-                className={gridClasses}
-            >
-                {filteredItems.slice(0, visibleCount).map((item) => (
-                    <ItemCard key={item.id} item={item} onClick={() => setSelectedItem(item)} isCompact={isCompact} />
-                ))}
-            </motion.div>
-
-            {/* Load More Trigger */}
-            {filteredItems.length > visibleCount && (
-                <div className="flex justify-center pb-20">
-                    <button
-                        onClick={() => setVisibleCount(prev => prev + 50)}
-                        className="px-8 py-3 bg-white/5 hover:bg-white/10 text-white rounded-full font-bold tracking-widest border border-white/10 transition-all active:scale-95"
-                    >
-                        LOAD MORE ({filteredItems.length - visibleCount})
-                    </button>
+            <div className="flex gap-6 relative">
+                {/* A-Z Sidebar */}
+                <div className="hidden lg:flex flex-col gap-1 w-8 sticky top-32 h-[calc(100vh-10rem)] overflow-y-auto no-scrollbar pb-20">
+                    {ALPHABET.map(char => (
+                        <button
+                            key={char}
+                            onClick={() => setActiveLetter(char)}
+                            className={`
+                                w-8 h-8 flex items-center justify-center rounded text-xs font-bold transition-all
+                                ${activeLetter === char
+                                    ? 'bg-arc-orange text-white shadow-lg scale-110'
+                                    : 'text-gray-500 hover:text-white hover:bg-white/10'
+                                }
+                            `}
+                        >
+                            {char === 'ALL' ? '*' : char}
+                        </button>
+                    ))}
                 </div>
-            )}
+
+                {/* Content Area */}
+                <div className="flex-1 min-w-0">
+                    {/* Render Logic */}
+                    <motion.div className={gridClasses}>
+                        {(() => {
+                            // Helper to determine what to render
+                            let itemsToRender: (Item | { type: 'header', letter: string })[] = [];
+
+                            if (viewMode === 'dense' && sortBy === 'name') {
+                                // Continuous Flow with Embedded Headers
+                                let currentLetter = '';
+                                filteredItems.forEach(item => {
+                                    const name = (item.name.es || item.name.en || '').toUpperCase();
+                                    const char = name.charAt(0);
+                                    const letter = /^[A-Z]/.test(char) ? char : '#';
+
+                                    if (letter !== currentLetter) {
+                                        itemsToRender.push({ type: 'header', letter });
+                                        currentLetter = letter;
+                                    }
+                                    itemsToRender.push(item);
+                                });
+                            } else {
+                                // Standard Slice for other views
+                                // @ts-ignore
+                                itemsToRender = filteredItems.slice(0, viewMode === 'dense' ? undefined : visibleCount);
+                            }
+
+                            return itemsToRender.map((item, index) => {
+                                // Header Tile
+                                if ('type' in item && item.type === 'header') {
+                                    return (
+                                        <div
+                                            key={`header-${item.letter}`}
+                                            className="flex items-center justify-center p-2 rounded bg-arc-orange/20 border border-arc-orange/50 text-arc-orange text-2xl font-black font-mono shadow-[0_0_15px_rgba(255,107,53,0.1)] select-none"
+                                        >
+                                            {item.letter}
+                                        </div>
+                                    );
+                                }
+
+                                // Standard Item Render
+                                // @ts-ignore - TS knows it's an Item here
+                                const realItem = item as Item;
+
+                                if (viewMode === 'grid') {
+                                    return <ItemCard key={realItem.id} item={realItem} onClick={() => setSelectedItem(realItem)} isCompact={false} />;
+                                } else if (viewMode === 'list') {
+                                    return (
+                                        <div
+                                            key={realItem.id}
+                                            onClick={() => setSelectedItem(realItem)}
+                                            className="flex items-center gap-4 bg-arc-card/30 border border-white/5 rounded-xl p-3 hover:bg-white/5 hover:border-white/10 transition-all cursor-pointer group"
+                                        >
+                                            <div className={`w-12 h-12 rounded-lg bg-black/40 border border-white/5 flex items-center justify-center relative overflow-hidden flex-shrink-0`}>
+                                                <div className={`absolute inset-0 opacity-20 bg-${getRarityColor(realItem.rarity)}-500/20`} />
+                                                {realItem.imageFilename ? (
+                                                    <img src={realItem.imageFilename} alt="" className="w-full h-full object-contain p-1" />
+                                                ) : (
+                                                    <div className="w-2 h-2 rounded-full bg-gray-600" />
+                                                )}
+                                            </div>
+
+                                            <div className="flex-1 min-w-0 flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+                                                <div className="flex-1 min-w-0">
+                                                    <h4 className="text-sm font-bold text-gray-200 truncate group-hover:text-white transition-colors">
+                                                        {realItem.name.es || realItem.name.en}
+                                                    </h4>
+                                                    <div className="text-xs text-gray-500 capitalize">{realItem.type}</div>
+                                                </div>
+                                                <div className="flex items-center gap-3">
+                                                    <span className={`text-[10px] px-2 py-0.5 rounded border border-white/10 uppercase tracking-wider text-${getRarityColor(realItem.rarity)}-400 bg-black/20`}>
+                                                        {realItem.rarity}
+                                                    </span>
+                                                    <div className="text-sm font-mono font-bold text-arc-green w-16 text-right">
+                                                        ${realItem.value || 0}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    );
+                                } else { // Dense Tile
+                                    return (
+                                        <div
+                                            key={realItem.id}
+                                            onClick={() => setSelectedItem(realItem)}
+                                            className={`
+                                                flex items-center gap-2 p-2 rounded hover:bg-white/10 cursor-pointer transition-colors group
+                                                border-l-[3px] border-${getRarityColor(realItem.rarity)}-500/50 hover:border-${getRarityColor(realItem.rarity)}-500
+                                                bg-black/20
+                                            `}
+                                        >
+                                            <div className="w-8 h-8 rounded bg-black/40 flex items-center justify-center relative overflow-hidden flex-shrink-0">
+                                                {realItem.imageFilename ? (
+                                                    <img src={realItem.imageFilename} alt="" className="w-full h-full object-contain p-0.5 opacity-80 group-hover:opacity-100 transition-opacity" />
+                                                ) : (
+                                                    <div className="w-1.5 h-1.5 rounded-full bg-gray-600" />
+                                                )}
+                                            </div>
+
+                                            <div className="flex-1 min-w-0">
+                                                <div className="text-xs font-medium text-gray-300 truncate group-hover:text-white leading-tight">
+                                                    {realItem.name.es || realItem.name.en}
+                                                </div>
+                                                <div className="text-[10px] font-mono font-bold text-arc-green/80 group-hover:text-arc-green leading-tight">
+                                                    ${realItem.value || 0}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    );
+                                }
+                            });
+                        })()}
+                    </motion.div>
+
+                    {/* Load More Trigger (Only for non-dense views where pagination applies) */}
+                    {viewMode !== 'dense' && filteredItems.length > visibleCount && (
+                        <div className="flex justify-center pb-20 mt-8">
+                            <button
+                                onClick={() => setVisibleCount(prev => prev + 50)}
+                                className="px-8 py-3 bg-white/5 hover:bg-white/10 text-white rounded-full font-bold tracking-widest border border-white/10 transition-all active:scale-95"
+                            >
+                                LOAD MORE ({filteredItems.length - visibleCount})
+                            </button>
+                        </div>
+                    )}
+                </div>
+            </div>
 
             {/* Modal - Rendered via Portal to escape parent transforms */}
             {selectedItem && typeof document !== 'undefined' && createPortal(
@@ -237,12 +459,13 @@ export default function ItemGallery({ items }: ItemGalleryProps) {
 }
 
 function getRarityColor(rarity: string) {
-    switch (rarity) {
-        case 'Common': return 'gray';
-        case 'Uncommon': return 'green';
-        case 'Rare': return 'blue';
-        case 'Epic': return 'purple';
-        case 'Legendary': return 'orange';
+    if (!rarity) return 'gray';
+    switch (rarity.toLowerCase()) {
+        case 'common': return 'gray';
+        case 'uncommon': return 'green';
+        case 'rare': return 'blue';
+        case 'epic': return 'purple';
+        case 'legendary': return 'orange';
         default: return 'gray';
     }
 }
