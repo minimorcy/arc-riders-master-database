@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { Search, CheckCircle, Circle } from 'lucide-react';
 import questsData from '../data/quests.json';
 import { useQuestStore } from '../hooks/useQuestStore';
+import { useLanguage } from '../hooks/useLanguage';
 
 type Quest = {
     id: string;
@@ -20,14 +21,15 @@ interface QuestListProps {
 export default function QuestList({ onSelectQuest }: QuestListProps) {
     const [searchTerm, setSearchTerm] = useState('');
     const { isCompleted, toggleQuest } = useQuestStore();
+    const { language, t } = useLanguage();
 
     const filteredQuests = useMemo(() => {
         const lowerTerm = searchTerm.toLowerCase();
         return (questsData as Quest[]).filter(q => {
-            const name = (q.name.es || q.name.en || q.id).toLowerCase();
+            const name = (q.name[language] || q.name.en || q.id).toLowerCase();
             return name.includes(lowerTerm) || q.trader.toLowerCase().includes(lowerTerm);
         });
-    }, [searchTerm]);
+    }, [searchTerm, language]);
 
     // Calculate Quest Depths for sorting
     const questDepths = useMemo(() => {
@@ -89,15 +91,15 @@ export default function QuestList({ onSelectQuest }: QuestListProps) {
     return (
         <div className="h-full flex flex-col bg-zinc-900/50 backdrop-blur-sm rounded-xl border border-zinc-700 overflow-hidden">
             {/* Search Bar */}
-            <div className="p-4 border-b border-zinc-700">
+            <div className="p-2 border-b border-zinc-700/50 bg-black/20">
                 <div className="relative">
-                    <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-400" />
+                    <Search className="absolute left-2.5 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500" />
                     <input
                         type="text"
-                        placeholder="Buscar misión o comerciante..."
-                        className="w-full bg-zinc-950/50 border border-zinc-700 text-zinc-100 text-sm rounded-lg pl-9 pr-4 py-2 focus:ring-1 focus:ring-arc-orange focus:border-arc-orange outline-none"
+                        placeholder={t("search.placeholder")}
                         value={searchTerm}
                         onChange={(e) => setSearchTerm(e.target.value)}
+                        className="w-full bg-zinc-900 border border-zinc-700/50 rounded-lg py-1.5 pl-9 pr-3 text-sm text-zinc-200 focus:outline-none focus:border-zinc-500 transition-colors placeholder-zinc-600"
                     />
                 </div>
             </div>
@@ -123,7 +125,7 @@ export default function QuestList({ onSelectQuest }: QuestListProps) {
                                                 toggleQuest(quest.id);
                                             }}
                                             className={`flex-shrink-0 transition-colors ${completed ? 'text-green-500' : 'text-zinc-600 hover:text-zinc-400'}`}
-                                            title={completed ? "Marcar como pendiente" : "Marcar como completada"}
+                                            title={completed ? t("quest.mark.pending") : t("quest.mark.completed")}
                                         >
                                             {completed ? <CheckCircle size={18} /> : <Circle size={18} />}
                                         </button>
@@ -132,7 +134,7 @@ export default function QuestList({ onSelectQuest }: QuestListProps) {
                                             className="flex-1 text-left"
                                         >
                                             <div className={`font-bold text-sm text-zinc-200 ${completed ? 'line-through text-zinc-500' : ''}`}>
-                                                {quest.name.es || quest.name.en || quest.id}
+                                                {quest.name[language] || quest.name.en || quest.id}
                                             </div>
                                         </button>
                                     </div>

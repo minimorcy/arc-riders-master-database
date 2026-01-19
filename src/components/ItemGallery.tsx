@@ -6,6 +6,7 @@ import categorizedData from '../data/arc_raiders_categorized.json';
 import ItemCard from './ItemCard';
 import questsData from '../data/quests.json';
 import { useQuestStore } from '../hooks/useQuestStore';
+import { useLanguage } from '../hooks/useLanguage';
 
 interface Item {
     id: string;
@@ -41,6 +42,17 @@ type ViewMode = 'grid' | 'list' | 'dense';
 type SortMode = 'name' | 'rarity' | 'value';
 
 export default function ItemGallery({ items }: ItemGalleryProps) {
+    const { language, t } = useLanguage();
+
+    const CATEGORIES = [
+        { id: 'all', label: `🌟 ${t("cat.all")}`, color: 'gray' },
+        { id: 'priority', label: `🔥 ${t("cat.priority")}`, color: 'red' },
+        { id: 'quests', label: `📜 ${t("cat.quests")}`, color: 'purple' },
+        { id: 'safe', label: `♻️ ${t("cat.safe")}`, color: 'green' },
+        { id: 'workshop', label: `🛠️ ${t("cat.workshop")}`, color: 'blue' },
+        { id: 'expedition', label: `🎒 ${t("cat.expedition")}`, color: 'yellow' },
+    ];
+
     const [searchQuery, setSearchQuery] = useState('');
     const [activeCategory, setActiveCategory] = useState('all');
     const [activeLetter, setActiveLetter] = useState('ALL');
@@ -108,7 +120,7 @@ export default function ItemGallery({ items }: ItemGalleryProps) {
         // Letter Filter
         if (activeLetter !== 'ALL') {
             result = result.filter(item => {
-                const name = (item.name.es || item.name.en || '').toUpperCase();
+                const name = (item.name[language] || item.name.en || item.id).toUpperCase();
                 const firstChar = name.charAt(0);
                 if (activeLetter === '#') {
                     return !/^[A-Z]/.test(firstChar);
@@ -121,7 +133,7 @@ export default function ItemGallery({ items }: ItemGalleryProps) {
         if (searchQuery) {
             const q = searchQuery.toLowerCase();
             result = result.filter(item =>
-                (item.name.es || item.name.en || '').toLowerCase().includes(q)
+                (item.name[language] || item.name.en || item.id).toLowerCase().includes(q)
             );
         }
 
@@ -136,15 +148,15 @@ export default function ItemGallery({ items }: ItemGalleryProps) {
                 valA = a.value || 0;
                 valB = b.value || 0;
             } else {
-                valA = (a.name.es || a.name.en || '').toLowerCase();
-                valB = (b.name.es || b.name.en || '').toLowerCase();
+                valA = (a.name[language] || a.name.en || a.id).toLowerCase();
+                valB = (b.name[language] || b.name.en || b.id).toLowerCase();
             }
 
             if (valA < valB) return sortDirection === 'asc' ? -1 : 1;
             if (valA > valB) return sortDirection === 'asc' ? 1 : -1;
             return 0;
         });
-    }, [items, searchQuery, activeCategory, sortBy, sortDirection, activeLetter, isCompleted]); // Added isCompleted to dependency array
+    }, [items, searchQuery, activeCategory, sortBy, sortDirection, activeLetter, isCompleted, language]); // Added language to dependency array
 
     // Reset pagination when filters change
     React.useEffect(() => {
@@ -173,7 +185,7 @@ export default function ItemGallery({ items }: ItemGalleryProps) {
                         <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
                         <input
                             type="text"
-                            placeholder="Buscar objetos..."
+                            placeholder={t("search.placeholder")}
                             value={searchQuery}
                             onChange={(e) => setSearchQuery(e.target.value)}
                             className="w-full bg-black/40 border border-white/10 rounded-lg py-2 pl-10 pr-4 text-sm text-white focus:outline-none focus:border-arc-orange focus:ring-1 focus:ring-arc-orange transition-all"
@@ -213,19 +225,19 @@ export default function ItemGallery({ items }: ItemGalleryProps) {
                             onClick={() => toggleSort('name')}
                             className={`px-3 py-1 text-[10px] md:text-xs font-bold uppercase tracking-wider rounded transition-all flex items-center gap-1 ${sortBy === 'name' ? 'bg-white/10 text-white' : 'text-gray-500 hover:text-gray-300'}`}
                         >
-                            Nombre {sortBy === 'name' && <ArrowUpDown className="w-3 h-3" />}
+                            {t("sort.name")} {sortBy === 'name' && <ArrowUpDown className="w-3 h-3" />}
                         </button>
                         <button
                             onClick={() => toggleSort('rarity')}
                             className={`px-3 py-1 text-[10px] md:text-xs font-bold uppercase tracking-wider rounded transition-all flex items-center gap-1 ${sortBy === 'rarity' ? 'bg-white/10 text-white' : 'text-gray-500 hover:text-gray-300'}`}
                         >
-                            Rareza {sortBy === 'rarity' && <ArrowUpDown className="w-3 h-3" />}
+                            {t("sort.rarity")} {sortBy === 'rarity' && <ArrowUpDown className="w-3 h-3" />}
                         </button>
                         <button
                             onClick={() => toggleSort('value')}
                             className={`px-3 py-1 text-[10px] md:text-xs font-bold uppercase tracking-wider rounded transition-all flex items-center gap-1 ${sortBy === 'value' ? 'bg-white/10 text-white' : 'text-gray-500 hover:text-gray-300'}`}
                         >
-                            Valor {sortBy === 'value' && <ArrowUpDown className="w-3 h-3" />}
+                            {t("sort.value")} {sortBy === 'value' && <ArrowUpDown className="w-3 h-3" />}
                         </button>
                     </div>
 
@@ -292,7 +304,7 @@ export default function ItemGallery({ items }: ItemGalleryProps) {
                                 // Continuous Flow with Embedded Headers
                                 let currentLetter = '';
                                 filteredItems.forEach(item => {
-                                    const name = (item.name.es || item.name.en || '').toUpperCase();
+                                    const name = (item.name[language] || item.name.en || '').toUpperCase();
                                     const char = name.charAt(0);
                                     const letter = /^[A-Z]/.test(char) ? char : '#';
 
@@ -353,7 +365,7 @@ export default function ItemGallery({ items }: ItemGalleryProps) {
                                             <div className="flex-1 min-w-0 flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
                                                 <div className="flex-1 min-w-0">
                                                     <h4 className="text-sm font-bold text-gray-200 truncate group-hover:text-white transition-colors">
-                                                        {realItem.name.es || realItem.name.en}
+                                                        {realItem.name[language] || realItem.name.en || realItem.id}
                                                     </h4>
                                                     <div className="text-xs text-gray-500 capitalize">{realItem.type}</div>
                                                 </div>
@@ -395,7 +407,7 @@ export default function ItemGallery({ items }: ItemGalleryProps) {
 
                                             <div className="flex-1 min-w-0">
                                                 <div className="text-xs font-medium text-gray-300 truncate group-hover:text-white leading-tight">
-                                                    {realItem.name.es || realItem.name.en}
+                                                    {realItem.name[language] || realItem.name.en || realItem.id}
                                                 </div>
                                                 <div className="text-[10px] font-mono font-bold text-arc-green/80 group-hover:text-arc-green leading-tight">
                                                     ${realItem.value || 0}
@@ -454,7 +466,7 @@ export default function ItemGallery({ items }: ItemGalleryProps) {
                                         {selectedItem.imageFilename ? (
                                             <img
                                                 src={selectedItem.imageFilename}
-                                                alt={selectedItem.name.es || selectedItem.name.en}
+                                                alt={selectedItem.name[language] || selectedItem.name.en}
                                                 className="w-40 h-40 object-contain relative z-10 drop-shadow-2xl"
                                             />
                                         ) : (
@@ -468,19 +480,20 @@ export default function ItemGallery({ items }: ItemGalleryProps) {
                                     </div>
                                 </div>
 
+
                                 <div className="flex-1 text-center md:text-left">
                                     <h2 className="text-3xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400 mb-4 font-heading">
-                                        {selectedItem.name.es || selectedItem.name.en}
+                                        {selectedItem.name[language] || selectedItem.name.en || selectedItem.id}
                                     </h2>
 
                                     <div className="space-y-4 text-gray-300 leading-relaxed">
                                         <p className="text-lg italic opacity-90 border-l-4 border-arc-orange pl-4 bg-white/5 py-2 rounded-r-lg">
-                                            {selectedItem.description.es || selectedItem.description.en}
+                                            {selectedItem.description[language] || selectedItem.description.en || 'No description available.'}
                                         </p>
 
                                         <div className="grid grid-cols-2 gap-4 mt-6">
                                             <div className="bg-black/40 p-3 rounded-xl border border-white/5">
-                                                <div className="text-xs text-gray-500 uppercase tracking-wider mb-1">Valor</div>
+                                                <div className="text-xs text-gray-500 uppercase tracking-wider mb-1">{t('sort.value')}</div>
                                                 <div className="text-xl font-bold text-arc-green">${selectedItem.value}</div>
                                             </div>
                                             <div className="bg-black/40 p-3 rounded-xl border border-white/5">
