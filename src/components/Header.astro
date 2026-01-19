@@ -1,0 +1,41 @@
+---
+import { Sparkles } from "lucide-react";
+
+import Navbar from "./Navbar";
+
+interface Props {
+    currentPath?: string;
+}
+
+const { currentPath = "" } = Astro.props;
+
+const navItems = [
+    { label: "Objetos", href: "/", icon: "📦" },
+    { label: "Misiones", href: "/quests", icon: "🗺️" },
+    { label: "Taller", href: "/workshop", icon: "🛠️" },
+    { label: "Escondite", href: "/hideout", icon: "🏠" },
+];
+---
+
+<header
+    class="flex items-center justify-between px-6 py-4 bg-arc-dark/50 backdrop-blur-sm border-b border-white/5 sticky top-0 z-50 transition-all duration-300"
+>
+    <a
+        href="/"
+        class="flex items-center gap-4 hover:opacity-80 transition-opacity z-50 relative"
+    >
+        <h1
+            class="text-2xl font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400 font-sans"
+        >
+            ARC RAIDERS
+        </h1>
+        <div
+            class="hidden md:flex items-center gap-2 px-3 py-1 rounded-full bg-arc-orange/10 border border-arc-orange/20 text-arc-orange text-xs font-mono font-bold tracking-widest"
+        >
+            <Sparkles className="w-3 h-3" />
+            MASTER DB
+        </div>
+    </a>
+
+    <Navbar currentPath={currentPath} navItems={navItems} client:load />
+</header>

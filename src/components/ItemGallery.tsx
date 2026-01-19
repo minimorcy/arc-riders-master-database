@@ -1,9 +1,11 @@
 import React, { useState, useMemo } from 'react';
 import { createPortal } from 'react-dom';
-import { Search, X, Grid, List, ArrowUpDown, LayoutGrid } from 'lucide-react';
+import { Search, X, Grid, List, ArrowUpDown, LayoutGrid, Scroll } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import categorizedData from '../data/arc_raiders_categorized.json';
 import ItemCard from './ItemCard';
+import questsData from '../data/quests.json';
+import { useQuestStore } from '../hooks/useQuestStore';
 
 interface Item {
     id: string;
@@ -27,6 +29,7 @@ interface ItemGalleryProps {
 const CATEGORIES = [
     { id: 'all', label: '🌟 Todos', color: 'gray' },
     { id: 'priority', label: '🔥 Prioridad', color: 'red' },
+    { id: 'quests', label: '📜 Misión', color: 'purple' },
     { id: 'safe', label: '♻️ Safe to Sell', color: 'green' },
     { id: 'workshop', label: '🛠️ Taller', color: 'blue' },
     { id: 'expedition', label: '🎒 Expedición', color: 'yellow' },
@@ -43,9 +46,39 @@ export default function ItemGallery({ items }: ItemGalleryProps) {
     const [activeLetter, setActiveLetter] = useState('ALL');
     const [selectedItem, setSelectedItem] = useState<Item | null>(null);
     const [visibleCount, setVisibleCount] = useState(50);
-    const [viewMode, setViewMode] = useState<ViewMode>('grid');
+    const [viewMode, setViewMode] = useState<ViewMode>('dense');
     const [sortBy, setSortBy] = useState<SortMode>('name');
     const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('asc');
+
+    const { isCompleted } = useQuestStore();
+
+    // Map Item ID -> List of Quest IDs that require it
+    const itemQuestMap = useMemo(() => {
+        const map = new Map<string, string[]>();
+        // @ts-ignore
+        questsData.forEach((q: any) => {
+            if (q.requiredItemIds) {
+                q.requiredItemIds.forEach((req: any) => {
+                    const current = map.get(req.itemId) || [];
+                    current.push(q.id);
+                    map.set(req.itemId, current);
+                });
+            }
+        });
+        return map;
+    }, []);
+
+    const getItemStatus = (itemId: string): 'active' | 'completed' | 'none' => {
+        const questIds = itemQuestMap.get(itemId);
+        if (!questIds) return 'none';
+
+        // If ANY quest requiring this item is NOT completed, it's active
+        const hasActiveQuest = questIds.some(qid => !isCompleted(qid));
+        if (hasActiveQuest) return 'active';
+
+        // If it has quests but none are active (all completed), it's completed
+        return 'completed';
+    };
 
     const gridClasses = useMemo(() => {
         switch (viewMode) {
@@ -61,7 +94,9 @@ export default function ItemGallery({ items }: ItemGalleryProps) {
         let result = items;
 
         // Category Filter
-        if (activeCategory !== 'all') {
+        if (activeCategory === 'quests') {
+            result = result.filter(item => getItemStatus(item.id) !== 'none');
+        } else if (activeCategory !== 'all') {
             // @ts-ignore - JSON structure might be inferred loosely
             const categoryItems = (categorizedData as any)[activeCategory];
             if (categoryItems) {
@@ -109,7 +144,7 @@ export default function ItemGallery({ items }: ItemGalleryProps) {
             if (valA > valB) return sortDirection === 'asc' ? 1 : -1;
             return 0;
         });
-    }, [items, searchQuery, activeCategory, sortBy, sortDirection, activeLetter]);
+    }, [items, searchQuery, activeCategory, sortBy, sortDirection, activeLetter, isCompleted]); // Added isCompleted to dependency array
 
     // Reset pagination when filters change
     React.useEffect(() => {
@@ -289,9 +324,10 @@ export default function ItemGallery({ items }: ItemGalleryProps) {
                                 // Standard Item Render
                                 // @ts-ignore - TS knows it's an Item here
                                 const realItem = item as Item;
+                                const status = getItemStatus(realItem.id);
 
                                 if (viewMode === 'grid') {
-                                    return <ItemCard key={realItem.id} item={realItem} onClick={() => setSelectedItem(realItem)} isCompact={false} />;
+                                    return <ItemCard key={realItem.id} item={realItem} onClick={() => setSelectedItem(realItem)} isCompact={false} questStatus={status} />;
                                 } else if (viewMode === 'list') {
                                     return (
                                         <div
@@ -305,6 +341,12 @@ export default function ItemGallery({ items }: ItemGalleryProps) {
                                                     <img src={realItem.imageFilename} alt="" className="w-full h-full object-contain p-1" />
                                                 ) : (
                                                     <div className="w-2 h-2 rounded-full bg-gray-600" />
+                                                )}
+                                                {/* Quest Marker Node */}
+                                                {status !== 'none' && (
+                                                    <div className={`absolute top-0.5 left-0.5 z-10 p-0.5 rounded shadow-sm ${status === 'active' ? 'bg-purple-500/90' : 'bg-gray-500/50'}`}>
+                                                        <Scroll size={10} className="text-white" />
+                                                    </div>
                                                 )}
                                             </div>
 
@@ -342,6 +384,12 @@ export default function ItemGallery({ items }: ItemGalleryProps) {
                                                     <img src={realItem.imageFilename} alt="" className="w-full h-full object-contain p-0.5 opacity-80 group-hover:opacity-100 transition-opacity" />
                                                 ) : (
                                                     <div className="w-1.5 h-1.5 rounded-full bg-gray-600" />
+                                                )}
+                                                {/* Quest Marker Node */}
+                                                {status !== 'none' && (
+                                                    <div className={`absolute top-0 left-0 z-10 p-0.5 rounded-br shadow-sm ${status === 'active' ? 'bg-purple-500/90' : 'bg-gray-500/50 hover:bg-purple-500/90'}`}>
+                                                        <Scroll size={8} className="text-white" />
+                                                    </div>
                                                 )}
                                             </div>
 

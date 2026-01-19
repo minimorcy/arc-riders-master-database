@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
 import WorkshopGallery from "../components/WorkshopGallery";
 import categorizedData from "../data/arc_raiders_categorized.json";
 import allItems from "../data/arc_raiders_all_items.json";
@@ -21,6 +22,8 @@ const workshopItems = categorizedData.workshop || [];
             >
             </div>
         </div>
+
+        <Header currentPath="/workshop" />
 
         <div class="relative pt-12 pb-8 text-center px-4">
             <h1

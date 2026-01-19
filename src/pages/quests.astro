@@ -1,0 +1,44 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import QuestTree from "../components/QuestTree";
+---
+
+<Layout title="Misiones - Arc Raiders Tracker">
+    <Header currentPath="/quests" />
+    <div class="space-y-6 p-6">
+        <div class="flex flex-col gap-2">
+            <h1 class="text-3xl font-bold tracking-tight">Árbol de Misiones</h1>
+            <p class="text-zinc-400">
+                Visualiza la progresión de las misiones y sus requisitos.
+            </p>
+        </div>
+
+        <!-- Quest Tree Visualization -->
+        <div class="w-full">
+            <QuestTree client:only="react" />
+        </div>
+
+        <!-- Instructions/Legend could go here -->
+        <div
+            class="grid grid-cols-2 md:grid-cols-4 gap-4 p-4 rounded-lg bg-zinc-900/50 border border-zinc-800"
+        >
+            <div class="flex items-center gap-2">
+                <div class="w-3 h-3 rounded-full bg-blue-500"></div>
+                <span class="text-sm font-medium">Celeste</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <div class="w-3 h-3 rounded-full bg-emerald-500"></div>
+                <span class="text-sm font-medium">Shani</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                <span class="text-sm font-medium">Tian Wen</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <div class="w-3 h-3 rounded-full bg-amber-500"></div>
+                <span class="text-sm font-medium">Lance</span>
+            </div>
+        </div>
+    </div>
+</Layout>

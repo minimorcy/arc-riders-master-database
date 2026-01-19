@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Scroll } from 'lucide-react';
 
 interface Item {
     id: string;
@@ -15,9 +16,11 @@ interface ItemCardProps {
     item: Item;
     onClick: () => void;
     isCompact?: boolean;
+    questStatus?: 'none' | 'active' | 'completed';
 }
 
 const RARITY_STYLES = {
+    // ... (rest of RARITY_STYLES matches existing file)
     'Common': {
         border: 'border-slate-600/30',
         hoverBorder: 'hover:border-slate-500',
@@ -60,7 +63,7 @@ const RARITY_STYLES = {
     }
 };
 
-export default function ItemCard({ item, onClick, isCompact = false }: ItemCardProps) {
+export default function ItemCard({ item, onClick, isCompact = false, questStatus = 'none' }: ItemCardProps) {
     const styles = RARITY_STYLES[item.rarity as keyof typeof RARITY_STYLES] || RARITY_STYLES['Common'];
 
     return (
@@ -72,6 +75,19 @@ export default function ItemCard({ item, onClick, isCompact = false }: ItemCardP
             onClick={onClick}
             className={`relative group bg-gradient-to-b ${styles.bg} to-[#151b33] rounded-xl cursor-pointer overflow-hidden border-2 ${styles.border} ${styles.hoverBorder} transition-all duration-300 shadow-lg hover:shadow-2xl ${styles.glow} ${isCompact ? 'p-2' : 'p-3'}`}
         >
+            {/* Quest Item Marker - Top Left */}
+            {questStatus !== 'none' && (
+                <div
+                    className={`absolute top-1 left-1 z-10 p-1 rounded-md shadow-lg backdrop-blur-sm border transition-opacity ${questStatus === 'active'
+                            ? 'bg-purple-500/80 border-purple-400/50 opacity-100'
+                            : 'bg-gray-500/40 border-gray-400/30 opacity-60 hover:opacity-100' // Faded for completed
+                        }`}
+                    title={questStatus === 'active' ? "Objeto de Misión (Requerido)" : "Objeto de Misión (Completada)"}
+                >
+                    <Scroll size={isCompact ? 12 : 16} className="text-white" />
+                </div>
+            )}
+
             {/* Rarity Indicator Top Right */}
             <div className={`absolute top-0 right-0 w-16 h-16 bg-gradient-to-bl from-white/10 to-transparent -mr-8 -mt-8 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity`} />
 
