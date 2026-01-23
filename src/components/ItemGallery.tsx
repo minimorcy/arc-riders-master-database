@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useCallback } from 'react';
 import { createPortal } from 'react-dom';
 import { Search, X, Grid, List, ArrowUpDown, LayoutGrid, Scroll } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -62,7 +62,7 @@ export default function ItemGallery({ items }: ItemGalleryProps) {
     const [sortBy, setSortBy] = useState<SortMode>('name');
     const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('asc');
 
-    const { isCompleted } = useQuestStore();
+    const { isCompleted, completedQuestIds } = useQuestStore();
 
     // Map Item ID -> List of Quest IDs that require it
     const itemQuestMap = useMemo(() => {
@@ -80,7 +80,7 @@ export default function ItemGallery({ items }: ItemGalleryProps) {
         return map;
     }, []);
 
-    const getItemStatus = (itemId: string): 'active' | 'completed' | 'none' => {
+    const getItemStatus = useCallback((itemId: string): 'active' | 'completed' | 'none' => {
         const questIds = itemQuestMap.get(itemId);
         if (!questIds) return 'none';
 
@@ -90,7 +90,7 @@ export default function ItemGallery({ items }: ItemGalleryProps) {
 
         // If it has quests but none are active (all completed), it's completed
         return 'completed';
-    };
+    }, [itemQuestMap, isCompleted]);
 
     const gridClasses = useMemo(() => {
         switch (viewMode) {
@@ -156,7 +156,7 @@ export default function ItemGallery({ items }: ItemGalleryProps) {
             if (valA > valB) return sortDirection === 'asc' ? 1 : -1;
             return 0;
         });
-    }, [items, searchQuery, activeCategory, sortBy, sortDirection, activeLetter, isCompleted, language]); // Added language to dependency array
+    }, [items, searchQuery, activeCategory, sortBy, sortDirection, activeLetter, completedQuestIds, language, getItemStatus]);
 
     // Reset pagination when filters change
     React.useEffect(() => {

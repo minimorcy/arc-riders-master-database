@@ -4,16 +4,22 @@ const STORAGE_KEY = 'arc_raiders_quest_progress';
 const EVENT_KEY = 'quest-local-update';
 
 export function useQuestStore() {
-    const [completedQuestIds, setCompletedQuestIds] = useState<Set<string>>(() => {
-        if (typeof window === 'undefined') return new Set();
-        try {
-            const stored = localStorage.getItem(STORAGE_KEY);
-            return stored ? new Set(JSON.parse(stored)) : new Set();
-        } catch (e) {
-            console.error("Failed to load quest progress", e);
-            return new Set();
+    // Always initialize with empty Set to avoid SSR hydration mismatch
+    const [completedQuestIds, setCompletedQuestIds] = useState<Set<string>>(new Set());
+
+    // Load from localStorage after hydration
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            try {
+                const stored = localStorage.getItem(STORAGE_KEY);
+                if (stored) {
+                    setCompletedQuestIds(new Set(JSON.parse(stored)));
+                }
+            } catch (e) {
+                console.error("Failed to load quest progress", e);
+            }
         }
-    });
+    }, []); // Run once on mount
 
     // Helper to persist to localStorage and dispatch event
     const persist = (newSet: Set<string>) => {
