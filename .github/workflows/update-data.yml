@@ -1,0 +1,63 @@
+name: Update data from RaidTheory
+
+on:
+  schedule:
+    # Runs daily at 03:00 UTC (adjust cron as needed)
+    - cron: '0 3 * * *'
+  workflow_dispatch: {}
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run update script
+        # allow the job to continue so we can decide where to push based on exit code
+        continue-on-error: true
+        run: |
+          echo "Running update script..."
+          npm run update-data
+          EXIT_CODE=$?
+          echo "UPDATE_EXIT_CODE=$EXIT_CODE" >> $GITHUB_ENV
+
+      - name: Commit and push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          # Stage metadata + consolidated files
+          git add src/data/update-metadata.json || true
+          git add src/data/arc_raiders_all_items.json || true
+          git add src/data/arc_raiders_categorized.json || true
+
+          # Choose branch: main if update succeeded (exit code 0), otherwise push to data branch
+          BRANCH=main
+          if [ "${UPDATE_EXIT_CODE:-1}" -ne 0 ]; then
+            echo "Update script exited with code ${UPDATE_EXIT_CODE}, pushing changes to 'data' branch instead of 'main'"
+            BRANCH=data
+          else
+            echo "Update script succeeded (exit code ${UPDATE_EXIT_CODE}), pushing changes to 'main'"
+          fi
+
+          if ! git diff --staged --quiet; then
+            git commit -m "chore(data): update from RaidTheory (exit=${UPDATE_EXIT_CODE}) [skip ci]" || true
+            # Ensure branch exists locally
+            git fetch origin $BRANCH || true
+            git push origin HEAD:$BRANCH
+          else
+            echo "No changes to commit"
+          fi
