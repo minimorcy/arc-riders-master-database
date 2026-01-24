@@ -36,19 +36,23 @@ export default function LastUpdateBadge() {
 
   return (
     <div className="relative">
-      <button
-        onClick={() => setShowTooltip(!showTooltip)}
-        className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-arc-orange/10 border border-arc-orange/20 hover:border-arc-orange/40 text-arc-orange text-xs font-mono font-semibold tracking-wider transition-all duration-200 hover:bg-arc-orange/15"
+      <div
+        // non-interactive: tooltip on hover only to avoid client-side triggers
+        onMouseEnter={() => setShowTooltip(true)}
+        onMouseLeave={() => setShowTooltip(false)}
+        className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-arc-orange/10 border border-arc-orange/20 text-arc-orange text-xs font-mono font-semibold tracking-wider transition-all duration-200"
         title={`Datos actualizados: ${metadata.lastUpdatedDate}`}
+        role="status"
+        aria-label={`Actualizado: ${metadata.lastUpdatedDate}`}
       >
         <Clock className="w-3 h-3" />
         <span className="hidden sm:inline">Actualizado</span>
-      </button>
+      </div>
 
       {showTooltip && (
         <div className="absolute right-0 mt-2 p-3 rounded-lg bg-arc-dark border border-arc-orange/30 text-arc-orange text-xs whitespace-nowrap shadow-lg shadow-arc-orange/20">
           <div className="flex items-center gap-2">
-            <RefreshCw className="w-3 h-3 animate-spin" />
+            <RefreshCw className="w-3 h-3" />
             <span>{metadata.lastUpdatedDate}</span>
           </div>
         </div>
