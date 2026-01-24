@@ -744,3 +744,4 @@ function getRarityStyle(rarity: string) {
         default: return { borderColor: '#6B7280', glow: 'rgba(107,114,128,0.12)', textColor: '#6B7280' };
     }
 }
+
