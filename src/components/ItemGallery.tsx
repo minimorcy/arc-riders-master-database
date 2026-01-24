@@ -506,6 +506,40 @@ export default function ItemGallery({ items }: ItemGalleryProps) {
                                                     <div className="text-lg font-medium text-arc-orange-light">{selectedItem.foundIn}</div>
                                                 </div>
                                             )}
+                                        
+                                        {/* Used In Section */}
+                                        {selectedItem.usedIn && selectedItem.usedIn.length > 0 && (
+                                            <div className="bg-black/40 p-3 rounded-xl border border-white/5 col-span-2">
+                                                <div className="flex items-center justify-between mb-2">
+                                                    <div className="text-xs text-gray-500 uppercase tracking-wider">Usado Para</div>
+                                                    <div className="text-xs font-mono text-gray-400">{selectedItem.usedIn.length} lugares</div>
+                                                </div>
+                                                <div className="flex flex-col gap-2">
+                                                    {selectedItem.usedIn.map((u: any) => {
+                                                        const target = items.find(it => it.id === u.id);
+                                                        const localizedName = u.name ? (u.name[language] || u.name.en || u.id) : u.id;
+                                                        return (
+                                                            <button
+                                                                key={u.id}
+                                                                onClick={() => target ? setSelectedItem(target) : null}
+                                                                className="w-full text-left p-2 rounded-lg hover:bg-white/5 transition-colors flex items-center justify-between"
+                                                            >
+                                                                <div className="flex items-center gap-3">
+                                                                    <div className="text-sm font-medium text-gray-100">{localizedName}</div>
+                                                                    <div className="flex items-center gap-2">
+                                                                        {u.bench && <div className="text-[11px] text-gray-400 bg-black/20 px-2 py-0.5 rounded uppercase font-mono">{u.bench}</div>}
+                                                                        {u.quantity != null && (
+                                                                            <div className="text-[11px] text-gray-300 bg-black/30 px-2 py-0.5 rounded font-mono">x{u.quantity}</div>
+                                                                        )}
+                                                                    </div>
+                                                                </div>
+                                                                <div className="text-xs text-gray-500">ver</div>
+                                                            </button>
+                                                        );
+                                                    })}
+                                                </div>
+                                            </div>
+                                        )}
                                         </div>
                                     </div>
                                 </div>

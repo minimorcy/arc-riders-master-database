@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 
-const STORAGE_KEY = 'arc_raiders_quest_progress';
+const STORAGE_KEY = 'arc_raiders_quest_progress_v2'; // Updated version to clear old data
 const EVENT_KEY = 'quest-local-update';
 
 export function useQuestStore() {

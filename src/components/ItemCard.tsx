@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useLanguage } from '../hooks/useLanguage';
 import { Scroll } from 'lucide-react';
 
 interface Item {
@@ -10,6 +11,7 @@ interface Item {
     value?: number;
     weightKg?: number;
     type: string;
+    usedIn?: Array<{ id: string; name: string; bench: string | null }>;
 }
 
 interface ItemCardProps {
@@ -64,6 +66,7 @@ const RARITY_STYLES = {
 };
 
 export default function ItemCard({ item, onClick, isCompact = false, questStatus = 'none' }: ItemCardProps) {
+    const { language } = useLanguage();
     const styles = RARITY_STYLES[item.rarity as keyof typeof RARITY_STYLES] || RARITY_STYLES['Common'];
 
     return (
@@ -119,6 +122,14 @@ export default function ItemCard({ item, onClick, isCompact = false, questStatus
                         </span>
                     </div>
                 )}
+                {!isCompact && item.usedIn && item.usedIn.length > 0 && (
+                    <div className="mt-2 flex items-center justify-center gap-2">
+                        <div className="text-[11px] text-gray-300 bg-black/30 px-2 py-1 rounded-full border border-white/5 flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3 text-gray-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                            <span className="font-mono text-xs">Usado en {item.usedIn.length}</span>
+                        </div>
+                    </div>
+                )}
                 <div className={`text-arc-green font-mono font-bold ${isCompact ? 'text-xs' : 'text-sm'}`}>
                     ${item.value || 0}
                 </div>
@@ -126,6 +137,28 @@ export default function ItemCard({ item, onClick, isCompact = false, questStatus
 
             {/* Hover overlay hint */}
             <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
+
+            {/* Used In Popover (shows on hover) */}
+            {!isCompact && item.usedIn && item.usedIn.length > 0 && (
+                <div className="absolute left-3 right-3 bottom-3 p-2 rounded-lg bg-black/80 border border-white/5 text-sm text-gray-200 hidden group-hover:flex flex-col gap-1 z-20 max-h-40 overflow-y-auto">
+                    <div className="flex items-center justify-between text-xs text-gray-400 mb-1">
+                        <div className="font-bold">Usado en</div>
+                        <div className="font-mono">{item.usedIn.length}</div>
+                    </div>
+                    {item.usedIn.map((u) => {
+                        const name = u.name ? (u.name[language] || u.name.en || u.id) : u.id;
+                        return (
+                            <div key={u.id} className="flex items-center justify-between text-xs px-2 py-1 rounded hover:bg-white/5 transition-colors">
+                                <div className="truncate">{name}</div>
+                                <div className="flex items-center gap-2">
+                                    {u.bench && <div className="text-[11px] text-gray-300 bg-black/20 px-2 py-0.5 rounded uppercase font-mono">{u.bench}</div>}
+                                    {u.quantity != null && <div className="text-[11px] text-gray-200 bg-arc-green/20 px-2 py-0.5 rounded font-mono">x{u.quantity}</div>}
+                                </div>
+                            </div>
+                        );
+                    })}
+                </div>
+            )}
         </motion.div>
     );
 }

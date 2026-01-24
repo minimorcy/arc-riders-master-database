@@ -31,52 +31,100 @@ export default function QuestList({ onSelectQuest }: QuestListProps) {
         });
     }, [searchTerm, language]);
 
-    // Calculate Quest Depths for sorting
-    const questDepths = useMemo(() => {
-        const depths: Record<string, number> = {};
+    // Calculate Quest Sequence Order for sorting (strict topological order)
+    const questOrder = useMemo(() => {
+        const order: Record<string, number> = {};
         const allQuests = questsData as Quest[];
 
-        // Initialize all with 0
-        allQuests.forEach(q => depths[q.id] = 0);
+        // Build adjacency list
+        const inDegree: Record<string, number> = {};
+        const graph: Record<string, string[]> = {};
 
-        // Map id -> quest to fast lookup
-        const questMap = new Map(allQuests.map(q => [q.id, q]));
+        allQuests.forEach(q => {
+            inDegree[q.id] = 0;
+            graph[q.id] = [];
+        });
 
-        let changed = true;
-        let iterations = 0;
-        while (changed && iterations < 100) {
-            changed = false;
-            iterations++;
-            allQuests.forEach(q => {
-                if (q.nextQuestIds) {
-                    q.nextQuestIds.forEach(nextId => {
-                        if (depths[nextId] <= depths[q.id]) {
-                            depths[nextId] = depths[q.id] + 1;
-                            changed = true;
-                        }
-                    });
+        allQuests.forEach(q => {
+            if (q.nextQuestIds) {
+                q.nextQuestIds.forEach(nextId => {
+                    if (graph[q.id]) {
+                        graph[q.id].push(nextId);
+                    }
+                    if (inDegree[nextId] !== undefined) {
+                        inDegree[nextId]++;
+                    }
+                });
+            }
+        });
+
+        // Kahn's algorithm for topological sort
+        const queue: string[] = [];
+        const sorted: string[] = [];
+
+        // Find items with no prerequisites
+        Object.keys(inDegree).forEach(id => {
+            if (inDegree[id] === 0) {
+                queue.push(id);
+            }
+        });
+
+        // Sort initial queue for stable results
+        queue.sort();
+
+        while (queue.length > 0) {
+            const current = queue.shift()!;
+            sorted.push(current);
+
+            const neighbors = graph[current] || [];
+            // Sort neighbors before adding to queue to keep order consistent
+            neighbors.sort();
+
+            neighbors.forEach(nextId => {
+                inDegree[nextId]--;
+                if (inDegree[nextId] === 0) {
+                    queue.push(nextId);
                 }
             });
         }
-        return depths;
-    }, []);
 
-    // Group by Trader and Sort
-    const groupedQuests = useMemo(() => {
-        const groups: Record<string, Quest[]> = {};
-        const sortedFiltered = [...filteredQuests].sort((a, b) => {
-            const depthA = questDepths[a.id] || 0;
-            const depthB = questDepths[b.id] || 0;
-            return depthA - depthB;
+        // Map IDs to their sequence index
+        sorted.forEach((id, index) => {
+            order[id] = index;
         });
 
-        sortedFiltered.forEach(q => {
+        // Fallback for any orphans
+        allQuests.forEach(q => {
+            if (order[q.id] === undefined) {
+                order[q.id] = 9999;
+            }
+        });
+
+        return order;
+    }, []);
+
+    // Group by Trader and Sort within each group
+    const groupedQuests = useMemo(() => {
+        const groups: Record<string, Quest[]> = {};
+
+        // First, group by trader
+        filteredQuests.forEach(q => {
             const trader = q.trader || 'Unknown';
             if (!groups[trader]) groups[trader] = [];
             groups[trader].push(q);
         });
+
+        // Then, sort each group by unique sequence order
+        Object.keys(groups).forEach(trader => {
+            groups[trader].sort((a, b) => {
+                const orderA = questOrder[a.id] ?? 9999;
+                const orderB = questOrder[b.id] ?? 9999;
+                return orderA - orderB;
+            });
+        });
+
         return groups;
-    }, [filteredQuests, questDepths]);
+    }, [filteredQuests, questOrder]);
 
     const getTraderColor = (trader: string) => {
         switch (trader) {
