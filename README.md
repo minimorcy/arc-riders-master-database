@@ -19,23 +19,42 @@ This project is a complete overhaul of the ARC Raiders database, built to provid
 *   **🔍 Advanced Item Database**: 
     *   **Instant Search**: Real-time filtering by name and category.
     *   **Smart Filtering**: Browse by specific types (Weapons, Meds, Materials).
-    *   **Rarity Visuals**: Color-coded borders and glows (Common to Legendary).
+    *   **Safe to Sell Filter**: Shows only "pure vendor trash" — items with no crafting recipe and not used in any other recipes. Perfect for quick inventory cleanup.
+    *   **Rarity Visuals**: Color-coded borders, glows, and text styles (Common to Legendary) for instant identification.
+    *   **Detailed Modal View**: Click any item to see:
+        - Full item stats and rarity information
+        - **Ingredients list** (left column on desktop, scrollable on mobile) with rarity frames and quantities
+        - **Used In list** (left column on desktop) showing all recipes that require this item
+        - Crafting bench information and location details
     *   **Compact Mode**: Toggle between detailed cards and a dense grid view.
 
 *   **🛠️ Workshop Companion**: 
     *   Browse crafting recipes for weapons, modifications, and gadgets.
     *   **Categorized View**: Quickly jump between Assault Rifles, SMGs, Tools, etc.
-    *   **Ingredient Breakdown**: See exactly what materials you need for each upgrade.
+    *   **Ingredient Breakdown**: See exactly what materials you need for each upgrade with rarity-colored cards.
+    *   **Ingredient Relationships**: Hover/click to see which items require a specific ingredient.
 
 *   **🏠 Hideout Station Tracker**: 
     *   Detailed upgrade paths for all stations (**Weapon Bench**, **Med Station**, **Scrappy**, etc.).
-    *   Level-by-level requirement lists.
+    *   Level-by-level requirement lists with ingredient relationships.
+    *   View ingredient sourcing directly from the modal.
+
+*   **📜 Quest Tree Visualization**:
+    *   Interactive quest dependency graph with tree and list views.
+    *   Click quests to see descriptions, objectives, and rewards.
+    *   See quest progression for all traders (Celeste, Shani, Tian Wen, Lance).
+
+*   **⚙️ Automatic Data Updates**:
+    *   **GitHub Actions Workflow**: Automatically fetches latest data from RaidTheory repository daily at 03:00 UTC.
+    *   **Update Badge**: Displays last update timestamp in the header (non-interactive for public safety).
+    *   **Metadata Tracking**: Stores update history in `update-metadata.json` for audit trails.
+    *   **Smart Branching**: Successful updates push to `main`, failed runs branch to `data` for inspection.
 
 *   **⚡ Modern Tech Stack**:
     *   **Astro**: For lightning-fast static page loads.
-    *   **React**: For rich, interactive UI components.
+    *   **React**: For rich, interactive UI components (ItemGallery, LastUpdateBadge, QuestTree).
     *   **Tailwind CSS v4**: For a sleek, maintainable design system.
-    *   **Framer Motion**: For smooth, satisfying animations.
+    *   **Node.js Data Pipeline**: Custom scripts for consolidation and relationship generation.
 
 ---
 
