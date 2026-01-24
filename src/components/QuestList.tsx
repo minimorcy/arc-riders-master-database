@@ -31,73 +31,24 @@ export default function QuestList({ onSelectQuest }: QuestListProps) {
         });
     }, [searchTerm, language]);
 
-    // Calculate Quest Sequence Order for sorting (strict topological order)
+    // Calculate Quest Sequence Order for sorting (by original JSON order within each trader)
     const questOrder = useMemo(() => {
         const order: Record<string, number> = {};
         const allQuests = questsData as Quest[];
 
-        // Build adjacency list
-        const inDegree: Record<string, number> = {};
-        const graph: Record<string, string[]> = {};
-
-        allQuests.forEach(q => {
-            inDegree[q.id] = 0;
-            graph[q.id] = [];
+        // Group quests by trader and maintain their JSON order
+        const questsByTrader: Record<string, Quest[]> = {};
+        allQuests.forEach((q, index) => {
+            const trader = q.trader || 'Unknown';
+            if (!questsByTrader[trader]) questsByTrader[trader] = [];
+            questsByTrader[trader].push({ ...q, _originalIndex: index } as any);
         });
 
-        allQuests.forEach(q => {
-            if (q.nextQuestIds) {
-                q.nextQuestIds.forEach(nextId => {
-                    if (graph[q.id]) {
-                        graph[q.id].push(nextId);
-                    }
-                    if (inDegree[nextId] !== undefined) {
-                        inDegree[nextId]++;
-                    }
-                });
-            }
-        });
-
-        // Kahn's algorithm for topological sort
-        const queue: string[] = [];
-        const sorted: string[] = [];
-
-        // Find items with no prerequisites
-        Object.keys(inDegree).forEach(id => {
-            if (inDegree[id] === 0) {
-                queue.push(id);
-            }
-        });
-
-        // Sort initial queue for stable results
-        queue.sort();
-
-        while (queue.length > 0) {
-            const current = queue.shift()!;
-            sorted.push(current);
-
-            const neighbors = graph[current] || [];
-            // Sort neighbors before adding to queue to keep order consistent
-            neighbors.sort();
-
-            neighbors.forEach(nextId => {
-                inDegree[nextId]--;
-                if (inDegree[nextId] === 0) {
-                    queue.push(nextId);
-                }
+        // For each trader, assign order based on their JSON appearance
+        Object.entries(questsByTrader).forEach(([trader, traderQuests]) => {
+            traderQuests.forEach((q, idx) => {
+                order[q.id] = idx;
             });
-        }
-
-        // Map IDs to their sequence index
-        sorted.forEach((id, index) => {
-            order[id] = index;
-        });
-
-        // Fallback for any orphans
-        allQuests.forEach(q => {
-            if (order[q.id] === undefined) {
-                order[q.id] = 9999;
-            }
         });
 
         return order;
