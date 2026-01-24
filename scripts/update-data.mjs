@@ -5,6 +5,7 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = path.join(__dirname, '../src/data');
 const HIDEOUT_DIR = path.join(DATA_DIR, 'hideout');
+const PUBLIC_DATA_DIR = path.join(__dirname, '../public/data');
 
 const BASE_URL = 'https://raw.githubusercontent.com/RaidTheory/arcraiders-data/main';
 
@@ -130,6 +131,15 @@ async function saveUpdateMetadata() {
   
   const metadataPath = path.join(DATA_DIR, 'update-metadata.json');
   await fs.writeFile(metadataPath, JSON.stringify(metadata, null, 2));
+
+  // Also write to public so the dev server can serve it at /data/update-metadata.json
+  try {
+    await fs.mkdir(PUBLIC_DATA_DIR, { recursive: true });
+    const publicPath = path.join(PUBLIC_DATA_DIR, 'update-metadata.json');
+    await fs.writeFile(publicPath, JSON.stringify(metadata, null, 2));
+  } catch (err) {
+    console.warn('Could not write metadata to public folder:', err.message);
+  }
   
   return metadata;
 }
