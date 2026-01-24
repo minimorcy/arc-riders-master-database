@@ -123,7 +123,25 @@ export default function QuestList({ onSelectQuest }: QuestListProps) {
             });
         });
 
-        return groups;
+        // Define trader order to show in progression (as they appear in-game)
+        const traderOrder = ['Celeste', 'Shani', 'Tian Wen', 'Lance'];
+        
+        // Sort groups by trader progression, then add unknowns at the end
+        const sortedGroups = traderOrder
+            .filter(t => groups[t])
+            .reduce((acc, trader) => {
+                acc[trader] = groups[trader];
+                return acc;
+            }, {} as Record<string, Quest[]>);
+
+        // Add any non-standard traders at the end
+        Object.keys(groups).forEach(trader => {
+            if (!sortedGroups[trader]) {
+                sortedGroups[trader] = groups[trader];
+            }
+        });
+
+        return sortedGroups;
     }, [filteredQuests, questOrder]);
 
     const getTraderColor = (trader: string) => {
