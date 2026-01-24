@@ -167,6 +167,19 @@ export default function ItemGallery({ items }: ItemGalleryProps) {
         if (searchQuery) setActiveLetter('ALL');
     }, [searchQuery, activeCategory, sortBy, sortDirection, activeLetter]);
 
+    // When the modal is open, prevent background page scrolling so modal scroll stays in control.
+    React.useEffect(() => {
+        if (typeof document === 'undefined') return;
+        if (selectedItem) {
+            const prevOverflow = document.body.style.overflow;
+            document.body.style.overflow = 'hidden';
+            return () => {
+                document.body.style.overflow = prevOverflow || '';
+            };
+        }
+        return;
+    }, [selectedItem]);
+
     const toggleSort = (mode: SortMode) => {
         if (sortBy === mode) {
             setSortDirection(prev => prev === 'asc' ? 'desc' : 'asc');
@@ -502,6 +515,57 @@ export default function ItemGallery({ items }: ItemGalleryProps) {
                                     <div className={`mt-4 text-center px-3 py-1 rounded-full text-xs font-black uppercase tracking-widest bg-black/40 border border-white/10 text-${getRarityColor(selectedItem.rarity)}-400`}>
                                         {selectedItem.rarity}
                                     </div>
+
+                                    {/* On desktop, use left column space to show Ingredients + UsedIn */}
+                                    <div className="hidden md:block mt-6 w-56">
+                                        {selectedItem.recipe && typeof selectedItem.recipe === 'object' && Object.keys(selectedItem.recipe).length > 0 && (
+                                            <div className="mb-4">
+                                                <div className="text-xs text-gray-500 uppercase tracking-wider font-bold mb-2">Ingredientes</div>
+                                                <div className="grid grid-cols-1 gap-2 max-h-48 overflow-y-auto pr-2">
+                                                    {Object.entries(selectedItem.recipe).map(([ingredientId, qty]: [string, any]) => {
+                                                        const ingredient = items.find(it => it.id === ingredientId);
+                                                        const ingredientName = ingredient?.name ? (ingredient.name[language] || ingredient.name.en || ingredientId) : ingredientId;
+                                                        const rarityStyle = getRarityStyle(ingredient?.rarity || 'Common');
+                                                        return (
+                                                            <div key={ingredientId} className="flex items-center gap-2 p-2 rounded-lg bg-black/30 border" style={{ borderColor: rarityStyle.borderColor, boxShadow: `0 6px 18px ${rarityStyle.glow}` }}>
+                                                                <div className="w-10 h-10 bg-black/40 flex items-center justify-center rounded">
+                                                                    {ingredient?.imageFilename ? <img src={ingredient.imageFilename} alt={ingredientName} className="w-full h-full object-contain p-1" /> : <div className="w-3 h-3 rounded-full bg-gray-600" />}
+                                                                </div>
+                                                                <div className="flex-1 text-left">
+                                                                    <div className="text-[12px] font-bold text-gray-200 truncate">{ingredientName}</div>
+                                                                    <div className="text-[10px] text-gray-300">×{qty} • { (ingredient?.rarity || 'Common').slice(0,3) }</div>
+                                                                </div>
+                                                            </div>
+                                                        );
+                                                    })}
+                                                </div>
+                                            </div>
+                                        )}
+
+                                        {selectedItem.usedIn && selectedItem.usedIn.length > 0 && (
+                                            <div>
+                                                <div className="text-xs text-gray-500 uppercase tracking-wider font-bold mb-2">Usado Para ({selectedItem.usedIn.length})</div>
+                                                <div className="grid grid-cols-1 gap-2 max-h-48 overflow-y-auto pr-2">
+                                                    {selectedItem.usedIn.map((u: any) => {
+                                                        const target = items.find(it => it.id === u.id);
+                                                        const localizedName = u.name ? (u.name[language] || u.name.en || u.id) : u.id;
+                                                        const rarityStyle = getRarityStyle(target?.rarity || 'Common');
+                                                        return (
+                                                            <div key={u.id} className="flex items-center gap-2 p-2 rounded-lg bg-black/30 border" style={{ borderColor: rarityStyle.borderColor, boxShadow: `0 6px 18px ${rarityStyle.glow}` }}>
+                                                                <div className="w-10 h-10 bg-black/40 flex items-center justify-center rounded">
+                                                                    {target?.imageFilename ? <img src={target.imageFilename} alt={localizedName} className="w-full h-full object-contain p-1" /> : <div className="w-3 h-3 rounded-full bg-gray-600" />}
+                                                                </div>
+                                                                <div className="flex-1 text-left">
+                                                                    <div className="text-[12px] font-bold text-gray-200 truncate">{localizedName}</div>
+                                                                    <div className="text-[10px] text-gray-300">{typeof u.bench === 'string' ? u.bench.split('_')[0] : ''} {u.quantity != null ? `• ×${u.quantity}` : ''}</div>
+                                                                </div>
+                                                            </div>
+                                                        );
+                                                    })}
+                                                </div>
+                                            </div>
+                                        )}
+                                    </div>
                                 </div>
 
 
@@ -534,23 +598,26 @@ export default function ItemGallery({ items }: ItemGalleryProps) {
                                         {/* Recipe/Ingredients Section */}
                                         {selectedItem.recipe && typeof selectedItem.recipe === 'object' && Object.keys(selectedItem.recipe).length > 0 && (
                                             <div className="col-span-2">
-                                                <div className="text-xs text-gray-500 uppercase tracking-wider font-bold mb-3">
+                                                <div className="text-xs text-gray-500 uppercase tracking-wider font-bold mb-3 md:hidden">
                                                     Ingredientes {selectedItem.craftBench && `(${selectedItem.craftBench})`}
                                                 </div>
-                                                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 max-h-80 overflow-y-auto pr-2">
+                                                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 max-h-80 overflow-y-auto pr-2 md:hidden">
                                                     {Object.entries(selectedItem.recipe).map(([ingredientId, qty]: [string, any]) => {
                                                         const ingredient = items.find(it => it.id === ingredientId);
                                                         const ingredientName = ingredient?.name ? (ingredient.name[language] || ingredient.name.en || ingredientId) : ingredientId;
                                                         const ingredientRarity = ingredient?.rarity || 'Common';
-                                                        const rarityColor = ingredient ? getRarityColor(ingredient.rarity) : 'gray';
+                                                        const rarityStyle = getRarityStyle(ingredientRarity);
                                                         return (
                                                             <button
                                                                 key={ingredientId}
                                                                 onClick={() => ingredient ? setSelectedItem(ingredient) : null}
-                                                                className={`relative group rounded-lg overflow-hidden border-2 border-${rarityColor}-500/30 hover:border-${rarityColor}-500/80 bg-black/30 hover:bg-black/50 transition-all duration-300 flex flex-col h-32`}
+                                                                className={`relative group rounded-lg overflow-hidden border-2 bg-black/30 hover:bg-black/50 transition-all duration-300 flex flex-col h-32`}
+                                                                style={{ borderColor: rarityStyle.borderColor, boxShadow: `0 8px 24px ${rarityStyle.glow}` }}
                                                             >
                                                                 {/* Image Container */}
                                                                 <div className="flex-1 flex items-center justify-center bg-black/40 overflow-hidden relative">
+                                                                    {/* rarity glow overlay */}
+                                                                    <div className="absolute inset-0 pointer-events-none" style={{ boxShadow: `inset 0 0 36px ${rarityStyle.glow}` }} />
                                                                     {ingredient?.imageFilename ? (
                                                                         <img
                                                                             src={ingredient.imageFilename}
@@ -571,7 +638,7 @@ export default function ItemGallery({ items }: ItemGalleryProps) {
                                                                         <div className="text-[10px] text-arc-green font-bold bg-arc-green/10 px-1.5 py-0.5 rounded font-mono">
                                                                             ×{qty}
                                                                         </div>
-                                                                        <div className="text-[10px] text-gray-300 bg-black/40 px-1.5 py-0.5 rounded uppercase font-mono">
+                                                                        <div className="text-[10px] bg-black/40 px-1.5 py-0.5 rounded uppercase font-mono" style={{ color: rarityStyle.textColor, border: `1px solid ${rarityStyle.borderColor}` }}>
                                                                             {ingredientRarity.slice(0, 3)}
                                                                         </div>
                                                                     </div>
@@ -586,22 +653,25 @@ export default function ItemGallery({ items }: ItemGalleryProps) {
                                         {/* Used In Section */}
                                         {selectedItem.usedIn && selectedItem.usedIn.length > 0 && (
                                             <div className="col-span-2">
-                                                <div className="text-xs text-gray-500 uppercase tracking-wider font-bold mb-3">
+                                                <div className="text-xs text-gray-500 uppercase tracking-wider font-bold mb-3 md:hidden">
                                                     Usado Para ({selectedItem.usedIn.length})
                                                 </div>
-                                                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 max-h-80 overflow-y-auto pr-2">
+                                                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 max-h-80 overflow-y-auto pr-2 md:hidden">
                                                     {selectedItem.usedIn.map((u: any) => {
                                                         const target = items.find(it => it.id === u.id);
                                                         const localizedName = u.name ? (u.name[language] || u.name.en || u.id) : u.id;
-                                                        const rarityColor = target ? getRarityColor(target.rarity) : 'gray';
+                                                        const targetRarity = target?.rarity || 'Common';
+                                                        const rarityStyle = getRarityStyle(targetRarity);
                                                         return (
                                                             <button
                                                                 key={u.id}
                                                                 onClick={() => target ? setSelectedItem(target) : null}
-                                                                className={`relative group rounded-lg overflow-hidden border-2 border-${rarityColor}-500/30 hover:border-${rarityColor}-500/80 bg-black/30 hover:bg-black/50 transition-all duration-300 flex flex-col h-32`}
+                                                                className={`relative group rounded-lg overflow-hidden border-2 bg-black/30 hover:bg-black/50 transition-all duration-300 flex flex-col h-32`}
+                                                                style={{ borderColor: rarityStyle.borderColor, boxShadow: `0 8px 24px ${rarityStyle.glow}` }}
                                                             >
                                                                 {/* Image Container */}
                                                                 <div className="flex-1 flex items-center justify-center bg-black/40 overflow-hidden relative">
+                                                                    <div className="absolute inset-0 pointer-events-none" style={{ boxShadow: `inset 0 0 36px ${rarityStyle.glow}` }} />
                                                                     {target?.imageFilename ? (
                                                                         <img
                                                                             src={target.imageFilename}
@@ -660,5 +730,17 @@ function getRarityColor(rarity: string) {
         case 'epic': return 'purple';
         case 'legendary': return 'orange';
         default: return 'gray';
+    }
+}
+
+function getRarityStyle(rarity: string) {
+    const r = (rarity || '').toLowerCase();
+    switch (r) {
+        case 'common': return { borderColor: '#9CA3AF', glow: 'rgba(156,163,175,0.18)', textColor: '#9CA3AF' };
+        case 'uncommon': return { borderColor: '#10B981', glow: 'rgba(16,185,129,0.18)', textColor: '#10B981' };
+        case 'rare': return { borderColor: '#3B82F6', glow: 'rgba(59,130,246,0.18)', textColor: '#3B82F6' };
+        case 'epic': return { borderColor: '#8B5CF6', glow: 'rgba(139,92,246,0.18)', textColor: '#8B5CF6' };
+        case 'legendary': return { borderColor: '#F97316', glow: 'rgba(249,115,22,0.18)', textColor: '#F97316' };
+        default: return { borderColor: '#6B7280', glow: 'rgba(107,114,128,0.12)', textColor: '#6B7280' };
     }
 }
