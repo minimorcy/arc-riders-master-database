@@ -2,6 +2,7 @@
 import { Sparkles } from "lucide-react";
 
 import Navbar from "./Navbar";
+import LastUpdateBadge from "./LastUpdateBadge";
 
 interface Props {
     currentPath?: string;
@@ -37,5 +38,8 @@ const navItems = [
         </div>
     </a>
 
-    <Navbar currentPath={currentPath} navItems={navItems} client:load />
+        <div class="flex items-center gap-3">
+            <LastUpdateBadge client:load />
+            <Navbar currentPath={currentPath} navItems={navItems} client:load />
+        </div>
 </header>

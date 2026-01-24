@@ -20,7 +20,7 @@
       "sr": "Akustična gitara",
       "tr": "Akustik Gitar",
       "uk": "Акустична гітара",
-      "zh-CN": "木吉他",
+      "zh-CN": "原声吉他",
       "zh-TW": "木吉他"
     },
     "description": {
@@ -42,7 +42,7 @@
       "sr": "Akustična gitara na kojoj se može svirati, koristi se za privlačenje ARC-ove pažnje i impresioniranje drugih Rajdera.",
       "tr": "ARC'nin dikkatini çekmek ve diğer Raider'ları etkilemek için kullanılan, çalınabilir bir akustik gitar.",
       "uk": "Гральна акустична гітара, щоб привернути увагу ARC і вразити інших рейдерів.",
-      "zh-CN": "一把可弹奏的木吉他，用来吸引ARC的注意并让其他掠夺者刮目相看。",
+      "zh-CN": "一把能演奏的原声吉他，即可用于引起ARC的注意，也能让其他奇袭者刮目相看。",
       "zh-TW": "一把可彈奏的木吉他，用來吸引ARC的注意並讓其他掠奪者刮目相看。"
     },
     "type": "Quick Use",
@@ -58,7 +58,8 @@
       "wires": 3
     },
     "imageFilename": "https://cdn.arctracker.io/items/acoustic_guitar.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "adrenaline_shot",
@@ -81,7 +82,7 @@
       "sr": "Injekcija adrenalina",
       "tr": "Adrenalin İğnesi",
       "uk": "Ін'єкція адреналіну",
-      "zh-CN": "肾上腺素注射剂",
+      "zh-CN": "肾上腺素针剂",
       "zh-TW": "腎上腺素注射劑"
     },
     "description": {
@@ -103,7 +104,7 @@
       "sr": "Serum koji potpuno obnavlja izdržljivost i privremeno povećava regeneraciju izdržljivosti.",
       "tr": "Dayanıklılığı tamamen geri yükleyen ve geçici olarak dayanıklılık yenilenmesini artıran bir serum.",
       "uk": "Сироватка, яка повністю відновлює витривалість і тимчасово збільшує її регенерацію.",
-      "zh-CN": "完全恢复耐力并暂时提升耐力恢复速度的血清。",
+      "zh-CN": "一种血清，可以完全恢复耐力，并临时增加耐力恢复速度。",
       "zh-TW": "一種血清,能完全恢復體力並暫時提升體力自然恢復速度。"
     },
     "type": "Quick Use",
@@ -195,7 +196,8 @@
       "chemicals": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/adrenaline_shot.png",
-    "updatedAt": "11/03/2025"
+    "updatedAt": "11/03/2025",
+    "usedIn": []
   },
   {
     "id": "advanced_arc_powercell",
@@ -240,7 +242,7 @@
       "sr": "Veoma vredan resurs koji pada sa određenih ARC neprijatelja.",
       "tr": "Belirli ARC düşmanlarından düşen çok değerli kaynak.",
       "uk": "Дуже цінний ресурс, що випадає з певних ворогів ARC.",
-      "zh-CN": "从特定ARC敌人掉落的非常珍贵资源。",
+      "zh-CN": "极其珍贵的资源，特定ARC敌人身上有可能掉落。",
       "zh-TW": "從特定ARC敵人掉落的非常珍貴資源。"
     },
     "type": "Topside Material",
@@ -357,7 +359,7 @@
       "sr": "Koristi se za izradu širokog spektra predmeta. Može se reciklirati u materijale za izradu. Koristi se za izradu: Tactical Mk. 3 (Defensive), Combat Mk. 3 (Flanking), Combat Mk. 3 (Aggressive), Looting Mk. 3 (Cautious), Tactical Mk. 3 (Healing)",
       "tr": "Geniş bir yelpazede eşya üretmek için kullanılır. Üretim malzemelerine geri dönüştürülebilir. Şunları üretmek için kullanılır: Taktik Mk. 3 (Savunma), Savaş Mk. 3 (Kuşatma), Savaş Mk. 3 (Saldırgan), Yağma Mk. 3 (İhtiyatlı), Taktik Mk. 3 (İyileştirme)",
       "uk": "Використовується для створення широкого спектру предметів. Можна переробити на матеріали для крафту. Використовується для створення: Тактичний Mk. 3 (Захисний), Бойовий Mk. 3 (Фланговий), Бойовий Mk. 3 (Агресивний), Мародерський Mk. 3 (Обережний), Тактичний Mk. 3 (Лікувальний)",
-      "zh-CN": "用于制作各种物品。可以回收成制作材料。用于制作：战术 Mk. 3（防御型）、战斗 Mk. 3（侧翼型）、战斗 Mk. 3（攻击型）、掠夺 Mk. 3（谨慎型）、战术 Mk. 3（治疗型）",
+      "zh-CN": "用于制作各种物品。可回收为制作材料。用于制作:奇袭者暗门钥匙，光电斗篷，耀眼明星，战术Mk.3(防御型)，战斗Mk.3(侧翼突击)",
       "zh-TW": "用來製作多種物品。可回收成製作材料。用來製作:戰術第3型(防禦),戰鬥第3型(側擊),戰鬥第3型(積極),搜刮第3型(謹慎),戰術第3型(治療)"
     },
     "type": "Refined Material",
@@ -458,6 +460,33 @@
           "uk": "Мародерство Mk. 3 (Обережне)",
           "zh-CN": "掠夺 Mk. 3 (谨慎)",
           "zh-TW": "掠奪 Mk. 3 (謹慎)"
+        },
+        "bench": "equipment_bench",
+        "quantity": 2
+      },
+      {
+        "id": "looting_mk3_survivor",
+        "name": {
+          "da": "Plyndring Mk. 3 (Survivor)",
+          "de": "Beute-Marke 3 (Überleben)",
+          "en": "Looting Mk. 3 (Survivor)",
+          "es": "Saqueo Ver. 3 (Superviviente)",
+          "fr": "Butin 3 (Survie)",
+          "he": "ביזה Mk. 3 (שורד)",
+          "hr": "Pljačkaški Mk. 3 (Preživjeli)",
+          "it": "Saccheggio Mk. 3 (Sopravvissuto)",
+          "ja": "略奪MK3 (サバイバー)",
+          "kr": "노획 마크(생존자)",
+          "no": "Plyndring Mk. 3 (Survivor)",
+          "pl": "Grabież Mk. 3 (Ocalały)",
+          "pt": "Saque Mk. 3 (Sobrevivente)",
+          "pt-BR": "Saque Mk. 3 (Sobrevivente)",
+          "ru": "Добыча 3 (Выживший)",
+          "sr": "Pljačkaški Mk. 3 (Preživeli)",
+          "tr": "Yağmalama Mk. 3 (Hayatta Kalan)",
+          "uk": "Мародерський Mk. 3 (вижилий)",
+          "zh-CN": "掠夺 Mk. 3（幸存者）",
+          "zh-TW": "掠奪 Mk. 3（倖存者）"
         },
         "bench": "equipment_bench",
         "quantity": 2
@@ -647,7 +676,7 @@
       "sr": "Napredne Mehaničke Komponente",
       "tr": "Gelişmiş Mekanik Bileşenler",
       "uk": "Просунуті механічні компоненти",
-      "zh-CN": "高级机械零件",
+      "zh-CN": "高级机械元件",
       "zh-TW": "進階機械元件"
     },
     "description": {
@@ -669,7 +698,7 @@
       "sr": "Koristi se za pravljenje naprednog oružja. Može se reciklirati u materijale za pravljenje. Koristi se za pravljenje: Torrente, Venator, Osprey, Renegade, Bettina",
       "tr": "Gelişmiş silahları üretmek için kullanılır. Üretim malzemelerine geri dönüştürülebilir. Üretim için kullanılır: Torrente, Venator, Osprey, Renegade, Bettina",
       "uk": "Використовується для створення просунутої зброї. Можна переробити на матеріали для крафту. Використовується для створення: Torrente, Venator, Osprey, Renegade, Bettina",
-      "zh-CN": "用于制作高级武器。可回收成制作材料。用于制作：Torrente、Venator、Osprey、Renegade、Bettina",
+      "zh-CN": "用于制作高级武器。可回收为制作材料。用于制作:磁力加速器，奔流，复仇者，鱼鹰，叛逆",
       "zh-TW": "用來製作進階武器。可回收成製作材料。用來製作:奔流,獵人,魚鷹,叛將,貝蒂娜"
     },
     "type": "Refined Material",
@@ -719,33 +748,6 @@
         },
         "bench": "weapon_bench",
         "quantity": 3
-      },
-      {
-        "id": "looting_mk3_survivor",
-        "name": {
-          "da": "Plyndring Mk. 3 (Survivor)",
-          "de": "Beute-Marke 3 (Überleben)",
-          "en": "Looting Mk. 3 (Survivor)",
-          "es": "Saqueo Ver. 3 (Superviviente)",
-          "fr": "Butin 3 (Survie)",
-          "he": "ביזה Mk. 3 (שורד)",
-          "hr": "Pljačkaški Mk. 3 (Preživjeli)",
-          "it": "Saccheggio Mk. 3 (Sopravvissuto)",
-          "ja": "略奪MK3 (サバイバー)",
-          "kr": "노획 마크(생존자)",
-          "no": "Plyndring Mk. 3 (Survivor)",
-          "pl": "Grabież Mk. 3 (Ocalały)",
-          "pt": "Saque Mk. 3 (Sobrevivente)",
-          "pt-BR": "Saque Mk. 3 (Sobrevivente)",
-          "ru": "Добыча 3 (Выживший)",
-          "sr": "Pljačkaški Mk. 3 (Preživeli)",
-          "tr": "Yağmalama Mk. 3 (Hayatta Kalan)",
-          "uk": "Мародерський Mk. 3 (вижилий)",
-          "zh-CN": "掠夺 Mk. 3（幸存者）",
-          "zh-TW": "掠奪 Mk. 3（倖存者）"
-        },
-        "bench": "equipment_bench",
-        "quantity": 2
       },
       {
         "id": "magnetic_accelerator",
@@ -822,7 +824,7 @@
           "sr": "Renegade I",
           "tr": "Renegade I",
           "uk": "Ренегат I",
-          "zh-CN": "叛徒 I",
+          "zh-CN": "叛逆 I",
           "zh-TW": "叛徒 I"
         },
         "bench": "weapon_bench",
@@ -849,8 +851,8 @@
           "sr": "Torrente I",
           "tr": "Torrente I",
           "uk": "Torrente I",
-          "zh-CN": "Torrente I",
-          "zh-TW": "奔流藍圖 I"
+          "zh-CN": "奔流 I",
+          "zh-TW": "奔流 I"
         },
         "bench": "weapon_bench",
         "quantity": 2
@@ -876,8 +878,8 @@
           "sr": "Venator I",
           "tr": "Venator I",
           "uk": "Venator I",
-          "zh-CN": "Venator I",
-          "zh-TW": "Venator I"
+          "zh-CN": "复仇者 I",
+          "zh-TW": "复仇者 I"
         },
         "bench": "weapon_bench",
         "quantity": 2
@@ -896,7 +898,7 @@
       "hr": "Agava",
       "it": "Agave",
       "ja": "リュウゼツラン",
-      "kr": "아가베",
+      "kr": "용설란",
       "no": "Agave",
       "pl": "Agawa",
       "pt": "Agave",
@@ -918,7 +920,7 @@
       "hr": "Komad lista agave. Može se koristiti za obnovu male količine zdravlja.",
       "it": "Un pezzo di foglia di agave. Può essere usato per recuperare una piccola quantità di salute.",
       "ja": "アガベの葉の一部。少量の体力を回復するために使用できます。",
-      "kr": "아가베 잎 조각. 소량의 체력을 회복하는 데 사용할 수 있습니다.",
+      "kr": "용설란 잎 조각. 소량의 체력을 회복하는 데 사용할 수 있습니다.",
       "no": "Et stykke av et agaveblad. Kan brukes til å gjenvinne en liten mengde helse.",
       "pl": "Kawałek liścia agawy. Można użyć, aby odzyskać niewielką ilość zdrowia.",
       "pt": "Um pedaço de folha de agave. Pode ser usado para recuperar uma pequena quantidade de saúde.",
@@ -1014,7 +1016,8 @@
       "assorted_seeds": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/agave.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "air_freshener",
@@ -1160,7 +1163,8 @@
       "processor": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/alarm_clock.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "angled_grip_i",
@@ -1183,7 +1187,7 @@
       "sr": "Kutna Ručka I",
       "tr": "Açılı Kabza I",
       "uk": "Кутова рукоятка I",
-      "zh-CN": "倾斜握把 I",
+      "zh-CN": "直角握把 I",
       "zh-TW": "斜角握把 I"
     },
     "description": {
@@ -1205,7 +1209,7 @@
       "sr": "Blago smanjuje horizontalni trzaj. Kompatibilno sa: Tempest, Arpeggio, Kettle, Ferro, Hullcracker",
       "tr": "Yatay geri tepmesini hafifçe azaltır. Uyumlu: Tempest, Arpeggio, Kettle, Ferro, Hullcracker",
       "uk": "Трохи зменшує горизонтальну віддачу. Сумісно з: Tempest, Arpeggio, Kettle, Ferro, Hullcracker",
-      "zh-CN": "略微降低水平后坐力。兼容武器：Tempest、Arpeggio、Kettle、Ferro、Hullcracker",
+      "zh-CN": "小幅度降低水平后坐力。适配:风暴，水壶，生铁，复仇者，公牛",
       "zh-TW": "稍微降低水平後座力。與以下物品相容:水壺,碎甲者,獵人,公牛,暴風雨"
     },
     "type": "Modification",
@@ -1233,7 +1237,7 @@
         "sr": "Smanjen Horizontalni Trzaj",
         "tr": "Azaltılmış Yatay Geri Tepme",
         "uk": "Зменшення горизонтальної віддачі",
-        "zh-CN": "降低水平后坐力",
+        "zh-CN": "水平后坐力降低",
         "zh-TW": "降低水平後座力"
       }
     },
@@ -1249,7 +1253,8 @@
       "plastic_parts": 3
     },
     "imageFilename": "https://cdn.arctracker.io/items/angled_grip_i.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "angled_grip_ii",
@@ -1272,7 +1277,7 @@
       "sr": "Kutni rukohvat II",
       "tr": "Açılı Kabza II",
       "uk": "Кутова рукоятка II",
-      "zh-CN": "倾斜握把 II",
+      "zh-CN": "直角握把 II",
       "zh-TW": "斜角握把 II"
     },
     "description": {
@@ -1294,7 +1299,7 @@
       "sr": "Umjereno smanjuje horizontalni trzaj. Kompatibilno sa: Arpeggio, Ferro, Il Toro, Stitcher",
       "tr": "Yatay geri tepmesini orta düzeyde azaltır. Uyumlu: Arpeggio, Ferro, Il Toro, Stitcher",
       "uk": "Помірно зменшує горизонтальну віддачу. Сумісно з: Arpeggio, Ferro, Il Toro, Stitcher",
-      "zh-CN": "适度降低水平后坐力。兼容武器：Arpeggio、Ferro、Il Toro、Stitcher",
+      "zh-CN": "中幅度降低水平后坐力。适配:风暴，水壶，生铁，复仇者，公牛",
       "zh-TW": "中度降低水平後座力。與以下物品相容:水壺,碎甲者,獵人,公牛,暴風雨"
     },
     "type": "Modification",
@@ -1330,7 +1335,7 @@
         "sr": "Smanjen horizontalni trzaj",
         "tr": "Azaltılmış Yatay Geri Tepme",
         "uk": "Зменшена горизонтальна віддача",
-        "zh-CN": "降低水平后坐力",
+        "zh-CN": "水平后坐力降低",
         "zh-TW": "降低水平後座力"
       }
     },
@@ -1348,7 +1353,8 @@
       "mechanical_components": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/angled_grip_ii.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "angled_grip_ii_blueprint",
@@ -1371,7 +1377,7 @@
       "sr": "Kutni rukohvat II Nacrt",
       "tr": "Acili Kabza II Plani",
       "uk": "Креслення Кутова рукоятка II",
-      "zh-CN": "倾斜握把 II 蓝图",
+      "zh-CN": "直角握把 II 蓝图",
       "zh-TW": "斜角握把 II 藍圖"
     },
     "description": {
@@ -1393,7 +1399,7 @@
       "sr": "Umjereno smanjuje horizontalni trzaj. Kompatibilno sa: Arpeggio, Ferro, Il Toro, Stitcher",
       "tr": "Yatay geri tepmesini orta duzeyde azaltir. Uyumlu: Arpeggio, Ferro, Il Toro, Stitcher",
       "uk": "Помірно зменшує горизонтальну віддачу. Сумісно з: Arpeggio, Ferro, Il Toro, Stitcher",
-      "zh-CN": "适度降低水平后坐力。兼容武器：Arpeggio、Ferro、Il Toro、Stitcher",
+      "zh-CN": "中幅度降低水平后坐力。适配:风暴，水壶，生铁，复仇者，公牛",
       "zh-TW": "中度降低水平後座力。與以下物品相容:水壺,碎甲者,獵人,公牛,暴風雨"
     },
     "type": "Blueprint",
@@ -1401,7 +1407,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/angled_grip_ii.png",
-    "updatedAt": "12/07/2025"
+    "updatedAt": "12/07/2025",
+    "usedIn": []
   },
   {
     "id": "angled_grip_iii",
@@ -1424,7 +1431,7 @@
       "sr": "Kutni Rukohvat III",
       "tr": "Açılı Kabza III",
       "uk": "Кутова рукоятка III",
-      "zh-CN": "倾斜握把 III",
+      "zh-CN": "直角握把 III",
       "zh-TW": "斜角握把 III"
     },
     "description": {
@@ -1446,7 +1453,7 @@
       "sr": "Značajno smanjuje horizontalni trzaj. Kompatibilno sa: Arpeggio, Ferro, Venator, Il Toro, Stitcher",
       "tr": "Yatay geri tepmeyi önemli ölçüde azaltır. Uyumlu: Arpeggio, Ferro, Venator, Il Toro, Stitcher",
       "uk": "Значно зменшує горизонтальну віддачу. Сумісно з: Арпеджіо, Ферро, Венатор, Іль Торо, Зшивач",
-      "zh-CN": "大幅减少水平后坐力。兼容武器：琶音、铁卫、猎人、公牛、缝合者",
+      "zh-CN": "大幅度降低水平后坐力。适配:风暴，水壶，生铁，复仇者，公牛",
       "zh-TW": "大幅減少水平後座力。相容武器：琶音、鐵衛、獵人、公牛、縫合者"
     },
     "type": "Modification",
@@ -1516,7 +1523,8 @@
       "mechanical_components": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/angled_grip_iii.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "angled_grip_iii_blueprint",
@@ -1539,7 +1547,7 @@
       "sr": "Kutni Rukohvat III Nacrt",
       "tr": "Acili Kabza III Plani",
       "uk": "Креслення Кутова рукоятка III",
-      "zh-CN": "倾斜握把 III 蓝图",
+      "zh-CN": "直角握把 III 蓝图",
       "zh-TW": "斜角握把 III 藍圖"
     },
     "description": {
@@ -1561,7 +1569,7 @@
       "sr": "Znacajno smanjuje horizontalni trzaj. Kompatibilno sa: Arpeggio, Ferro, Venator, Il Toro, Stitcher",
       "tr": "Yatay geri tepmeyi onemli olcude azaltir. Uyumlu: Arpeggio, Ferro, Venator, Il Toro, Stitcher",
       "uk": "Значно зменшує горизонтальну віддачу. Сумісно з: Арпеджіо, Ферро, Венатор, Іль Торо, Зшивач",
-      "zh-CN": "大幅减少水平后坐力。兼容武器：琶音、铁卫、猎人、公牛、缝合者",
+      "zh-CN": "大幅度降低水平后坐力。适配:风暴，水壶，生铁，复仇者，公牛",
       "zh-TW": "大幅減少水平後座力。相容武器：琶音、鐵衛、獵人、公牛、縫合者"
     },
     "type": "Blueprint",
@@ -1569,7 +1577,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/angled_grip_iii.png",
-    "updatedAt": "12/07/2025"
+    "updatedAt": "12/07/2025",
+    "usedIn": []
   },
   {
     "id": "antiseptic",
@@ -1592,7 +1601,7 @@
       "sr": "Antiseptik",
       "tr": "Antiseptik",
       "uk": "Антисептик",
-      "zh-CN": "消毒剂",
+      "zh-CN": "防腐剂",
       "zh-TW": "防腐劑"
     },
     "description": {
@@ -1614,7 +1623,7 @@
       "sr": "Koristi se za izradu medicinskih potrepština. Može se reciklirati u hemikalije. Koristi se za izradu: Sterilizovani Zavoj, Vita Sprej, Vita Injekcija",
       "tr": "Tıbbi malzeme üretmek için kullanılır. Kimyasallara geri dönüştürülebilir. Üretim: Sterilize Bandaj, Vita Spreyi, Vita İğnesi",
       "uk": "Використовується для створення медичних приладь. Можна переробити на хімікати. Використовується для крафту: Стерильний бинт, Віта-спрей, Віта-укол",
-      "zh-CN": "用于制作医疗用品。可回收为化学品。用于制作：消毒绷带、活力喷雾、活力注射剂",
+      "zh-CN": "用于制作医疗用品。可回收为化学品。用于制作:消毒绷带，补水喷雾，生命针剂",
       "zh-TW": "用來製作醫療物資。可回收成化學物質。用來製作:滅菌繃帶,維生素噴霧,維生素注射"
     },
     "type": "Refined Material",
@@ -1688,7 +1697,7 @@
           "zh-CN": "活力注射剂",
           "zh-TW": "活力注射劑"
         },
-        "bench": null,
+        "bench": "Unknown",
         "quantity": 2
       },
       {
@@ -1741,7 +1750,7 @@
       "sr": "Anvil Nacrt",
       "tr": "Anvil Planı",
       "uk": "Креслення Anvil",
-      "zh-CN": "Anvil蓝图",
+      "zh-CN": "铁砧蓝图",
       "zh-TW": "鐵砧藍圖"
     },
     "description": {
@@ -1763,7 +1772,7 @@
       "sr": "Ima visoku štetu i štetu od pogotka u glavu, ali sporo rukovanje.",
       "tr": "Yüksek hasar çıkışı ve kafadan vuruş hasarına sahiptir, ancak yavaş kullanıma sahiptir.",
       "uk": "Має високий урон та урон в голову, але повільну обробку.",
-      "zh-CN": "伤害和爆头伤害高，但操控缓慢。",
+      "zh-CN": "伤害高且爆头伤害尤其高，但操作速度较慢。",
       "zh-TW": "傷害和爆頭傷害高，但操控緩慢。"
     },
     "type": "Blueprint",
@@ -1771,7 +1780,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/anvil_blueprint.png",
-    "updatedAt": "11/03/2025"
+    "updatedAt": "11/03/2025",
+    "usedIn": []
   },
   {
     "id": "anvil_i",
@@ -1816,7 +1826,7 @@
       "sr": "Ručni top jednostrukog okidanja sa visokom štetom i štetom pri pogotku u glavu, ali sporim rukovanjem.",
       "tr": "Tek etkili el topu; yüksek hasar ve kafa vuruşu hasarı sunar, ancak kullanım yavaştır.",
       "uk": "Ручна гармата одинарної дії з високою шкодою та підвищеним уроном у голову, але з повільним поводженням.",
-      "zh-CN": "单动式手炮，伤害与爆头伤害高，但操控缓慢。",
+      "zh-CN": "伤害高且爆头伤害尤其高，但操作速度较慢。",
       "zh-TW": "單動式手砲，具有高傷害與爆頭傷害，但操控較慢。"
     },
     "type": "Hand Cannon",
@@ -1868,7 +1878,7 @@
         "sr": "ARC probijanje oklopa",
         "tr": "ARC Zırh Delme",
         "uk": "Пробиття броні ARC",
-        "zh-CN": "ARC 装甲穿透",
+        "zh-CN": "ARC 护甲穿透",
         "zh-TW": "ARC 裝甲穿透"
       },
       "Durability": {
@@ -1891,7 +1901,7 @@
         "sr": "Izdržljivost",
         "tr": "Dayanıklılık",
         "uk": "Міцність",
-        "zh-CN": "耐久度",
+        "zh-CN": "耐用性",
         "zh-TW": "耐久度"
       },
       "Firing Mode": {
@@ -1954,7 +1964,8 @@
       "simple_gun_parts": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/anvil.png",
-    "updatedAt": "11/06/2025"
+    "updatedAt": "11/06/2025",
+    "usedIn": []
   },
   {
     "id": "anvil_ii",
@@ -1999,7 +2010,7 @@
       "sr": "Ručni top jednostrukog okidanja sa visokom štetom i štetom pri pogotku u glavu, ali sporim rukovanjem.",
       "tr": "Tek etkili el topu; yüksek hasar ve kafa vuruşu hasarı sunar, ancak kullanım yavaştır.",
       "uk": "Ручна гармата одинарної дії з високою шкодою та підвищеним уроном у голову, але з повільним поводженням.",
-      "zh-CN": "单动式手炮，伤害与爆头伤害高，但操控缓慢。",
+      "zh-CN": "伤害高且爆头伤害尤其高，但操作速度较慢。",
       "zh-TW": "單動式手砲，具有高傷害與爆頭傷害，但操控較慢。"
     },
     "type": "Hand Cannon",
@@ -2051,7 +2062,7 @@
         "sr": "ARC probijanje oklopa",
         "tr": "ARC Zırh Delme",
         "uk": "Пробиття броні ARC",
-        "zh-CN": "ARC 装甲穿透",
+        "zh-CN": "ARC 护甲穿透",
         "zh-TW": "ARC 裝甲穿透"
       },
       "Durability": {
@@ -2074,7 +2085,7 @@
         "sr": "Izdržljivost",
         "tr": "Dayanıklılık",
         "uk": "Міцність",
-        "zh-CN": "耐久度",
+        "zh-CN": "耐用性",
         "zh-TW": "耐久度"
       },
       "Firing Mode": {
@@ -2120,7 +2131,7 @@
         "sr": "Povećana brzina paljbe",
         "tr": "Artırılmış atış hızı",
         "uk": "Підвищена швидкість стрільби",
-        "zh-CN": "提高射速",
+        "zh-CN": "射速增加",
         "zh-TW": "提高射速"
       },
       "Magazine Size": {
@@ -2166,7 +2177,7 @@
         "sr": "Smanjeno vreme oporavka raspršenja",
         "tr": "Azaltılmış saçılma toparlanma süresi",
         "uk": "Скорочений час відновлення розсіювання",
-        "zh-CN": "缩短散射恢复时间",
+        "zh-CN": "散布恢复时间缩短",
         "zh-TW": "降低散射恢復時間"
       }
     },
@@ -2182,7 +2193,8 @@
       "simple_gun_parts": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/anvil.png",
-    "updatedAt": "11/06/2025"
+    "updatedAt": "11/06/2025",
+    "usedIn": []
   },
   {
     "id": "anvil_iii",
@@ -2279,7 +2291,7 @@
         "sr": "ARC probijanje oklopa",
         "tr": "ARC Zırh Delme",
         "uk": "Пробиття броні ARC",
-        "zh-CN": "ARC 装甲穿透",
+        "zh-CN": "ARC 护甲穿透",
         "zh-TW": "ARC 裝甲穿透"
       },
       "Durability": {
@@ -2302,7 +2314,7 @@
         "sr": "Izdržljivost",
         "tr": "Dayanıklılık",
         "uk": "Міцність",
-        "zh-CN": "耐久度",
+        "zh-CN": "耐用性",
         "zh-TW": "耐久度"
       },
       "Firing Mode": {
@@ -2348,7 +2360,7 @@
         "sr": "Povećana brzina paljbe",
         "tr": "Artırılmış atış hızı",
         "uk": "Підвищена швидкість стрільби",
-        "zh-CN": "提高射速",
+        "zh-CN": "射速增加",
         "zh-TW": "提高射速"
       },
       "Magazine Size": {
@@ -2394,7 +2406,7 @@
         "sr": "Smanjeno vreme oporavka raspršenja",
         "tr": "Azaltılmış saçılma toparlanma süresi",
         "uk": "Скорочений час відновлення розсіювання",
-        "zh-CN": "缩短散射恢复时间",
+        "zh-CN": "散布恢复时间缩短",
         "zh-TW": "降低散射恢復時間"
       }
     },
@@ -2410,7 +2422,8 @@
       "mechanical_components": 4
     },
     "imageFilename": "https://cdn.arctracker.io/items/anvil.png",
-    "updatedAt": "11/06/2025"
+    "updatedAt": "11/06/2025",
+    "usedIn": []
   },
   {
     "id": "anvil_iv",
@@ -2507,7 +2520,7 @@
         "sr": "ARC probijanje oklopa",
         "tr": "ARC Zırh Delme",
         "uk": "Пробиття броні ARC",
-        "zh-CN": "ARC 装甲穿透",
+        "zh-CN": "ARC 护甲穿透",
         "zh-TW": "ARC 裝甲穿透"
       },
       "Durability": {
@@ -2530,7 +2543,7 @@
         "sr": "Izdržljivost",
         "tr": "Dayanıklılık",
         "uk": "Міцність",
-        "zh-CN": "耐久度",
+        "zh-CN": "耐用性",
         "zh-TW": "耐久度"
       },
       "Firing Mode": {
@@ -2576,7 +2589,7 @@
         "sr": "Povećana brzina paljbe",
         "tr": "Artırılmış atış hızı",
         "uk": "Підвищена швидкість стрільби",
-        "zh-CN": "提高射速",
+        "zh-CN": "射速增加",
         "zh-TW": "提高射速"
       },
       "Magazine Size": {
@@ -2622,7 +2635,7 @@
         "sr": "Smanjeno vreme oporavka raspršenja",
         "tr": "Azaltılmış saçılma toparlanma süresi",
         "uk": "Скорочений час відновлення розсіювання",
-        "zh-CN": "缩短散射恢复时间",
+        "zh-CN": "散布恢复时间缩短",
         "zh-TW": "降低散射恢復時間"
       }
     },
@@ -2638,7 +2651,8 @@
       "mechanical_components": 4
     },
     "imageFilename": "https://cdn.arctracker.io/items/anvil.png",
-    "updatedAt": "11/06/2025"
+    "updatedAt": "11/06/2025",
+    "usedIn": []
   },
   {
     "id": "anvil_splitter",
@@ -2683,7 +2697,7 @@
       "sr": "Tehnički mod za Nakovanj koji zamenjuje njegove metke onima koji se dele na 4 slabija projektila.",
       "tr": "Örs için mermilerini 4 zayıf mermiye bölünen mermilerle değiştiren teknoloji modu.",
       "uk": "Технологічна модифікація для Ковадла, яка замінює його кулі на ті, що розділяються на 4 слабших снаряди.",
-      "zh-CN": "铁砧的科技模组，将其子弹替换为分裂成4个较弱弹体的子弹。",
+      "zh-CN": "一种适用于铁砧的科技改装，将其子弹替换为4颗威力较弱的分裂弹。",
       "zh-TW": "鐵砧的科技模組，將其子彈替換為分裂成4個較弱彈體的子彈。"
     },
     "type": "Modification",
@@ -2711,7 +2725,7 @@
         "sr": "Projektila po Pucnju",
         "tr": "Atış Başına Mermi",
         "uk": "Снарядів за постріл",
-        "zh-CN": "每次射击弹体数",
+        "zh-CN": "单发投射物数量",
         "zh-TW": "每次射擊彈體數"
       },
       "Reduced Projectile Damage": {
@@ -2734,7 +2748,7 @@
         "sr": "Smanjena Šteta Projektila",
         "tr": "Azaltılmış Mermi Hasarı",
         "uk": "Зменшена шкода снаряда",
-        "zh-CN": "弹体伤害降低",
+        "zh-CN": "投射物伤害减少",
         "zh-TW": "彈體傷害降低"
       }
     },
@@ -2746,7 +2760,8 @@
       "mechanical_components": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/anvil_splitter.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "aphelion",
@@ -2791,7 +2806,7 @@
       "sr": "Eksperimentalno ARC zrakasto oruzje pokretano Matriarch reaktorom.",
       "tr": "Matriarch Reaktoru ile calisan deneysel bir ARC isin silahi.",
       "uk": "Експериментальна променева зброя ARC, що працює на реакторі Матріарха.",
-      "zh-CN": "由族长反应堆供电的实验性ARC光束武器。",
+      "zh-CN": "能发射高速能量弹。由族长反应堆供电的实验性ARC光束武器。",
       "zh-TW": "由族長反應爐供電的實驗性ARC光束武器。"
     },
     "type": "Special",
@@ -2844,7 +2859,7 @@
         "sr": "ARC probijanje oklopa",
         "tr": "ARC Zirh Delme",
         "uk": "Пробиття броні ARC",
-        "zh-CN": "ARC 装甲穿透",
+        "zh-CN": "ARC 护甲穿透",
         "zh-TW": "ARC 裝甲穿透"
       },
       "Durability": {
@@ -2867,7 +2882,7 @@
         "sr": "Izdrzljivost",
         "tr": "Dayaniklilik",
         "uk": "Міцність",
-        "zh-CN": "耐久度",
+        "zh-CN": "耐用性",
         "zh-TW": "耐久度"
       },
       "Firing Mode": {
@@ -2909,7 +2924,8 @@
       "magnetic_accelerator": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/aphelion.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "aphelion_blueprint",
@@ -2954,7 +2970,7 @@
       "sr": "Eksperimentalno ARC zrakasto oruzje pokretano Matriarch reaktorom.",
       "tr": "Matriarch Reaktoru ile calisan deneysel bir ARC isin silahi.",
       "uk": "Експериментальна променева зброя ARC, що працює на реакторі Матріарха.",
-      "zh-CN": "由族长反应堆供电的实验性ARC光束武器。",
+      "zh-CN": "能发射高速能量弹。由族长反应堆供电的实验性ARC光束武器。",
       "zh-TW": "由族長反應爐供電的實驗性ARC光束武器。"
     },
     "type": "Blueprint",
@@ -2962,7 +2978,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/aphelion.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "apricot",
@@ -2985,7 +3002,7 @@
       "sr": "Kajsija",
       "tr": "Kayısı",
       "uk": "Абрикос",
-      "zh-CN": "杏",
+      "zh-CN": "杏子",
       "zh-TW": "杏桃"
     },
     "description": {
@@ -3145,7 +3162,7 @@
       "sr": "Dobija se od ARC neprijatelja ili aktivnosti, ili recikliranjem određenih ARC delova. Koristi se za izradu komponenti. Koristi se za izradu: Lagani štit, ARC jezgro pokreta, ARC sklopovi",
       "tr": "ARC düşmanlarından veya aktivitelerden elde edilir ya da belirli ARC parçalarını geri dönüştürerek kazanılır. Bileşen üretmek için kullanılır. Üretilebilir: Hafif Kalkan, ARC Hareket Çekirdeği, ARC Devre",
       "uk": "Отримується з ворогів ARC або активностей, або шляхом переробки певних деталей ARC. Використовується для створення компонентів. Використовується для створення: Легкий щит, ARC рухове ядро, ARC схеми",
-      "zh-CN": "从ARC敌人或活动中获得，或通过回收特定ARC零件取得。用于制作组件。可制作：轻型护盾、ARC动力核心、ARC电路",
+      "zh-CN": "从ARC敌人身上或行动中，或通过回收某些ARC零件获得。用于制作组件。用于制作:轻型护盾，追踪手雷，ARC运动核心，ARC线圈",
       "zh-TW": "從ARC敵人或活動中獲得，或透過回收特定ARC零件取得。用於製作組件。可製作：輕型護盾、ARC動力核心、ARC電路"
     },
     "type": "Topside Material",
@@ -3184,7 +3201,7 @@
           "sr": "ARC Sklopovi",
           "tr": "ARC Devre Sistemi",
           "uk": "Схеми ARC",
-          "zh-CN": "ARC电路",
+          "zh-CN": "ARC线圈",
           "zh-TW": "ARC電路"
         },
         "bench": "refiner",
@@ -3211,7 +3228,7 @@
           "sr": "ARC Jezgro Pokreta",
           "tr": "ARC Hareket Çekirdeği",
           "uk": "Ядро руху ARC",
-          "zh-CN": "ARC动力核心",
+          "zh-CN": "ARC运动核心",
           "zh-TW": "ARC動力核心"
         },
         "bench": "refiner",
@@ -3297,7 +3314,7 @@
       "sr": "ARC Sklopovi",
       "tr": "ARC Devre Sistemi",
       "uk": "Схеми ARC",
-      "zh-CN": "ARC电路",
+      "zh-CN": "ARC线圈",
       "zh-TW": "ARC電路"
     },
     "description": {
@@ -3319,7 +3336,7 @@
       "sr": "Dobija se od ARC neprijatelja ili aktivnosti. Koristi se za izradu komponenti. Može se reciklirati u ARC Leguru. Koristi se za izradu: Srednji Štit, Energetska Šipka",
       "tr": "ARC düşmanlarından veya aktivitelerden elde edilir. Bileşen üretiminde kullanılır. ARC Alaşımına geri dönüştürülebilir. Üretilebilir: Orta Kalkan, Güç Çubuğu",
       "uk": "Отримується зворогів ARC або активностей. Використовується для створення компонентів. Можна переробити в сплав ARC. Використовується для створення: Середній щит, Силовий стрижень",
-      "zh-CN": "从ARC敌人或活动中获得。用于制作组件。可回收为ARC合金。可制作：中型护盾、能量棒",
+      "zh-CN": "从ARC敌人身上或行动中获取。用于制作组件。可回收为ARC合金。用于制作:死线，中型护盾，电棍",
       "zh-TW": "從ARC敵人或活動中獲得。用於製作組件。可回收為ARC合金。可製作：中型護盾、能量棒"
     },
     "type": "Topside Material",
@@ -3483,7 +3500,8 @@
       "chemicals": 9
     },
     "imageFilename": "https://cdn.arctracker.io/items/arc_coolant.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "arc_flex_rubber",
@@ -3544,7 +3562,8 @@
       "rubber_parts": 9
     },
     "imageFilename": "https://cdn.arctracker.io/items/arc_flex_rubber.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "arc_motion_core",
@@ -3567,7 +3586,7 @@
       "sr": "ARC Jezgro Pokreta",
       "tr": "ARC Hareket Çekirdeği",
       "uk": "Ядро руху ARC",
-      "zh-CN": "ARC动力核心",
+      "zh-CN": "ARC运动核心",
       "zh-TW": "ARC動力核心"
     },
     "description": {
@@ -3589,7 +3608,7 @@
       "sr": "Dobija se od ARC neprijatelja ili aktivnosti. Koristi se za izradu komponenti. Može se reciklirati u ARC Leguru. Koristi se za izradu: Magnetski Akcelerator",
       "tr": "ARC düşmanlarından veya aktivitelerden elde edilir. Bileşen üretiminde kullanılır. ARC Alaşımına geri dönüştürülebilir. Üretilebilir: Manyetik Hızlandırıcı",
       "uk": "Отримується зворогів ARC або активностей. Використовується для створення компонентів. Можна переробити в сплав ARC. Використовується для створення: Магнітний прискорювач",
-      "zh-CN": "从ARC敌人或活动中获得。用于制作组件。可回收为ARC合金。可制作：磁力加速器",
+      "zh-CN": "从ARC敌人身上或行动中获取。用于制作组件。可回收为ARC合金。用于制作:发射器弹药，狼群，磁力加速器",
       "zh-TW": "從ARC敵人或活動中獲得。用於製作組件。可回收為ARC合金。可製作：磁力加速器"
     },
     "type": "Topside Material",
@@ -3753,7 +3772,8 @@
       "metal_parts": 7
     },
     "imageFilename": "https://cdn.arctracker.io/items/arc_performance_steel.png",
-    "updatedAt": "11/01/2025"
+    "updatedAt": "11/01/2025",
+    "usedIn": []
   },
   {
     "id": "arc_powercell",
@@ -3798,7 +3818,7 @@
       "sr": "Vredan resurs koji ispuštaju svi ARC neprijatelji. Koristi se za izradu: Punjač Štita Može se koristiti za popravku štitova.",
       "tr": "Tüm ARC düşmanlarından düşen değerli kaynak. Şunları üretmek için kullanılır: Kalkan Şarj Cihazı. Kalkanları onarmak için kullanılabilir.",
       "uk": "Цінний ресурс, що випадає з усіхворогів ARC. Використовується для створення: Перезарядник щита. Можна використовувати для ремонту щитів.",
-      "zh-CN": "从所有 ARC 敌人身上掉落的珍贵资源。用于制作：护盾充能器。可用于修复护盾。",
+      "zh-CN": "珍贵的资源，所有ARC敌人身上都有可能掉落。用于制作:护盾充能器。可用于修理护盾。",
       "zh-TW": "從所有 ARC 敵人身上掉落的珍貴資源。用於製作：護盾充能器。可用於修復護盾。"
     },
     "type": "Topside Material",
@@ -3974,7 +3994,8 @@
       "plastic_parts": 9
     },
     "imageFilename": "https://cdn.arctracker.io/items/arc_synthetic_resin.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "arc_thermo_lining",
@@ -4035,7 +4056,8 @@
       "fabric": 9
     },
     "imageFilename": "https://cdn.arctracker.io/items/arc_thermo_lining.png",
-    "updatedAt": "11/03/2025"
+    "updatedAt": "11/03/2025",
+    "usedIn": []
   },
   {
     "id": "arpeggio_i",
@@ -4058,7 +4080,7 @@
       "sr": "Arpeđo I",
       "tr": "Arpej I",
       "uk": "Арпеджіо I",
-      "zh-CN": "琶音 I",
+      "zh-CN": "三连奏 I",
       "zh-TW": "琶音 I"
     },
     "description": {
@@ -4080,7 +4102,7 @@
       "sr": "Ima pristojnu štetu i preciznost.",
       "tr": "Makul hasar çıkışı ve isabetliliğe sahiptir.",
       "uk": "Має пристойний урон та точність.",
-      "zh-CN": "拥有不错的伤害输出和精准度。",
+      "zh-CN": "具有不俗的伤害输出和精准度。",
       "zh-TW": "擁有不錯的傷害輸出和精準度。"
     },
     "type": "Assault Rifle",
@@ -4155,7 +4177,7 @@
         "sr": "Izdržljivost",
         "tr": "Dayanıklılık",
         "uk": "Міцність",
-        "zh-CN": "耐久度",
+        "zh-CN": "耐用性",
         "zh-TW": "耐久度"
       },
       "Firing Mode": {
@@ -4218,7 +4240,8 @@
       "simple_gun_parts": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/arpeggio.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "arpeggio_ii",
@@ -4241,7 +4264,7 @@
       "sr": "Arpeđo II",
       "tr": "Arpej II",
       "uk": "Арпеджіо II",
-      "zh-CN": "琶音 II",
+      "zh-CN": "三连奏 II",
       "zh-TW": "琶音 II"
     },
     "description": {
@@ -4263,7 +4286,7 @@
       "sr": "Ima pristojnu štetu i preciznost.",
       "tr": "Makul hasar çıkışı ve isabetliliğe sahiptir.",
       "uk": "Має пристойний урон та точність.",
-      "zh-CN": "拥有不错的伤害输出和精准度。",
+      "zh-CN": "具有不俗的伤害输出和精准度。",
       "zh-TW": "擁有不錯的傷害輸出和精準度。"
     },
     "type": "Assault Rifle",
@@ -4338,7 +4361,7 @@
         "sr": "Izdržljivost",
         "tr": "Dayanıklılık",
         "uk": "Міцність",
-        "zh-CN": "耐久度",
+        "zh-CN": "耐用性",
         "zh-TW": "耐久度"
       },
       "Firing Mode": {
@@ -4384,7 +4407,7 @@
         "sr": "Povećana brzina paljbe",
         "tr": "Artırılmış atış hızı",
         "uk": "Підвищена швидкість стрільби",
-        "zh-CN": "提高射速",
+        "zh-CN": "射速增加",
         "zh-TW": "提高射速"
       },
       "Magazine Size": {
@@ -4430,7 +4453,7 @@
         "sr": "Smanjeno vrijeme punjenja",
         "tr": "Azaltılmış yeniden doldurma süresi",
         "uk": "Скорочений час перезаряджання",
-        "zh-CN": "缩短装填时间",
+        "zh-CN": "装弹时间缩短",
         "zh-TW": "降低換彈時間"
       }
     },
@@ -4447,7 +4470,8 @@
       "simple_gun_parts": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/arpeggio.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "arpeggio_iii",
@@ -4470,7 +4494,7 @@
       "sr": "Arpeđo III",
       "tr": "Arpej III",
       "uk": "Арпеджіо III",
-      "zh-CN": "琶音 III",
+      "zh-CN": "三连奏 III",
       "zh-TW": "琶音 III"
     },
     "description": {
@@ -4492,7 +4516,7 @@
       "sr": "Ima pristojnu štetu i preciznost.",
       "tr": "Makul hasar çıkışı ve isabetliliğe sahiptir.",
       "uk": "Має пристойний урон та точність.",
-      "zh-CN": "拥有不错的伤害输出和精准度。",
+      "zh-CN": "具有不俗的伤害输出和精准度。",
       "zh-TW": "擁有不錯的傷害輸出和精準度。"
     },
     "type": "Assault Rifle",
@@ -4567,7 +4591,7 @@
         "sr": "Izdržljivost",
         "tr": "Dayanıklılık",
         "uk": "Міцність",
-        "zh-CN": "耐久度",
+        "zh-CN": "耐用性",
         "zh-TW": "耐久度"
       },
       "Firing Mode": {
@@ -4613,7 +4637,7 @@
         "sr": "Povećana brzina paljbe",
         "tr": "Artırılmış atış hızı",
         "uk": "Підвищена швидкість стрільби",
-        "zh-CN": "提高射速",
+        "zh-CN": "射速增加",
         "zh-TW": "提高射速"
       },
       "Magazine Size": {
@@ -4659,7 +4683,7 @@
         "sr": "Smanjeno vrijeme punjenja",
         "tr": "Azaltılmış yeniden doldurma süresi",
         "uk": "Скорочений час перезаряджання",
-        "zh-CN": "缩短装填时间",
+        "zh-CN": "装弹时间缩短",
         "zh-TW": "降低換彈時間"
       }
     },
@@ -4676,7 +4700,8 @@
       "medium_gun_parts": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/arpeggio.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "arpeggio_iv",
@@ -4699,7 +4724,7 @@
       "sr": "Arpeđo IV",
       "tr": "Arpej IV",
       "uk": "Арпеджіо IV",
-      "zh-CN": "琶音 IV",
+      "zh-CN": "三连奏 IV",
       "zh-TW": "琶音 IV"
     },
     "description": {
@@ -4721,7 +4746,7 @@
       "sr": "Ima pristojnu štetu i preciznost.",
       "tr": "Makul hasar çıkışı ve isabetliliğe sahiptir.",
       "uk": "Має пристойний урон та точність.",
-      "zh-CN": "拥有不错的伤害输出和精准度。",
+      "zh-CN": "具有不俗的伤害输出和精准度。",
       "zh-TW": "擁有不錯的傷害輸出和精準度。"
     },
     "type": "Assault Rifle",
@@ -4796,7 +4821,7 @@
         "sr": "Izdržljivost",
         "tr": "Dayanıklılık",
         "uk": "Міцність",
-        "zh-CN": "耐久度",
+        "zh-CN": "耐用性",
         "zh-TW": "耐久度"
       },
       "Firing Mode": {
@@ -4842,7 +4867,7 @@
         "sr": "Povećana brzina paljbe",
         "tr": "Artırılmış atış hızı",
         "uk": "Підвищена швидкість стрільби",
-        "zh-CN": "提高射速",
+        "zh-CN": "射速增加",
         "zh-TW": "提高射速"
       },
       "Magazine Size": {
@@ -4888,7 +4913,7 @@
         "sr": "Smanjeno vrijeme punjenja",
         "tr": "Azaltılmış yeniden doldurma süresi",
         "uk": "Скорочений час перезаряджання",
-        "zh-CN": "缩短装填时间",
+        "zh-CN": "装弹时间缩短",
         "zh-TW": "降低換彈時間"
       }
     },
@@ -4905,7 +4930,8 @@
       "medium_gun_parts": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/arpeggio.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "assorted_seeds",
@@ -4928,7 +4954,7 @@
       "sr": "Raznovrsno Seme",
       "tr": "Çeşitli Tohumlar",
       "uk": "Різні насіння",
-      "zh-CN": "各式种子",
+      "zh-CN": "混合种子",
       "zh-TW": "各式種子"
     },
     "description": {
@@ -4950,7 +4976,7 @@
       "sr": "Pregršt semenja. Celeste bi mogla tražiti ovo.",
       "tr": "Bir avuç tohum. Celeste bunları arıyor olabilir.",
       "uk": "Жменя насіння. Можливо, Селеста їх шукає.",
-      "zh-CN": "一把种子。Celeste可能在找这些。",
+      "zh-CN": "一把种子。也许正是塞莱斯特要找的。",
       "zh-TW": "一把種子。Celeste可能在找這些。"
     },
     "type": "Nature",
@@ -4961,7 +4987,8 @@
     "stackSize": 100,
     "recyclesInto": {},
     "imageFilename": "https://cdn.arctracker.io/items/assorted_seeds.png",
-    "updatedAt": "10/30/2025"
+    "updatedAt": "10/30/2025",
+    "usedIn": []
   },
   {
     "id": "backpack_black_hiker_color",
@@ -5011,7 +5038,8 @@
     },
     "type": "Cosmetic",
     "rarity": "Common",
-    "updatedAt": "10/30/2025"
+    "updatedAt": "10/30/2025",
+    "usedIn": []
   },
   {
     "id": "banana",
@@ -5062,7 +5090,8 @@
     "type": "Backpack Charm",
     "rarity": "Common",
     "imageFilename": "https://cdn.arctracker.io/items/banana.png",
-    "updatedAt": "10/30/2025"
+    "updatedAt": "10/30/2025",
+    "usedIn": []
   },
   {
     "id": "bandage",
@@ -5200,7 +5229,8 @@
       "fabric": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/bandage.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "barricade_kit",
@@ -5313,7 +5343,8 @@
       "metal_parts": 3
     },
     "imageFilename": "https://cdn.arctracker.io/items/barricade_kit.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "barricade_kit_blueprint",
@@ -5366,7 +5397,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/barricade_kit.png",
-    "updatedAt": "11/13/2025"
+    "updatedAt": "11/13/2025",
+    "usedIn": []
   },
   {
     "id": "bastion_cell",
@@ -5428,7 +5460,8 @@
       "advanced_mechanical_components": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/bastion_cell.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "battery",
@@ -5625,7 +5658,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/bettina_blueprint.png",
-    "updatedAt": "12/07/2025"
+    "updatedAt": "12/07/2025",
+    "usedIn": []
   },
   {
     "id": "bettina_i",
@@ -5809,7 +5843,8 @@
       "advanced_mechanical_components": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/bettina.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "bettina_ii",
@@ -5832,7 +5867,7 @@
       "sr": "Bettina II",
       "tr": "Bettina II",
       "uk": "Bettina II",
-      "zh-CN": "Bettina II",
+      "zh-CN": "贝蒂娜 II",
       "zh-TW": "Bettina II"
     },
     "description": {
@@ -6038,7 +6073,8 @@
       "heavy_gun_parts": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/bettina.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "bettina_iii",
@@ -6061,7 +6097,7 @@
       "sr": "Bettina III",
       "tr": "Bettina III",
       "uk": "Bettina III",
-      "zh-CN": "Bettina III",
+      "zh-CN": "贝蒂娜 III",
       "zh-TW": "Bettina III"
     },
     "description": {
@@ -6267,7 +6303,8 @@
       "heavy_gun_parts": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/bettina.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "bettina_iv",
@@ -6290,7 +6327,7 @@
       "sr": "Bettina IV",
       "tr": "Bettina IV",
       "uk": "Bettina IV",
-      "zh-CN": "Bettina IV",
+      "zh-CN": "贝蒂娜 IV",
       "zh-TW": "Bettina IV"
     },
     "description": {
@@ -6496,7 +6533,8 @@
       "heavy_gun_parts": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/bettina.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "bicycle_pump",
@@ -6558,7 +6596,8 @@
       "canister": 3
     },
     "imageFilename": "https://cdn.arctracker.io/items/bicycle_pump.png",
-    "updatedAt": "11/01/2025"
+    "updatedAt": "11/01/2025",
+    "usedIn": []
   },
   {
     "id": "binoculars",
@@ -6648,7 +6687,8 @@
       "plastic_parts": 4
     },
     "imageFilename": "https://cdn.arctracker.io/items/binoculars.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "blaze_grenade",
@@ -6868,7 +6908,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/blaze_grenade.png",
-    "updatedAt": "11/13/2025"
+    "updatedAt": "11/13/2025",
+    "usedIn": []
   },
   {
     "id": "blaze_grenade_trap",
@@ -6976,7 +7017,8 @@
       "wires": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/blaze_grenade_trap.png",
-    "updatedAt": "12/19/2025"
+    "updatedAt": "12/19/2025",
+    "usedIn": []
   },
   {
     "id": "bloated_tuna_can",
@@ -7079,7 +7121,8 @@
       }
     },
     "imageFilename": "https://cdn.arctracker.io/items/bloated_tuna_can.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "blue_gate_cellar_key",
@@ -7133,7 +7176,8 @@
     "weightKg": 0.25,
     "stackSize": 1,
     "imageFilename": "https://cdn.arctracker.io/items/blue_gate_cellar_key.png",
-    "updatedAt": "12/07/2025"
+    "updatedAt": "12/07/2025",
+    "usedIn": []
   },
   {
     "id": "blue_gate_communication_tower_key",
@@ -7187,7 +7231,8 @@
     "weightKg": 0.25,
     "stackSize": 1,
     "imageFilename": "https://cdn.arctracker.io/items/blue_gate_communication_tower_key.png",
-    "updatedAt": "11/13/2025"
+    "updatedAt": "11/13/2025",
+    "usedIn": []
   },
   {
     "id": "blue_gate_confiscation_room_key",
@@ -7240,7 +7285,8 @@
     "value": 100,
     "weightKg": 0.25,
     "imageFilename": "https://cdn.arctracker.io/items/blue_gate_confiscation_room_key.png",
-    "updatedAt": "10/30/2025"
+    "updatedAt": "10/30/2025",
+    "usedIn": []
   },
   {
     "id": "blue_gate_village_key",
@@ -7294,7 +7340,8 @@
     "weightKg": 0.25,
     "stackSize": 1,
     "imageFilename": "https://cdn.arctracker.io/items/blue_gate_village_key.png",
-    "updatedAt": "12/07/2025"
+    "updatedAt": "12/07/2025",
+    "usedIn": []
   },
   {
     "id": "blue_light_stick",
@@ -7407,7 +7454,8 @@
       "chemicals": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/blue_light_stick.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "blue_light_stick_blueprint",
@@ -7461,7 +7509,8 @@
     "weightKg": 0,
     "stackSize": 1,
     "imageFilename": "https://cdn.arctracker.io/items/blue_light_stick_blueprint.png",
-    "updatedAt": "11/04/2025"
+    "updatedAt": "11/04/2025",
+    "usedIn": []
   },
   {
     "id": "blue_radio_renegade_color",
@@ -7512,7 +7561,8 @@
     "type": "Cosmetic",
     "rarity": "Common",
     "imageFilename": "https://cdn.arctracker.io/items/blue_radio_renegade_color.png",
-    "updatedAt": "11/10/2025"
+    "updatedAt": "11/10/2025",
+    "usedIn": []
   },
   {
     "id": "bobcat_blueprint",
@@ -7565,7 +7615,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/bobcat.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "bobcat_i",
@@ -7890,7 +7941,8 @@
       "light_gun_parts": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/bobcat.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "bobcat_ii",
@@ -8279,7 +8331,8 @@
       "light_gun_parts": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/bobcat.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "bobcat_iii",
@@ -8668,7 +8721,8 @@
       "light_gun_parts": 3
     },
     "imageFilename": "https://cdn.arctracker.io/items/bobcat.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "bobcat_iv",
@@ -9057,7 +9111,8 @@
       "light_gun_parts": 3
     },
     "imageFilename": "https://cdn.arctracker.io/items/bobcat.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "bombardier_cell",
@@ -9116,7 +9171,8 @@
       "arc_alloy": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/bombardier_cell.png",
-    "updatedAt": "11/01/2025"
+    "updatedAt": "11/01/2025",
+    "usedIn": []
   },
   {
     "id": "breathtaking_snow_globe",
@@ -9171,7 +9227,8 @@
     "weightKg": 0.2,
     "stackSize": 1,
     "imageFilename": "https://cdn.arctracker.io/items/breathtaking_snow_globe.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "broken_flashlight",
@@ -9233,7 +9290,8 @@
       "metal_parts": 7
     },
     "imageFilename": "https://cdn.arctracker.io/items/broken_flashlight.png",
-    "updatedAt": "11/04/2025"
+    "updatedAt": "11/04/2025",
+    "usedIn": []
   },
   {
     "id": "broken_guidance_system",
@@ -9294,7 +9352,8 @@
       "processor": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/broken_guidance_system.png",
-    "updatedAt": "11/14/2025"
+    "updatedAt": "11/14/2025",
+    "usedIn": []
   },
   {
     "id": "broken_handheld_radio",
@@ -9356,7 +9415,8 @@
       "sensors": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/broken_handheld_radio.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "broken_taser",
@@ -9418,7 +9478,8 @@
       "battery": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/broken_taser.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "burgerboy",
@@ -9469,7 +9530,8 @@
     "type": "Backpack Charm",
     "rarity": "Common",
     "imageFilename": "https://cdn.arctracker.io/items/burgerboy.png",
-    "updatedAt": "11/01/2025"
+    "updatedAt": "11/01/2025",
+    "usedIn": []
   },
   {
     "id": "buried_city_hospital_key",
@@ -9523,7 +9585,8 @@
     "weightKg": 0.25,
     "stackSize": 1,
     "imageFilename": "https://cdn.arctracker.io/items/buried_city_hospital_key.png",
-    "updatedAt": "12/07/2025"
+    "updatedAt": "12/07/2025",
+    "usedIn": []
   },
   {
     "id": "buried_city_jkv_employee_access_card",
@@ -9577,7 +9640,8 @@
     "weightKg": 0.25,
     "stackSize": 1,
     "imageFilename": "https://cdn.arctracker.io/items/buried_city_jkv_employee_access_card.png",
-    "updatedAt": "12/07/2025"
+    "updatedAt": "12/07/2025",
+    "usedIn": []
   },
   {
     "id": "buried_city_residential_master_key",
@@ -9631,7 +9695,8 @@
     "weightKg": 0.25,
     "stackSize": 1,
     "imageFilename": "https://cdn.arctracker.io/items/buried_city_residential_master_key.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "buried_city_town_hall_key",
@@ -9686,7 +9751,8 @@
     "stackSize": 1,
     "recyclesInto": {},
     "imageFilename": "https://cdn.arctracker.io/items/buried_city_town_hall_key.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "burletta_blueprint",
@@ -9709,7 +9775,7 @@
       "sr": "Burletta Nacrt",
       "tr": "Burletta Planı",
       "uk": "Креслення Бурлетти",
-      "zh-CN": "布雷塔蓝图",
+      "zh-CN": "布尔莱塔蓝图",
       "zh-TW": "布雷塔藍圖"
     },
     "description": {
@@ -9737,7 +9803,8 @@
     "type": "Blueprint",
     "rarity": "Legendary",
     "imageFilename": "https://cdn.arctracker.io/items/burletta.png",
-    "updatedAt": "11/12/2025"
+    "updatedAt": "11/12/2025",
+    "usedIn": []
   },
   {
     "id": "burletta_i",
@@ -9760,7 +9827,7 @@
       "sr": "Burletta I",
       "tr": "Burletta I",
       "uk": "Бурлетта I",
-      "zh-CN": "布雷塔 I",
+      "zh-CN": "布尔莱塔 I",
       "zh-TW": "布雷塔 I"
     },
     "description": {
@@ -9921,7 +9988,8 @@
     },
     "imageFilename": "https://cdn.arctracker.io/items/burletta.png",
     "updatedAt": "01/13/2026",
-    "durability": 100
+    "durability": 100,
+    "usedIn": []
   },
   {
     "id": "burletta_ii",
@@ -9944,7 +10012,7 @@
       "sr": "Burletta II",
       "tr": "Burletta II",
       "uk": "Бурлетта II",
-      "zh-CN": "布雷塔 II",
+      "zh-CN": "布尔莱塔 II",
       "zh-TW": "布雷塔 II"
     },
     "description": {
@@ -9986,7 +10054,8 @@
       "simple_gun_parts": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/burletta.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "burletta_iii",
@@ -10009,7 +10078,7 @@
       "sr": "Burletta III",
       "tr": "Burletta III",
       "uk": "Бурлетта III",
-      "zh-CN": "布雷塔 III",
+      "zh-CN": "布尔莱塔 III",
       "zh-TW": "布雷塔 III"
     },
     "description": {
@@ -10051,7 +10120,8 @@
       "simple_gun_parts": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/burletta.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "burletta_iv",
@@ -10074,7 +10144,7 @@
       "sr": "Burletta IV",
       "tr": "Burletta IV",
       "uk": "Бурлетта IV",
-      "zh-CN": "布雷塔 IV",
+      "zh-CN": "布尔莱塔 IV",
       "zh-TW": "布雷塔 IV"
     },
     "description": {
@@ -10116,7 +10186,8 @@
       "mechanical_components": 4
     },
     "imageFilename": "https://cdn.arctracker.io/items/burletta.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "burned_arc_circuitry",
@@ -10177,7 +10248,8 @@
       "arc_alloy": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/burned_arc_circuitry.png",
-    "updatedAt": "12/07/2025"
+    "updatedAt": "12/07/2025",
+    "usedIn": []
   },
   {
     "id": "burnt_out_candles",
@@ -10232,7 +10304,8 @@
     "weightKg": 0.2,
     "stackSize": 15,
     "imageFilename": "https://cdn.arctracker.io/items/burnt_out_candles.png",
-    "updatedAt": "12/16/2025"
+    "updatedAt": "12/16/2025",
+    "usedIn": []
   },
   {
     "id": "camera_lens",
@@ -10293,7 +10366,8 @@
       "plastic_parts": 4
     },
     "imageFilename": "https://cdn.arctracker.io/items/camera_lens.png",
-    "updatedAt": "11/03/2025"
+    "updatedAt": "11/03/2025",
+    "usedIn": []
   },
   {
     "id": "candle_holder",
@@ -10354,7 +10428,8 @@
       "metal_parts": 4
     },
     "imageFilename": "https://cdn.arctracker.io/items/candle_holder.png",
-    "updatedAt": "11/04/2025"
+    "updatedAt": "11/04/2025",
+    "usedIn": []
   },
   {
     "id": "candleberries",
@@ -10412,7 +10487,8 @@
       "assorted_seeds": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/candleberries.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "canister",
@@ -10634,7 +10710,8 @@
     "type": "Cosmetic",
     "rarity": "Common",
     "imageFilename": "https://cdn.arctracker.io/items/cans.png",
-    "updatedAt": "11/10/2025"
+    "updatedAt": "11/10/2025",
+    "usedIn": []
   },
   {
     "id": "cat_bed",
@@ -10690,7 +10767,8 @@
     "stackSize": 3,
     "recyclesInto": {},
     "imageFilename": "https://cdn.arctracker.io/items/cat_bed.png",
-    "updatedAt": "12/07/2025"
+    "updatedAt": "12/07/2025",
+    "usedIn": []
   },
   {
     "id": "celeste_journal",
@@ -10742,7 +10820,8 @@
     "rarity": "Common",
     "weightKg": 0.25,
     "imageFilename": "https://cdn.arctracker.io/items/celestes_journal.png",
-    "updatedAt": "11/09/2025"
+    "updatedAt": "11/09/2025",
+    "usedIn": []
   },
   {
     "id": "cheer",
@@ -10793,7 +10872,8 @@
     "type": "Cosmetic",
     "rarity": "Common",
     "imageFilename": "https://cdn.arctracker.io/items/cheer.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "chemicals",
@@ -10871,7 +10951,7 @@
           "sr": "Injekcija adrenalina",
           "tr": "Adrenalin İğnesi",
           "uk": "Ін'єкція адреналіну",
-          "zh-CN": "肾上腺素注射剂",
+          "zh-CN": "肾上腺素针剂",
           "zh-TW": "腎上腺素注射劑"
         },
         "bench": "med_station",
@@ -10898,7 +10978,7 @@
           "sr": "Antiseptik",
           "tr": "Antiseptik",
           "uk": "Антисептик",
-          "zh-CN": "消毒剂",
+          "zh-CN": "防腐剂",
           "zh-TW": "防腐劑"
         },
         "bench": "refiner",
@@ -11162,7 +11242,7 @@
           "hr": "Mala dimna granata",
           "it": "Piccola granata fumogena",
           "ja": "リトルスモーク・グレネード",
-          "kr": "소형 연막탄",
+          "kr": "꼬마 연막 수류탄",
           "no": "Liten røykgranat",
           "pl": "Mały granat dymny",
           "pt": "Pequena granada de fumaça",
@@ -11336,7 +11416,7 @@
           "zh-CN": "黄色荧光棒",
           "zh-TW": "黃色螢光棒"
         },
-        "bench": "explosives_bench",
+        "bench": "utility_bench",
         "quantity": 3
       }
     ]
@@ -11395,7 +11475,8 @@
     "stackSize": 3,
     "recyclesInto": {},
     "imageFilename": "https://cdn.arctracker.io/items/coffee_pot.png",
-    "updatedAt": "11/04/2025"
+    "updatedAt": "11/04/2025",
+    "usedIn": []
   },
   {
     "id": "combat_mk1",
@@ -11447,6 +11528,7 @@
     "rarity": "Uncommon",
     "value": 640,
     "weightKg": 2,
+    "stackSize": 1,
     "effects": {
       "Durability": {
         "value": "100/100",
@@ -11531,7 +11613,8 @@
       "plastic_parts": 3
     },
     "imageFilename": "https://cdn.arctracker.io/items/combat_i.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/20/2026",
+    "usedIn": []
   },
   {
     "id": "combat_mk2",
@@ -11583,6 +11666,7 @@
     "rarity": "Rare",
     "value": 2000,
     "weightKg": 3,
+    "stackSize": 1,
     "effects": {
       "Durability": {
         "value": "100/100",
@@ -11690,7 +11774,8 @@
       "electrical_components": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/combat_i.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/20/2026",
+    "usedIn": []
   },
   {
     "id": "combat_mk3_aggressive",
@@ -11742,6 +11827,7 @@
     "rarity": "Epic",
     "value": 5000,
     "weightKg": 5,
+    "stackSize": 1,
     "blueprintLocked": true,
     "effects": {
       "Backpack Slots": {
@@ -11943,12 +12029,13 @@
       "electrical_components": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/combat_mk3_aggressive.png",
-    "updatedAt": "01/13/2026",
+    "updatedAt": "01/20/2026",
     "repairCost": {
       "advanced_electrical_components": 1,
       "processor": 2
     },
-    "repairDurability": 50
+    "repairDurability": 50,
+    "usedIn": []
   },
   {
     "id": "combat_mk3_aggressive_blueprint",
@@ -12001,7 +12088,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/combat_mk3_aggressive.png",
-    "updatedAt": "11/13/2025"
+    "updatedAt": "11/13/2025",
+    "usedIn": []
   },
   {
     "id": "combat_mk3_flanking",
@@ -12053,6 +12141,7 @@
     "rarity": "Epic",
     "value": 5000,
     "weightKg": 5,
+    "stackSize": 1,
     "blueprintLocked": true,
     "effects": {
       "Backpack Slots": {
@@ -12254,12 +12343,13 @@
       "electrical_components": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/combat_mk3_flanking.png",
-    "updatedAt": "01/13/2026",
+    "updatedAt": "01/20/2026",
     "repairCost": {
       "advanced_electrical_components": 1,
       "processor": 2
     },
-    "repairDurability": 50
+    "repairDurability": 50,
+    "usedIn": []
   },
   {
     "id": "combat_mk3_flanking_blueprint",
@@ -12312,7 +12402,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/combat_mk3_flanking.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "compensator_i",
@@ -12439,7 +12530,8 @@
       "metal_parts": 3
     },
     "imageFilename": "https://cdn.arctracker.io/items/compensator_i.png",
-    "updatedAt": "10/30/2025"
+    "updatedAt": "10/30/2025",
+    "usedIn": []
   },
   {
     "id": "compensator_ii",
@@ -12559,7 +12651,8 @@
       "mechanical_components": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/compensator_ii.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "compensator_ii_blueprint",
@@ -12612,7 +12705,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/compensator_ii_blueprint.png",
-    "updatedAt": "11/01/2025"
+    "updatedAt": "11/01/2025",
+    "usedIn": []
   },
   {
     "id": "compensator_iii",
@@ -12766,7 +12860,8 @@
       "mechanical_components": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/compensator_ii.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "compensator_iii_blueprint",
@@ -12819,7 +12914,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/compensator_iii.png",
-    "updatedAt": "12/07/2025"
+    "updatedAt": "12/07/2025",
+    "usedIn": []
   },
   {
     "id": "complex_gun_parts",
@@ -13022,7 +13118,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/complex_gun_parts_blueprint.png",
-    "updatedAt": "11/12/2025"
+    "updatedAt": "11/12/2025",
+    "usedIn": []
   },
   {
     "id": "coolant",
@@ -13084,7 +13181,8 @@
       "oil": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/coolant.png",
-    "updatedAt": "11/07/2025"
+    "updatedAt": "11/07/2025",
+    "usedIn": []
   },
   {
     "id": "cooling_coil",
@@ -13146,7 +13244,8 @@
       "steel_spring": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/cooling_coil.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "cooling_fan",
@@ -13208,7 +13307,8 @@
       "wires": 4
     },
     "imageFilename": "https://cdn.arctracker.io/items/cooling_fan.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "cracked_bioscanner",
@@ -13270,7 +13370,8 @@
       "battery": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/cracked_bioscanner.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "crude_explosives",
@@ -13635,7 +13736,8 @@
       "plastic_parts": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/crumpled_plastic_bottle.png",
-    "updatedAt": "11/04/2025"
+    "updatedAt": "11/04/2025",
+    "usedIn": []
   },
   {
     "id": "dam_control_tower_key",
@@ -13688,7 +13790,8 @@
     "value": 100,
     "weightKg": 0.25,
     "imageFilename": "https://cdn.arctracker.io/items/dam_control_tower_key.png",
-    "updatedAt": "10/30/2025"
+    "updatedAt": "10/30/2025",
+    "usedIn": []
   },
   {
     "id": "dam_staff_room_key",
@@ -13742,7 +13845,8 @@
     "weightKg": 0.25,
     "stackSize": 1,
     "imageFilename": "https://cdn.arctracker.io/items/dam_staff_room_key.png",
-    "updatedAt": "11/10/2025"
+    "updatedAt": "11/10/2025",
+    "usedIn": []
   },
   {
     "id": "dam_surveillance_key",
@@ -13795,7 +13899,8 @@
     "value": 100,
     "weightKg": 0.25,
     "imageFilename": "https://cdn.arctracker.io/items/dam_surveillance_key.png",
-    "updatedAt": "11/03/2025"
+    "updatedAt": "11/03/2025",
+    "usedIn": []
   },
   {
     "id": "dam_testing_annex_key",
@@ -13848,7 +13953,8 @@
     "value": 100,
     "weightKg": 0.25,
     "imageFilename": "https://cdn.arctracker.io/items/dam_testing_annex_key.png",
-    "updatedAt": "10/30/2025"
+    "updatedAt": "10/30/2025",
+    "usedIn": []
   },
   {
     "id": "dam_utility_key",
@@ -13902,7 +14008,8 @@
     "weightKg": 0.25,
     "stackSize": 1,
     "imageFilename": "https://cdn.arctracker.io/items/dam_utility_key.png",
-    "updatedAt": "11/10/2025"
+    "updatedAt": "11/10/2025",
+    "usedIn": []
   },
   {
     "id": "damaged_arc_motion_core",
@@ -13957,13 +14064,14 @@
     "weightKg": 0.25,
     "stackSize": 5,
     "recyclesInto": {
-      "arc_alloy": 3
-    },
-    "salvagesInto": {
       "arc_alloy": 2
     },
+    "salvagesInto": {
+      "arc_alloy": 1
+    },
     "imageFilename": "https://cdn.arctracker.io/items/damaged_arc_motion_core.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/20/2026",
+    "usedIn": []
   },
   {
     "id": "damaged_arc_powercell",
@@ -14024,7 +14132,8 @@
       "metal_parts": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/damaged_arc_powercell.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "damaged_fireball_burner",
@@ -14085,7 +14194,8 @@
       "metal_parts": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/damaged_fireball_burner.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "damaged_heat_sink",
@@ -14147,7 +14257,8 @@
       "wires": 3
     },
     "imageFilename": "https://cdn.arctracker.io/items/damaged_heat_sink.png",
-    "updatedAt": "11/06/2025"
+    "updatedAt": "11/06/2025",
+    "usedIn": []
   },
   {
     "id": "damaged_hornet_driver",
@@ -14208,7 +14319,8 @@
       "arc_alloy": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/damaged_hornet_driver.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "damaged_rocketeer_driver",
@@ -14269,7 +14381,8 @@
       "arc_alloy": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/damaged_rocketeer_driver.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "damaged_snitch_scanner",
@@ -14324,7 +14437,8 @@
     "weightKg": 0.25,
     "stackSize": 3,
     "imageFilename": "https://cdn.arctracker.io/items/damaged_snitch_scanner.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "damaged_tick_pod",
@@ -14385,7 +14499,8 @@
       "metal_parts": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/damaged_tick_pod.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "damaged_wasp_driver",
@@ -14446,7 +14561,8 @@
       "metal_parts": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/damaged_wasp_driver.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "dart_board",
@@ -14501,7 +14617,8 @@
     "weightKg": 1,
     "stackSize": 3,
     "imageFilename": "https://cdn.arctracker.io/items/dart_board.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "deadline",
@@ -14638,7 +14755,8 @@
       "explosive_compound": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/deadline.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "deadline_blueprint",
@@ -14692,7 +14810,8 @@
     "weightKg": 0,
     "stackSize": 1,
     "imageFilename": "https://cdn.arctracker.io/items/deadline.png",
-    "updatedAt": "11/20/2025"
+    "updatedAt": "11/20/2025",
+    "usedIn": []
   },
   {
     "id": "defibrillator",
@@ -14806,7 +14925,8 @@
       "chemicals": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/defibrillator.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "defibrillator_blueprint",
@@ -14860,7 +14980,8 @@
     "weightKg": 0,
     "stackSize": 1,
     "imageFilename": "https://cdn.arctracker.io/items/defibrillator.png",
-    "updatedAt": "11/12/2025"
+    "updatedAt": "11/12/2025",
+    "usedIn": []
   },
   {
     "id": "deflated_football",
@@ -14922,7 +15043,8 @@
       "rubber_parts": 9
     },
     "imageFilename": "https://cdn.arctracker.io/items/deflated_football.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "degraded_arc_rubber",
@@ -14983,7 +15105,8 @@
       "rubber_parts": 5
     },
     "imageFilename": "https://cdn.arctracker.io/items/degraded_arc_rubber.png",
-    "updatedAt": "10/30/2025"
+    "updatedAt": "10/30/2025",
+    "usedIn": []
   },
   {
     "id": "diving_goggles",
@@ -15044,7 +15167,8 @@
       "rubber_parts": 5
     },
     "imageFilename": "https://cdn.arctracker.io/items/diving_goggles.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "dog_collar",
@@ -15106,7 +15230,8 @@
       "fabric": 5
     },
     "imageFilename": "https://cdn.arctracker.io/items/dog_collar.png",
-    "updatedAt": "10/30/2025"
+    "updatedAt": "10/30/2025",
+    "usedIn": []
   },
   {
     "id": "door_blocker",
@@ -15171,7 +15296,8 @@
       "metal_parts": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/door_blocker.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "dried_out_arc_resin",
@@ -15232,7 +15358,8 @@
       "plastic_parts": 4
     },
     "imageFilename": "https://cdn.arctracker.io/items/dried_out_arc_resin.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "duct_tape",
@@ -15316,7 +15443,7 @@
           "sr": "Kutna Ručka I",
           "tr": "Açılı Kabza I",
           "uk": "Кутова рукоятка I",
-          "zh-CN": "倾斜握把 I",
+          "zh-CN": "直角握把 I",
           "zh-TW": "斜角握把 I"
         },
         "bench": "weapon_bench",
@@ -15343,7 +15470,7 @@
           "sr": "Kutni rukohvat II",
           "tr": "Açılı Kabza II",
           "uk": "Кутова рукоятка II",
-          "zh-CN": "倾斜握把 II",
+          "zh-CN": "直角握把 II",
           "zh-TW": "斜角握把 II"
         },
         "bench": "weapon_bench",
@@ -15370,7 +15497,7 @@
           "sr": "Kutni Rukohvat III",
           "tr": "Açılı Kabza III",
           "uk": "Кутова рукоятка III",
-          "zh-CN": "倾斜握把 III",
+          "zh-CN": "直角握把 III",
           "zh-TW": "斜角握把 III"
         },
         "bench": "weapon_bench",
@@ -15776,7 +15903,7 @@
       "hr": "Koristi se za izradu širokog spektra predmeta. Može se reciklirati u materijale za izradu. Koristi se za izradu: Tactical Mk. 2, Combat Mk. 2, Looting Mk. 2, Surge Shield Recharger, Lure Granata",
       "it": "Si usa per creare una vasta gamma di oggetti. Si può riciclare in materiali da creazione. Si usa per creare: Tattico Mk. 2, Combattimento Mk. 2, Saccheggio Mk. 2, Componenti elettrici avanzati, Caricascudi rapido",
       "ja": "幅広いアイテムの製作に使用。製作素材にリサイクル可能。製作用途：Tactical Mk. 2、Combat Mk. 2、Looting Mk. 2、サージシールドリチャージャー、ルアーグレネード",
-      "kr": "다양한 아이템 제작에 사용. 제작 재료로 재활용 가능. 제작 용도: 전술 마크 2, 전투 마크 2, 노획 마크 2, 급속 실드 충전기, 미끼 수류탄",
+      "kr": "다양한 아이템 제작에 사용. 제작 재료로 재활용 가능. 제작 용도: 전술 마크 2, 전투 마크 2, 노획 마크 2, 급속 실드 충전기, 유인 수류탄",
       "no": "Brukes til å lage et bredt spekter av gjenstander. Kan resirkuleres til håndverksmateriell. Brukes til å lage: Tactical Mk. 2, Combat Mk. 2, Looting Mk. 2, Surge skjoldlader, Lokkegranate",
       "pl": "Używany do wytwarzania szerokiej gamy przedmiotów. Może być przetworzony na materiały rzemieślnicze. Używany do wytworzenia: Tactical Mk. 2, Combat Mk. 2, Looting Mk. 2, Ładowarka tarczy Surge, Granat wabik",
       "pt": "Usado para fabricar uma ampla gama de itens. Pode ser reciclado em materiais de fabricação. Usado para fabricar: Tactical Mk. 2, Combat Mk. 2, Looting Mk. 2, Recarregador de escudo Surge, Granada isca",
@@ -15807,7 +15934,7 @@
       "plastic_parts": 3
     },
     "imageFilename": "https://cdn.arctracker.io/items/electrical_components.png",
-    "updatedAt": "11/03/2025",
+    "updatedAt": "01/13/2026",
     "usedIn": [
       {
         "id": "advanced_electrical_components",
@@ -16080,7 +16207,8 @@
     "weightKg": 0.2,
     "stackSize": 5,
     "imageFilename": "https://cdn.arctracker.io/items/empty_wine_bottle.png",
-    "updatedAt": "11/04/2025"
+    "updatedAt": "11/04/2025",
+    "usedIn": []
   },
   {
     "id": "energy_clip",
@@ -16144,7 +16272,8 @@
       "battery": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/energy_clip.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "equalizer",
@@ -16317,7 +16446,8 @@
       "magnetic_accelerator": 2
     },
     "stability": 84.6,
-    "stealth": null
+    "stealth": null,
+    "usedIn": []
   },
   {
     "id": "equalizer_blueprint",
@@ -16370,7 +16500,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/equalizer.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "esr_analyzer",
@@ -16423,7 +16554,8 @@
     "weightKg": 0.25,
     "questItem": true,
     "imageFilename": "https://cdn.arctracker.io/items/esr_analyzer.png",
-    "updatedAt": "11/17/2025"
+    "updatedAt": "11/17/2025",
+    "usedIn": []
   },
   {
     "id": "exodus_modules",
@@ -16537,7 +16669,7 @@
           "sr": "Hullcracker I",
           "tr": "Hullcracker I",
           "uk": "Hullcracker I",
-          "zh-CN": "Hullcracker I",
+          "zh-CN": "裂甲者 I",
           "zh-TW": "Hullcracker I"
         },
         "bench": "weapon_bench",
@@ -16618,8 +16750,8 @@
           "sr": "Vulcano I",
           "tr": "Vulcano I",
           "uk": "Vulcano I",
-          "zh-CN": "Vulcano I",
-          "zh-TW": "Vulcano I"
+          "zh-CN": "火山 I",
+          "zh-TW": "火山 I"
         },
         "bench": "weapon_bench",
         "quantity": 1
@@ -16676,7 +16808,8 @@
     "rarity": "Common",
     "weightKg": 0.25,
     "imageFilename": "https://cdn.arctracker.io/items/experimental_seed_sample.png",
-    "updatedAt": "11/17/2025"
+    "updatedAt": "11/17/2025",
+    "usedIn": []
   },
   {
     "id": "expired_pasta",
@@ -16779,7 +16912,8 @@
       }
     },
     "imageFilename": "https://cdn.arctracker.io/items/expired_pasta.png",
-    "updatedAt": "10/30/2025"
+    "updatedAt": "10/30/2025",
+    "usedIn": []
   },
   {
     "id": "expired_respirator",
@@ -16841,7 +16975,8 @@
       "rubber_parts": 5
     },
     "imageFilename": "https://cdn.arctracker.io/items/expired_respirator.png",
-    "updatedAt": "11/03/2025"
+    "updatedAt": "11/03/2025",
+    "usedIn": []
   },
   {
     "id": "explosive_compound",
@@ -17002,7 +17137,7 @@
           "hr": "Kutija vatrometa",
           "it": "Scatola di fuochi d'artificio",
           "ja": "花火の箱",
-          "kr": "불꽃놀이 상자",
+          "kr": "폭죽 상자",
           "no": "Fyrverkeriboks",
           "pl": "Pudełko fajerwerków",
           "pt": "Caixa de fogos de artifício",
@@ -17214,7 +17349,8 @@
       "oil": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/explosive_mine.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "explosive_mine_blueprint",
@@ -17268,7 +17404,8 @@
     "weightKg": 0,
     "stackSize": 1,
     "imageFilename": "https://cdn.arctracker.io/items/explosive_mine.png",
-    "updatedAt": "12/07/2025"
+    "updatedAt": "12/07/2025",
+    "usedIn": []
   },
   {
     "id": "extended_barrel",
@@ -17383,7 +17520,8 @@
       "mechanical_components": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/extended_barrel.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "extended_barrel_blueprint",
@@ -17436,7 +17574,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/extended_barrel.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "extended_light_mag_i",
@@ -17532,7 +17671,8 @@
       "plastic_parts": 3
     },
     "imageFilename": "https://cdn.arctracker.io/items/extended_light_mag_i.png",
-    "updatedAt": "11/03/2025"
+    "updatedAt": "11/03/2025",
+    "usedIn": []
   },
   {
     "id": "extended_light_mag_ii",
@@ -17624,7 +17764,8 @@
       "mechanical_components": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/extended_light_mag_ii.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "extended_light_mag_ii_blueprint",
@@ -17677,7 +17818,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/extended_light_mag_ii.png",
-    "updatedAt": "12/07/2025"
+    "updatedAt": "12/07/2025",
+    "usedIn": []
   },
   {
     "id": "extended_light_mag_iii",
@@ -17769,7 +17911,8 @@
       "mechanical_components": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/extended_light_mag_iii.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "extended_light_mag_iii_blueprint",
@@ -17822,7 +17965,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/extended_light_mag_iii.png",
-    "updatedAt": "12/07/2025"
+    "updatedAt": "12/07/2025",
+    "usedIn": []
   },
   {
     "id": "extended_medium_mag_i",
@@ -17911,7 +18055,8 @@
       "plastic_parts": 3
     },
     "imageFilename": "https://cdn.arctracker.io/items/extended_medium_mag_i.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "extended_medium_mag_ii",
@@ -18001,7 +18146,8 @@
       "mechanical_components": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/extended_medium_mag_ii.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "extended_medium_mag_ii_blueprint",
@@ -18054,7 +18200,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/extended_medium_mag_ii_blueprint.png",
-    "updatedAt": "11/12/2025"
+    "updatedAt": "11/12/2025",
+    "usedIn": []
   },
   {
     "id": "extended_medium_mag_iii",
@@ -18144,7 +18291,8 @@
       "mechanical_components": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/extended_medium_mag_iii.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "extended_medium_mag_iii_blueprint",
@@ -18223,7 +18371,8 @@
       }
     },
     "imageFilename": "https://cdn.arctracker.io/items/extended_medium_mag_iii.png",
-    "updatedAt": "11/12/2025"
+    "updatedAt": "11/12/2025",
+    "usedIn": []
   },
   {
     "id": "extended_shotgun_mag_i",
@@ -18312,7 +18461,8 @@
       "plastic_parts": 3
     },
     "imageFilename": "https://cdn.arctracker.io/items/extended_shotgun_mag_i.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "extended_shotgun_mag_ii",
@@ -18403,7 +18553,8 @@
       "mechanical_components": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/extended_shotgun_mag_ii.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "extended_shotgun_mag_ii_blueprint",
@@ -18457,7 +18608,8 @@
     "weightKg": 0,
     "stackSize": 1,
     "imageFilename": "https://cdn.arctracker.io/items/extended_shotgun_mag_ii.png",
-    "updatedAt": "11/12/2025"
+    "updatedAt": "11/12/2025",
+    "usedIn": []
   },
   {
     "id": "extended_shotgun_mag_iii",
@@ -18546,7 +18698,8 @@
       "steel_spring": 5
     },
     "imageFilename": "https://cdn.arctracker.io/items/extended_shotgun_mag_iii.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "extended_shotgun_mag_iii_blueprint",
@@ -18600,7 +18753,8 @@
     "weightKg": 0,
     "stackSize": 1,
     "imageFilename": "https://cdn.arctracker.io/items/extended_shotgun_mag_iii.png",
-    "updatedAt": "11/12/2025"
+    "updatedAt": "11/12/2025",
+    "usedIn": []
   },
   {
     "id": "fabric",
@@ -18800,7 +18954,7 @@
       "hr": "Izblijedjela fotografija",
       "it": "Fotografia sbiadita",
       "ja": "色あせた写真",
-      "kr": "바랜 사진",
+      "kr": "빛바랜 사진",
       "no": "Falmet fotografi",
       "pl": "Wyblakła fotografia",
       "pt": "Fotografia desbotada",
@@ -18842,7 +18996,8 @@
     "stackSize": 15,
     "recyclesInto": {},
     "imageFilename": "https://cdn.arctracker.io/items/faded_photograph.png",
-    "updatedAt": "11/03/2025"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "ferro_i",
@@ -18865,7 +19020,7 @@
       "sr": "Ferro I",
       "tr": "Ferro I",
       "uk": "Ferro I",
-      "zh-CN": "Ferro I",
+      "zh-CN": "生铁 I",
       "zh-TW": "Ferro I"
     },
     "description": {
@@ -19032,7 +19187,8 @@
     "repairMaterials": {
       "durability_increase": 50,
       "materials": null
-    }
+    },
+    "usedIn": []
   },
   {
     "id": "ferro_ii",
@@ -19055,7 +19211,7 @@
       "sr": "Ferro II",
       "tr": "Ferro II",
       "uk": "Ferro II",
-      "zh-CN": "Ferro II",
+      "zh-CN": "生铁 II",
       "zh-TW": "Ferro II"
     },
     "description": {
@@ -19213,7 +19369,8 @@
       "metal_parts": 7
     },
     "imageFilename": "https://cdn.arctracker.io/items/ferro.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "ferro_iii",
@@ -19236,7 +19393,7 @@
       "sr": "Ferro III",
       "tr": "Ferro III",
       "uk": "Ferro III",
-      "zh-CN": "Ferro III",
+      "zh-CN": "生铁 III",
       "zh-TW": "Ferro III"
     },
     "description": {
@@ -19418,7 +19575,8 @@
       "simple_gun_parts": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/ferro.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "ferro_iv",
@@ -19441,7 +19599,7 @@
       "sr": "Ferro IV",
       "tr": "Ferro IV",
       "uk": "Ferro IV",
-      "zh-CN": "Ferro IV",
+      "zh-CN": "生铁 IV",
       "zh-TW": "Ferro IV"
     },
     "description": {
@@ -19628,7 +19786,8 @@
     "repairMaterials": {
       "durability_increase": 50,
       "materials": null
-    }
+    },
+    "usedIn": []
   },
   {
     "id": "fertilizer",
@@ -19689,7 +19848,8 @@
       "assorted_seeds": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/fertilizer.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "film_reel",
@@ -19745,7 +19905,8 @@
     "stackSize": 3,
     "recyclesInto": {},
     "imageFilename": "https://cdn.arctracker.io/items/film_reel.png",
-    "updatedAt": "11/03/2025"
+    "updatedAt": "11/03/2025",
+    "usedIn": []
   },
   {
     "id": "fine_wristwatch",
@@ -19800,7 +19961,8 @@
     "weightKg": 0.2,
     "stackSize": 3,
     "imageFilename": "https://cdn.arctracker.io/items/fine_wristwatch.png",
-    "updatedAt": "11/01/2025"
+    "updatedAt": "11/01/2025",
+    "usedIn": []
   },
   {
     "id": "fireball_burner",
@@ -20053,7 +20215,8 @@
       "plastic_parts": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/firecracker.png",
-    "updatedAt": "12/16/2025"
+    "updatedAt": "12/16/2025",
+    "usedIn": []
   },
   {
     "id": "fireworks_box",
@@ -20067,7 +20230,7 @@
       "hr": "Kutija vatrometa",
       "it": "Scatola di fuochi d'artificio",
       "ja": "花火の箱",
-      "kr": "불꽃놀이 상자",
+      "kr": "폭죽 상자",
       "no": "Fyrverkeriboks",
       "pl": "Pudełko fajerwerków",
       "pt": "Caixa de fogos de artifício",
@@ -20089,7 +20252,7 @@
       "hr": "Daljinski aktiviran raspored blještavog vatrometa, sigurno će napraviti predstavu.",
       "it": "Un assortimento di fuochi d'artificio abbaglianti attivato a distanza, pronto a mettere in scena uno spettacolo.",
       "ja": "遠隔で起動する、まばゆい花火のセット。きっとショーになる。",
-      "kr": "원격으로 작동하는 눈부신 불꽃놀이 세트. 확실히 쇼를 보여줍니다.",
+      "kr": "원격으로 작동하는 눈부신 폭죽 세트. 확실히 쇼를 보여줍니다.",
       "no": "Et fjernutløst oppsett med blendende fyrverkeri – garantert show.",
       "pl": "Zdalnie odpalany zestaw olśniewających fajerwerków — na pewno zrobi wrażenie.",
       "pt": "Um conjunto de fogos de artifício deslumbrantes acionado remotamente, feito para dar um show.",
@@ -20120,7 +20283,8 @@
       "explosive_compound": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/fireworks_box.png",
-    "updatedAt": "12/16/2025"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "fireworks_box_blueprint",
@@ -20134,7 +20298,7 @@
       "hr": "Nacrt Kutije Vatrometa",
       "it": "Progetto scatola di fuochi d'artificio",
       "ja": "花火の箱の設計図",
-      "kr": "불꽃놀이 상자 설계도",
+      "kr": "폭죽 상자 설계도",
       "no": "Fyrverkeribokstegning",
       "pl": "Projekt pudełka fajerwerków",
       "pt": "Projeto de caixa de fogos de artifício",
@@ -20156,7 +20320,7 @@
       "hr": "Otključava nacrt izrade za Kutiju vatrometa.",
       "it": "Sblocca il progetto di creazione per la Scatola di fuochi d'artificio.",
       "ja": "花火箱のクラフト設計図をアンロックする。",
-      "kr": "불꽃놀이 상자 제작 설계도를 해금합니다.",
+      "kr": "폭죽 상자 제작 설계도를 해금합니다.",
       "no": "Låser opp oppskriften for Fyrverkeriboksen.",
       "pl": "Odblokowuje projekt wytwarzania Pudełka fajerwerków.",
       "pt": "Desbloqueia o projeto de fabricação da caixa de fogos de artifício.",
@@ -20173,7 +20337,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/fireworks_box.png",
-    "updatedAt": "12/16/2025"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "first_wave_compass",
@@ -20226,7 +20391,8 @@
     "weightKg": 0.25,
     "questItem": true,
     "imageFilename": "https://cdn.arctracker.io/items/first_wave_compass.png",
-    "updatedAt": "11/17/2025"
+    "updatedAt": "11/17/2025",
+    "usedIn": []
   },
   {
     "id": "first_wave_rations",
@@ -20279,7 +20445,8 @@
     "weightKg": 0.25,
     "questItem": true,
     "imageFilename": "https://cdn.arctracker.io/items/first_wave_rations.png",
-    "updatedAt": "11/17/2025"
+    "updatedAt": "11/17/2025",
+    "usedIn": []
   },
   {
     "id": "first_wave_tape",
@@ -20332,7 +20499,8 @@
     "weightKg": 0.25,
     "questItem": true,
     "imageFilename": "https://cdn.arctracker.io/items/first_wave_tape.png",
-    "updatedAt": "11/17/2025"
+    "updatedAt": "11/17/2025",
+    "usedIn": []
   },
   {
     "id": "flame_spray",
@@ -20445,7 +20613,8 @@
       "fireball_burner": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/flame_spray.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "flow_controller",
@@ -20507,7 +20676,8 @@
       "mechanical_components": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/flow_controller.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "flushing_terminal_key",
@@ -20521,7 +20691,7 @@
       "hr": "Ključ Flushing Terminala",
       "it": "Chiave del Terminale Flushing",
       "ja": "フラッシング端末の鍵",
-      "kr": "플러싱 터미널 열쇠",
+      "kr": "수세 터미널 열쇠",
       "no": "Nøkkel til Flushing-terminalen",
       "pl": "Klucz do Terminala Flushing",
       "pt": "Chave do Terminal de Flushing",
@@ -20543,7 +20713,7 @@
       "hr": "Ovaj se ključ koristi u zadatku \"The Stench of Corruption\" za aktiviranje Flushing Terminala",
       "it": "Questa chiave viene usata nella missione \"The Stench of Corruption\" per attivare il Terminale Flushing",
       "ja": "この鍵はクエスト\"The Stench of Corruption\"でフラッシング端末を起動するために使用される",
-      "kr": "이 열쇠는 퀘스트 \"The Stench of Corruption\"에서 플러싱 터미널을 활성화하는 데 사용됩니다",
+      "kr": "이 열쇠는 퀘스트 \"부패의 악취\"에서 수세 터미널을 활성화하는 데 사용됩니다",
       "no": "Denne nøkkelen brukes i oppdraget \"The Stench of Corruption\" for å aktivere Flushing-terminalen",
       "pl": "Ten klucz jest używany w zadaniu \"The Stench of Corruption\", aby aktywować Terminal Flushing",
       "pt": "Esta chave é usada na missão \"The Stench of Corruption\" para ativar o Terminal de Flushing",
@@ -20561,7 +20731,8 @@
     "weightKg": 0.25,
     "stackSize": 1,
     "imageFilename": "https://cdn.arctracker.io/items/flushing_terminal_key.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "fossilized_lightning",
@@ -20622,7 +20793,8 @@
       "explosive_compound": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/fossilized_lightning.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "free_loadout_augment",
@@ -20702,7 +20874,8 @@
       "Shield Compatibility": null
     },
     "imageFilename": "https://cdn.arctracker.io/items/free_loadout_augment.png",
-    "updatedAt": "11/16/2025"
+    "updatedAt": "11/16/2025",
+    "usedIn": []
   },
   {
     "id": "frequency_modulation_box",
@@ -20716,7 +20889,7 @@
       "hr": "Kutija za modulaciju frekvencije",
       "it": "Scatola di modulazione di frequenza",
       "ja": "周波数変調ボックス",
-      "kr": "주파수 변조 박스",
+      "kr": "주파수 변조함",
       "no": "Frekvensmodulasjonsboks",
       "pl": "Skrzynka modulacji częstotliwości",
       "pt": "Caixa de modulação de frequência",
@@ -20764,7 +20937,8 @@
       "electrical_components": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/frequency_modulation_box.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "fried_motherboard",
@@ -20826,7 +21000,8 @@
       "wires": 5
     },
     "imageFilename": "https://cdn.arctracker.io/items/fried_motherboard.png",
-    "updatedAt": "12/07/2025"
+    "updatedAt": "12/07/2025",
+    "usedIn": []
   },
   {
     "id": "fruit_mix",
@@ -20958,7 +21133,8 @@
       "prickly_pear": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/fruit_mix.png",
-    "updatedAt": "11/12/2025"
+    "updatedAt": "11/12/2025",
+    "usedIn": []
   },
   {
     "id": "frying_pan",
@@ -21019,7 +21195,8 @@
       "metal_parts": 4
     },
     "imageFilename": "https://cdn.arctracker.io/items/frying_pan.png",
-    "updatedAt": "11/04/2025"
+    "updatedAt": "11/04/2025",
+    "usedIn": []
   },
   {
     "id": "garlic_press",
@@ -21080,7 +21257,8 @@
       "metal_parts": 7
     },
     "imageFilename": "https://cdn.arctracker.io/items/garlic_press.png",
-    "updatedAt": "11/04/2025"
+    "updatedAt": "11/04/2025",
+    "usedIn": []
   },
   {
     "id": "gas_grenade",
@@ -21377,7 +21555,8 @@
       "wires": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/gas_grenade_trap.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "gas_mine",
@@ -21516,7 +21695,8 @@
       "chemicals": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/gas_mine.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "gas_mine_blueprint",
@@ -21569,7 +21749,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/gas_mine.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "geiger_counter",
@@ -21631,7 +21812,8 @@
       "battery": 3
     },
     "imageFilename": "https://cdn.arctracker.io/items/geiger_counter.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "great_mullein",
@@ -21715,7 +21897,7 @@
           "sr": "Antiseptik",
           "tr": "Antiseptik",
           "uk": "Антисептик",
-          "zh-CN": "消毒剂",
+          "zh-CN": "防腐剂",
           "zh-TW": "防腐劑"
         },
         "bench": "refiner",
@@ -21860,7 +22042,8 @@
       "chemicals": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/green_light_stick.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "green_light_stick_blueprint",
@@ -21914,7 +22097,8 @@
     "weightKg": 0,
     "stackSize": 1,
     "imageFilename": "https://cdn.arctracker.io/items/green_light_stick.png",
-    "updatedAt": "11/12/2025"
+    "updatedAt": "11/12/2025",
+    "usedIn": []
   },
   {
     "id": "hairpin_i",
@@ -22123,7 +22307,8 @@
       "metal_parts": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/hairpin_i.png",
-    "updatedAt": "11/11/2025"
+    "updatedAt": "11/11/2025",
+    "usedIn": []
   },
   {
     "id": "hairpin_ii",
@@ -22374,7 +22559,8 @@
       "metal_parts": 8
     },
     "imageFilename": "https://cdn.arctracker.io/items/hairpin_i.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "hairpin_iii",
@@ -22626,7 +22812,8 @@
       "simple_gun_parts": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/hairpin_i.png",
-    "updatedAt": "11/24/2025"
+    "updatedAt": "11/24/2025",
+    "usedIn": []
   },
   {
     "id": "hairpin_iv",
@@ -22878,7 +23065,8 @@
       "simple_gun_parts": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/hairpin_i.png",
-    "updatedAt": "11/11/2025"
+    "updatedAt": "11/11/2025",
+    "usedIn": []
   },
   {
     "id": "headphones",
@@ -22940,7 +23128,8 @@
       "speaker_component": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/headphones.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "heavy_ammo",
@@ -23005,7 +23194,8 @@
       "metal_parts": 3
     },
     "imageFilename": "https://cdn.arctracker.io/items/heavy_ammo.png",
-    "updatedAt": "12/07/2025"
+    "updatedAt": "12/07/2025",
+    "usedIn": []
   },
   {
     "id": "heavy_fuze_grenade",
@@ -23119,7 +23309,8 @@
       "crude_explosives": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/heavy_fuze_grenade.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "heavy_gun_parts",
@@ -23261,7 +23452,7 @@
           "sr": "Hullcracker I",
           "tr": "Hullcracker I",
           "uk": "Hullcracker I",
-          "zh-CN": "Hullcracker I",
+          "zh-CN": "裂甲者 I",
           "zh-TW": "Hullcracker I"
         },
         "bench": "weapon_bench",
@@ -23288,8 +23479,8 @@
           "sr": "Vulcano I",
           "tr": "Vulcano I",
           "uk": "Vulcano I",
-          "zh-CN": "Vulcano I",
-          "zh-TW": "Vulcano I"
+          "zh-CN": "火山 I",
+          "zh-TW": "火山 I"
         },
         "bench": "weapon_bench",
         "quantity": 3
@@ -23348,7 +23539,8 @@
     "weightKg": 0,
     "stackSize": 1,
     "imageFilename": "https://cdn.arctracker.io/items/heavy_gun_parts.png",
-    "updatedAt": "11/12/2025"
+    "updatedAt": "11/12/2025",
+    "usedIn": []
   },
   {
     "id": "heavy_shield",
@@ -23511,7 +23703,8 @@
     "damageMitigation": 65,
     "durability": 140,
     "movementSpeedModifier": -15,
-    "shieldCharge": 120
+    "shieldCharge": 120,
+    "usedIn": []
   },
   {
     "id": "herbal_bandage",
@@ -23648,7 +23841,8 @@
       "fabric": 8
     },
     "imageFilename": "https://cdn.arctracker.io/items/herbal_bandage.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "horizontal_grip",
@@ -23799,7 +23993,8 @@
       "mechanical_components": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/horizontal_grip.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "horizontal_grip_blueprint",
@@ -23852,7 +24047,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/horizontal_grip.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "hornet_driver",
@@ -23986,7 +24182,8 @@
     },
     "imageFilename": "https://cdn.arctracker.io/items/hornet_driver.png",
     "updatedAt": "01/13/2026",
-    "tip": "The Hornet Driver is a rare item is dropped by Hornets that can be recycled into crafting materials."
+    "tip": "The Hornet Driver is a rare item is dropped by Hornets that can be recycled into crafting materials.",
+    "usedIn": []
   },
   {
     "id": "household_cleaner",
@@ -24047,7 +24244,8 @@
       "chemicals": 5
     },
     "imageFilename": "https://cdn.arctracker.io/items/household_cleaner.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "hullcracker_blueprint",
@@ -24070,7 +24268,7 @@
       "sr": "Нацрт Хулкракера",
       "tr": "Hullcracker Planı",
       "uk": "Креслення Hullcracker",
-      "zh-CN": "碎舰者蓝图",
+      "zh-CN": "裂甲者蓝图",
       "zh-TW": "碎艦者藍圖"
     },
     "description": {
@@ -24100,7 +24298,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/hullcracker.png",
-    "updatedAt": "11/16/2025"
+    "updatedAt": "11/16/2025",
+    "usedIn": []
   },
   {
     "id": "hullcracker_i",
@@ -24123,7 +24322,7 @@
       "sr": "Hullcracker I",
       "tr": "Hullcracker I",
       "uk": "Hullcracker I",
-      "zh-CN": "Hullcracker I",
+      "zh-CN": "裂甲者 I",
       "zh-TW": "Hullcracker I"
     },
     "description": {
@@ -24286,7 +24485,8 @@
       "heavy_gun_parts": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/hullcracker.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "hullcracker_ii",
@@ -24309,7 +24509,7 @@
       "sr": "Lomač Trupa II",
       "tr": "Gövde Kırıcı II",
       "uk": "Корпусолом II",
-      "zh-CN": "破壳者 II",
+      "zh-CN": "裂甲者 II",
       "zh-TW": "破殼者 II"
     },
     "description": {
@@ -24499,7 +24699,8 @@
     "fireRate": 20.3,
     "range": 38.9,
     "stability": 97.2,
-    "stealth": 1
+    "stealth": 1,
+    "usedIn": []
   },
   {
     "id": "hullcracker_iii",
@@ -24522,7 +24723,7 @@
       "sr": "Lomač Trupa III",
       "tr": "Gövde Kırıcı III",
       "uk": "Корпусолом III",
-      "zh-CN": "破壳者 III",
+      "zh-CN": "裂甲者 III",
       "zh-TW": "破殼者 III"
     },
     "description": {
@@ -24712,7 +24913,8 @@
     "fireRate": 20.3,
     "range": 38.9,
     "stability": 97.2,
-    "stealth": 1
+    "stealth": 1,
+    "usedIn": []
   },
   {
     "id": "hullcracker_iv",
@@ -24735,7 +24937,7 @@
       "sr": "Lomač Trupa IV",
       "tr": "Gövde Kırıcı IV",
       "uk": "Корпусолом IV",
-      "zh-CN": "破壳者 IV",
+      "zh-CN": "裂甲者 IV",
       "zh-TW": "破殼者 IV"
     },
     "description": {
@@ -24925,7 +25127,8 @@
     "fireRate": 20.3,
     "range": 38.9,
     "stability": 97.2,
-    "stealth": 1
+    "stealth": 1,
+    "usedIn": []
   },
   {
     "id": "humidifier",
@@ -24987,7 +25190,8 @@
       "canister": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/humidifier.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "ice_cream_scooper",
@@ -25048,7 +25252,8 @@
       "metal_parts": 3
     },
     "imageFilename": "https://cdn.arctracker.io/items/ice_cream_scooper.png",
-    "updatedAt": "11/04/2025"
+    "updatedAt": "11/04/2025",
+    "usedIn": []
   },
   {
     "id": "il_toro_blueprint",
@@ -25071,7 +25276,7 @@
       "sr": "Nacrt za Il Toro",
       "tr": "Il Toro Planı",
       "uk": "Креслення Il Toro",
-      "zh-CN": "Il Toro蓝图",
+      "zh-CN": "公牛蓝图",
       "zh-TW": "Il Toro藍圖"
     },
     "description": {
@@ -25102,7 +25307,8 @@
     "weightKg": 0,
     "stackSize": 1,
     "imageFilename": "https://cdn.arctracker.io/items/il_toro.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "il_toro_i",
@@ -25125,7 +25331,7 @@
       "sr": "Il Toro I",
       "tr": "Il Toro I",
       "uk": "Il Toro I",
-      "zh-CN": "Il Toro I",
+      "zh-CN": "公牛 I",
       "zh-TW": "Il Toro I"
     },
     "description": {
@@ -25286,7 +25492,8 @@
       "simple_gun_parts": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/il_toro.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "il_toro_ii",
@@ -25309,7 +25516,7 @@
       "sr": "Il Toro II",
       "tr": "Il Toro II",
       "uk": "Il Toro II",
-      "zh-CN": "Il Toro II",
+      "zh-CN": "公牛 II",
       "zh-TW": "Il Toro II"
     },
     "description": {
@@ -25493,7 +25700,8 @@
       "simple_gun_parts": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/il_toro.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "il_toro_iii",
@@ -25516,7 +25724,7 @@
       "sr": "Il Toro III",
       "tr": "Il Toro III",
       "uk": "Il Toro III",
-      "zh-CN": "Il Toro III",
+      "zh-CN": "公牛 III",
       "zh-TW": "Il Toro III"
     },
     "description": {
@@ -25706,7 +25914,8 @@
     "fireRate": 14.3,
     "range": 20,
     "stability": 80.6,
-    "stealth": 18
+    "stealth": 18,
+    "usedIn": []
   },
   {
     "id": "il_toro_iv",
@@ -25729,7 +25938,7 @@
       "sr": "Il Toro IV",
       "tr": "Il Toro IV",
       "uk": "Il Toro IV",
-      "zh-CN": "Il Toro IV",
+      "zh-CN": "公牛 IV",
       "zh-TW": "Il Toro IV"
     },
     "description": {
@@ -25919,7 +26128,8 @@
     "fireRate": 14.3,
     "range": 20,
     "stability": 80.6,
-    "stealth": 18
+    "stealth": 18,
+    "usedIn": []
   },
   {
     "id": "impure_arc_coolant",
@@ -25980,7 +26190,8 @@
       "chemicals": 5
     },
     "imageFilename": "https://cdn.arctracker.io/items/impure_arc_coolant.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "industrial_battery",
@@ -26042,7 +26253,8 @@
       "battery": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/industrial_battery.png",
-    "updatedAt": "11/03/2025"
+    "updatedAt": "11/03/2025",
+    "usedIn": []
   },
   {
     "id": "industrial_charger",
@@ -26104,7 +26316,8 @@
       "voltage_converter": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/industrial_charger.png",
-    "updatedAt": "10/30/2025"
+    "updatedAt": "10/30/2025",
+    "usedIn": []
   },
   {
     "id": "industrial_magnet",
@@ -26166,7 +26379,8 @@
       "magnet": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/industrial_magnet.png",
-    "updatedAt": "10/30/2025"
+    "updatedAt": "10/30/2025",
+    "usedIn": []
   },
   {
     "id": "ion_sputter",
@@ -26228,7 +26442,8 @@
       "exodus_modules": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/ion_sputter.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "jolt_mine",
@@ -26365,7 +26580,8 @@
       "battery": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/jolt_mine.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "jolt_mine_blueprint",
@@ -26419,7 +26635,8 @@
     "weightKg": 0,
     "stackSize": 1,
     "imageFilename": "https://cdn.arctracker.io/items/jolt_mine.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "junior_outfit",
@@ -26469,7 +26686,8 @@
     },
     "type": "Cosmetic",
     "rarity": "Common",
-    "updatedAt": "10/30/2025"
+    "updatedAt": "10/30/2025",
+    "usedIn": []
   },
   {
     "id": "jupiter",
@@ -26665,7 +26883,8 @@
       "magnetic_accelerator": 2
     },
     "stability": 73.5,
-    "stealth": 5
+    "stealth": 5,
+    "usedIn": []
   },
   {
     "id": "jupiter_blueprint",
@@ -26718,7 +26937,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/jupiter.png",
-    "updatedAt": "11/12/2025"
+    "updatedAt": "11/12/2025",
+    "usedIn": []
   },
   {
     "id": "kettle_i",
@@ -26904,7 +27124,8 @@
       "metal_parts": 3
     },
     "imageFilename": "https://cdn.arctracker.io/items/kettle.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "kettle_ii",
@@ -26965,7 +27186,8 @@
       "metal_parts": 6
     },
     "imageFilename": "https://cdn.arctracker.io/items/kettle.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "kettle_iii",
@@ -26988,7 +27210,7 @@
       "sr": "Kettle III",
       "tr": "Kettle III",
       "uk": "Kettle III",
-      "zh-CN": "Kettle III",
+      "zh-CN": "水壶 III",
       "zh-TW": "Kettle III"
     },
     "description": {
@@ -27169,7 +27391,8 @@
       "simple_gun_parts": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/kettle.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "kettle_iv",
@@ -27192,7 +27415,7 @@
       "sr": "Kettle IV",
       "tr": "Kettle IV",
       "uk": "Kettle IV",
-      "zh-CN": "Kettle IV",
+      "zh-CN": "水壶 IV",
       "zh-TW": "Kettle IV"
     },
     "description": {
@@ -27347,7 +27570,8 @@
       "simple_gun_parts": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/kettle.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "kinetic_converter",
@@ -27478,7 +27702,62 @@
       "mechanical_components": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/kinetic_converter.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
+  },
+  {
+    "id": "kinetic_converter_blueprint",
+    "name": {
+      "da": "Kinetisk konverter Tegning",
+      "de": "Bauplan: Kinetischer Konverter",
+      "en": "Kinetic Converter Blueprint",
+      "es": "Plano de Convertidor cinético",
+      "fr": "Schéma Convertisseur Cinétique",
+      "he": "שרטוט ממיר קינטי",
+      "hr": "Nacrt za Kinetički pretvarač",
+      "it": "Progetto Convertitore cinetico",
+      "ja": "キネティック・コンバーター 設計図",
+      "kr": "키네틱 컨버터 설계도",
+      "no": "Kinetisk konverter Tegning",
+      "pl": "Projekt Konwerter kinetyczny",
+      "pt": "Projeto de Conversor cinético",
+      "pt-BR": "Esquema de Conversor Cinético",
+      "ru": "Чертёж кинетического преобразователя",
+      "sr": "Nacrt za Kinetički pretvarač",
+      "tr": "Kinetik Dönüştürücü Planı",
+      "uk": "Креслення кінетичного перетворювача",
+      "zh-CN": "动能转换器蓝图",
+      "zh-TW": "動能轉換器藍圖"
+    },
+    "description": {
+      "da": "En tegning til at lave Kinetisk konverter.",
+      "de": "Ein Bauplan zur Herstellung des Kinetischen Konverters.",
+      "en": "A blueprint to craft the Kinetic Converter.",
+      "es": "Un plano para fabricar el Convertidor cinético.",
+      "fr": "Un schéma pour fabriquer le Convertisseur Cinétique.",
+      "he": "שרטוט ליצירת ממיר קינטי.",
+      "hr": "Nacrt za izradu Kinetičkog pretvarača.",
+      "it": "Un progetto per creare il Convertitore cinetico.",
+      "ja": "キネティック・コンバーター を製作するための設計図。",
+      "kr": "키네틱 컨버터을 제작하기 위한 설계도.",
+      "no": "En tegning for å lage Kinetisk konverter.",
+      "pl": "Projekt do wytworzenia Konwertera kinetycznego.",
+      "pt": "Um projeto para fabricar o Conversor cinético.",
+      "pt-BR": "Um esquema para fabricar o Conversor Cinético.",
+      "ru": "Чертёж для создания кинетического преобразователя.",
+      "sr": "Nacrt za izradu Kinetičkog pretvarača.",
+      "tr": "Kinetik Dönüştürücü üretmek için bir plan.",
+      "uk": "Креслення для створення кінетичного перетворювача.",
+      "zh-CN": "用于制作动能转换器的蓝图。",
+      "zh-TW": "用於製作動能轉換器的藍圖。"
+    },
+    "type": "Blueprint",
+    "rarity": "Legendary",
+    "value": 5000,
+    "weightKg": 0,
+    "imageFilename": "https://cdn.arctracker.io/items/kinetic_converter.png",
+    "updatedAt": "01/19/2026",
+    "usedIn": []
   },
   {
     "id": "laboratory_reagents",
@@ -27492,7 +27771,7 @@
       "hr": "Laboratorijski Reagensi",
       "it": "Reagenti da laboratorio",
       "ja": "研究用試薬",
-      "kr": "실험실 시약",
+      "kr": "연구실 시약",
       "no": "Laboratoriereagenser",
       "pl": "Odczynniki laboratoryjne",
       "pt": "Reagentes de laboratório",
@@ -27514,7 +27793,7 @@
       "hr": "Set kemijskih reagenasa korištenih u laboratorijskim eksperimentima.",
       "it": "Un set di reagenti chimici utilizzati negli esperimenti di laboratorio.",
       "ja": "実験室での実験に使用される化学試薬のセット。",
-      "kr": "실험실 실험에 사용되는 화학 시약 세트.",
+      "kr": "연구실 실험에 사용되는 화학 시약 세트.",
       "no": "Et sett med kjemiske reagenser brukt i laboratorieforsøk.",
       "pl": "Zestaw odczynników chemicznych używanych w eksperymentach laboratoryjnych.",
       "pt": "Um conjunto de reagentes químicos usados em experimentos de laboratório.",
@@ -27539,7 +27818,8 @@
       "crude_explosives": 3
     },
     "imageFilename": "https://cdn.arctracker.io/items/laboratory_reagents.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "lances_mixtape_5th_edition",
@@ -27594,7 +27874,8 @@
     "weightKg": 0.2,
     "stackSize": 3,
     "imageFilename": "https://cdn.arctracker.io/items/lances_mixtape_5th_edition.png",
-    "updatedAt": "11/04/2025"
+    "updatedAt": "11/04/2025",
+    "usedIn": []
   },
   {
     "id": "launcher_ammo",
@@ -27657,7 +27938,8 @@
       "crude_explosives": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/launcher_ammo.png",
-    "updatedAt": "12/07/2025"
+    "updatedAt": "12/07/2025",
+    "usedIn": []
   },
   {
     "id": "leaper_pulse_unit",
@@ -27767,7 +28049,8 @@
       "mechanical_components": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/leaper_pulse_unit.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "lemon",
@@ -27957,7 +28240,8 @@
     "rarity": "Common",
     "weightKg": 0.25,
     "imageFilename": "https://cdn.arctracker.io/items/lidar_scanner.png",
-    "updatedAt": "11/17/2025"
+    "updatedAt": "11/17/2025",
+    "usedIn": []
   },
   {
     "id": "light_ammo",
@@ -28024,7 +28308,8 @@
       "metal_parts": 3
     },
     "imageFilename": "https://cdn.arctracker.io/items/light_ammo.png",
-    "updatedAt": "12/07/2025"
+    "updatedAt": "12/07/2025",
+    "usedIn": []
   },
   {
     "id": "light_bulb",
@@ -28079,7 +28364,8 @@
     "weightKg": 0.2,
     "stackSize": 3,
     "imageFilename": "https://cdn.arctracker.io/items/light_bulb.png",
-    "updatedAt": "11/01/2025"
+    "updatedAt": "11/01/2025",
+    "usedIn": []
   },
   {
     "id": "light_gun_parts",
@@ -28256,7 +28542,8 @@
     "weightKg": 0,
     "stackSize": 1,
     "imageFilename": "https://cdn.arctracker.io/items/light_gun_parts_blueprint.png",
-    "updatedAt": "11/12/2025"
+    "updatedAt": "11/12/2025",
+    "usedIn": []
   },
   {
     "id": "light_impact_grenade",
@@ -28373,7 +28660,8 @@
       "chemicals": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/light_impact_grenade.png",
-    "updatedAt": "11/03/2025"
+    "updatedAt": "11/03/2025",
+    "usedIn": []
   },
   {
     "id": "light_shield",
@@ -28515,7 +28803,8 @@
     "damageMitigation": 40,
     "durability": 100,
     "movementSpeedModifier": 0,
-    "shieldCharge": 40
+    "shieldCharge": 40,
+    "usedIn": []
   },
   {
     "id": "lightweight_stock",
@@ -28697,7 +28986,8 @@
       "mechanical_components": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/lightweight_stock.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "lightweight_stock_blueprint",
@@ -28750,7 +29040,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/lightweight_stock_blueprint.png",
-    "updatedAt": "11/12/2025"
+    "updatedAt": "11/12/2025",
+    "usedIn": []
   },
   {
     "id": "lil_smoke_grenade",
@@ -28764,7 +29055,7 @@
       "hr": "Mala dimna granata",
       "it": "Piccola granata fumogena",
       "ja": "リトルスモーク・グレネード",
-      "kr": "소형 연막탄",
+      "kr": "꼬마 연막 수류탄",
       "no": "Liten røykgranat",
       "pl": "Mały granat dymny",
       "pt": "Pequena granada de fumaça",
@@ -28864,7 +29155,8 @@
       "chemicals": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/lil_smoke_grenade.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "looting_mk1",
@@ -28916,6 +29208,7 @@
     "rarity": "Uncommon",
     "value": 640,
     "weightKg": 1,
+    "stackSize": 1,
     "effects": {
       "Durability": {
         "value": "100/100",
@@ -29003,7 +29296,8 @@
       "plastic_parts": 3
     },
     "imageFilename": "https://cdn.arctracker.io/items/looting_mk1.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/20/2026",
+    "usedIn": []
   },
   {
     "id": "looting_mk2",
@@ -29055,6 +29349,7 @@
     "rarity": "Rare",
     "value": 2000,
     "weightKg": 2,
+    "stackSize": 1,
     "effects": {
       "Durability": {
         "value": "100/100",
@@ -29139,7 +29434,8 @@
       "electrical_components": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/looting_mk2.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/20/2026",
+    "usedIn": []
   },
   {
     "id": "looting_mk3_cautious",
@@ -29191,6 +29487,7 @@
     "rarity": "Epic",
     "value": 5000,
     "weightKg": 3,
+    "stackSize": 1,
     "effects": {
       "Durability": {
         "value": "100/100",
@@ -29275,7 +29572,8 @@
       "electrical_components": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/looting_mk3_cautious.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/20/2026",
+    "usedIn": []
   },
   {
     "id": "looting_mk3_survivor",
@@ -29328,6 +29626,7 @@
     "value": 5000,
     "weightKg": 4,
     "stackSize": 1,
+    "blueprintLocked": true,
     "effects": {
       "Durability": {
         "value": "100/100",
@@ -29401,8 +29700,8 @@
     },
     "craftBench": "equipment_bench",
     "recipe": {
-      "advanced_mechanical_components": 2,
-      "processor": 2
+      "advanced_electrical_components": 2,
+      "processor": 3
     },
     "recyclesInto": {
       "advanced_electrical_components": 1,
@@ -29412,7 +29711,8 @@
       "electrical_components": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/looting_mk3_survivor.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/20/2026",
+    "usedIn": []
   },
   {
     "id": "looting_mk3_survivor_blueprint",
@@ -29465,7 +29765,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/looting_mk3_survivor_blueprint.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "lure_grenade",
@@ -29543,7 +29844,7 @@
           "hr": "Zamka s mamac granatom",
           "it": "Trappola granata esca",
           "ja": "レーザートラップ：ルアー",
-          "kr": "미끼 수류탄 함정",
+          "kr": "유인 수류탄 함정",
           "no": "Lokkegranатfelle",
           "pl": "Pułapka z granatem wabik",
           "pt": "Armadilha de granada isca",
@@ -29572,7 +29873,7 @@
       "hr": "Nacrt Mamac Granate",
       "it": "Progetto granata esca",
       "ja": "ルアー・グレネード設計図",
-      "kr": "미끼 수류탄 설계도",
+      "kr": "유인 수류탄 설계도",
       "no": "Lokkegranattegning",
       "pl": "Projekt granatu wabika",
       "pt": "Projeto de granada isca",
@@ -29611,7 +29912,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/lure_grenade.png",
-    "updatedAt": "11/12/2025"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "lure_grenade_trap",
@@ -29625,7 +29927,7 @@
       "hr": "Zamka s mamac granatom",
       "it": "Trappola granata esca",
       "ja": "レーザートラップ：ルアー",
-      "kr": "미끼 수류탄 함정",
+      "kr": "유인 수류탄 함정",
       "no": "Lokkegranатfelle",
       "pl": "Pułapka z granatem wabik",
       "pt": "Armadilha de granada isca",
@@ -29647,7 +29949,7 @@
       "hr": "Laserska žica zamka koja detonira mamac granatu.",
       "it": "Un filo laser che fa detonare una granata esca.",
       "ja": "ルアーグレネードを起爆するレーザートリップワイヤー。",
-      "kr": "미끼 수류탄을 폭발시키는 레이저 트립 와이어입니다.",
+      "kr": "유인 수류탄을 폭발시키는 레이저 트립 와이어입니다.",
       "no": "En lasertråd som detonerer en lokkegranat.",
       "pl": "Laserowy drut potykowy, który detonuje granat wabik.",
       "pt": "Um fio de disparo a laser que detona uma granada isca.",
@@ -29719,7 +30021,8 @@
       "wires": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/lure_grenade_trap.png",
-    "updatedAt": "12/19/2025"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "magnet",
@@ -29911,8 +30214,8 @@
           "sr": "Venator I",
           "tr": "Venator I",
           "uk": "Venator I",
-          "zh-CN": "Venator I",
-          "zh-TW": "Venator I"
+          "zh-CN": "复仇者 I",
+          "zh-TW": "复仇者 I"
         },
         "bench": "weapon_bench",
         "quantity": 5
@@ -30090,7 +30393,7 @@
           "sr": "Hullcracker I",
           "tr": "Hullcracker I",
           "uk": "Hullcracker I",
-          "zh-CN": "Hullcracker I",
+          "zh-CN": "裂甲者 I",
           "zh-TW": "Hullcracker I"
         },
         "bench": "weapon_bench",
@@ -30171,8 +30474,8 @@
           "sr": "Vulcano I",
           "tr": "Vulcano I",
           "uk": "Vulcano I",
-          "zh-CN": "Vulcano I",
-          "zh-TW": "Vulcano I"
+          "zh-CN": "火山 I",
+          "zh-TW": "火山 I"
         },
         "bench": "weapon_bench",
         "quantity": 1
@@ -30191,7 +30494,7 @@
       "hr": "Magnetron",
       "it": "Magnetron",
       "ja": "マグネトロン",
-      "kr": "마그네트론",
+      "kr": "전자관",
       "no": "Magnetron",
       "pl": "Magnetron",
       "pt": "Magnetron",
@@ -30239,7 +30542,8 @@
       "advanced_mechanical_components": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/magnetron.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "major_aivas_patch",
@@ -30316,7 +30620,8 @@
       }
     },
     "imageFilename": "https://cdn.arctracker.io/items/major_aivas_patch.png",
-    "updatedAt": "11/17/2025"
+    "updatedAt": "11/17/2025",
+    "usedIn": []
   },
   {
     "id": "matriarch_reactor",
@@ -30330,7 +30635,7 @@
       "hr": "Matrijarhalni Reaktor",
       "it": "Reattore della Matriarca",
       "ja": "マトリアークリアクター",
-      "kr": "여왕 반응로",
+      "kr": "퀸 리액터",
       "no": "Matriarkreactor",
       "pl": "Reaktor Matriarchy",
       "pt": "Reator da Matriarca",
@@ -30377,7 +30682,7 @@
       "power_rod": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/matriarch_reactor.png",
-    "updatedAt": "12/07/2025",
+    "updatedAt": "01/13/2026",
     "usedIn": [
       {
         "id": "aphelion",
@@ -30496,7 +30801,7 @@
           "sr": "Napredne Mehaničke Komponente",
           "tr": "Gelişmiş Mekanik Bileşenler",
           "uk": "Просунуті механічні компоненти",
-          "zh-CN": "高级机械零件",
+          "zh-CN": "高级机械元件",
           "zh-TW": "進階機械元件"
         },
         "bench": "refiner",
@@ -30523,7 +30828,7 @@
           "sr": "Kutni rukohvat II",
           "tr": "Açılı Kabza II",
           "uk": "Кутова рукоятка II",
-          "zh-CN": "倾斜握把 II",
+          "zh-CN": "直角握把 II",
           "zh-TW": "斜角握把 II"
         },
         "bench": "weapon_bench",
@@ -30577,7 +30882,7 @@
           "sr": "Arpeđo I",
           "tr": "Arpej I",
           "uk": "Арпеджіо I",
-          "zh-CN": "琶音 I",
+          "zh-CN": "三连奏 I",
           "zh-TW": "琶音 I"
         },
         "bench": "weapon_bench",
@@ -30631,7 +30936,7 @@
           "sr": "Burletta I",
           "tr": "Burletta I",
           "uk": "Бурлетта I",
-          "zh-CN": "布雷塔 I",
+          "zh-CN": "布尔莱塔 I",
           "zh-TW": "布雷塔 I"
         },
         "bench": "weapon_bench",
@@ -30766,7 +31071,7 @@
           "sr": "Il Toro I",
           "tr": "Il Toro I",
           "uk": "Il Toro I",
-          "zh-CN": "Il Toro I",
+          "zh-CN": "公牛 I",
           "zh-TW": "Il Toro I"
         },
         "bench": "weapon_bench",
@@ -31028,7 +31333,8 @@
       "metal_parts": 3
     },
     "imageFilename": "https://cdn.arctracker.io/items/medium_ammo.png",
-    "updatedAt": "12/07/2025"
+    "updatedAt": "12/07/2025",
+    "usedIn": []
   },
   {
     "id": "medium_gun_parts",
@@ -31170,7 +31476,7 @@
           "sr": "Renegade I",
           "tr": "Renegade I",
           "uk": "Ренегат I",
-          "zh-CN": "叛徒 I",
+          "zh-CN": "叛逆 I",
           "zh-TW": "叛徒 I"
         },
         "bench": "weapon_bench",
@@ -31224,8 +31530,8 @@
           "sr": "Torrente I",
           "tr": "Torrente I",
           "uk": "Torrente I",
-          "zh-CN": "Torrente I",
-          "zh-TW": "奔流藍圖 I"
+          "zh-CN": "奔流 I",
+          "zh-TW": "奔流 I"
         },
         "bench": "weapon_bench",
         "quantity": 3
@@ -31251,8 +31557,8 @@
           "sr": "Venator I",
           "tr": "Venator I",
           "uk": "Venator I",
-          "zh-CN": "Venator I",
-          "zh-TW": "Venator I"
+          "zh-CN": "复仇者 I",
+          "zh-TW": "复仇者 I"
         },
         "bench": "weapon_bench",
         "quantity": 3
@@ -31310,7 +31616,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/medium_gun_parts_blueprint.png",
-    "updatedAt": "11/12/2025"
+    "updatedAt": "11/12/2025",
+    "usedIn": []
   },
   {
     "id": "medium_shield",
@@ -31469,7 +31776,8 @@
     "damageMitigation": 42.5,
     "durability": 100,
     "movementSpeedModifier": -5,
-    "shieldCharge": 70
+    "shieldCharge": 70,
+    "usedIn": []
   },
   {
     "id": "metal_brackets",
@@ -31530,7 +31838,8 @@
       "metal_parts": 4
     },
     "imageFilename": "https://cdn.arctracker.io/items/metal_brackets.png",
-    "updatedAt": "11/10/2025"
+    "updatedAt": "11/10/2025",
+    "usedIn": []
   },
   {
     "id": "metal_parts",
@@ -31663,7 +31972,7 @@
           "sr": "Ferro I",
           "tr": "Ferro I",
           "uk": "Ferro I",
-          "zh-CN": "Ferro I",
+          "zh-CN": "生铁 I",
           "zh-TW": "Ferro I"
         },
         "bench": [
@@ -31969,7 +32278,7 @@
           "sr": "Stitcher I",
           "tr": "Stitcher I",
           "uk": "Зшивач I",
-          "zh-CN": "缝合者 I",
+          "zh-CN": "钉机 I",
           "zh-TW": "縫合者 I"
         },
         "bench": [
@@ -32040,7 +32349,8 @@
       "mechanical_components": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/microscope.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "mini_centrifuge",
@@ -32102,7 +32412,8 @@
       "mechanical_components": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/mini_centrifuge.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "mod_components",
@@ -32192,7 +32503,7 @@
           "sr": "Kutni Rukohvat III",
           "tr": "Açılı Kabza III",
           "uk": "Кутова рукоятка III",
-          "zh-CN": "倾斜握把 III",
+          "zh-CN": "直角握把 III",
           "zh-TW": "斜角握把 III"
         },
         "bench": "weapon_bench",
@@ -32771,7 +33082,8 @@
       "oil": 3
     },
     "imageFilename": "https://cdn.arctracker.io/items/motor.png",
-    "updatedAt": "12/07/2025"
+    "updatedAt": "12/07/2025",
+    "usedIn": []
   },
   {
     "id": "mushroom",
@@ -32874,7 +33186,8 @@
     },
     "recyclesInto": {},
     "imageFilename": "https://cdn.arctracker.io/items/mushroom.png",
-    "updatedAt": "10/31/2025"
+    "updatedAt": "10/31/2025",
+    "usedIn": []
   },
   {
     "id": "music_album",
@@ -32930,7 +33243,8 @@
     "stackSize": 3,
     "recyclesInto": {},
     "imageFilename": "https://cdn.arctracker.io/items/music_album.png",
-    "updatedAt": "11/04/2025"
+    "updatedAt": "11/04/2025",
+    "usedIn": []
   },
   {
     "id": "music_box",
@@ -32986,7 +33300,8 @@
     "stackSize": 3,
     "recyclesInto": {},
     "imageFilename": "https://cdn.arctracker.io/items/music_box.png",
-    "updatedAt": "12/16/2025"
+    "updatedAt": "12/16/2025",
+    "usedIn": []
   },
   {
     "id": "muzzle_brake_i",
@@ -33098,7 +33413,8 @@
       "metal_parts": 3
     },
     "imageFilename": "https://cdn.arctracker.io/items/muzzle_brake_i.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "muzzle_brake_ii",
@@ -33218,7 +33534,8 @@
       "mechanical_components": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/muzzle_brake_ii.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "muzzle_brake_ii_blueprint",
@@ -33320,7 +33637,8 @@
       }
     },
     "imageFilename": "https://cdn.arctracker.io/items/muzzle_brake_ii.png",
-    "updatedAt": "11/12/2025"
+    "updatedAt": "11/12/2025",
+    "usedIn": []
   },
   {
     "id": "muzzle_brake_iii",
@@ -33458,7 +33776,8 @@
       "mechanical_components": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/muzzle_brake_iii.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "muzzle_brake_iii_blueprint",
@@ -33511,7 +33830,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/muzzle_brake_iii.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "noisemaker",
@@ -33624,7 +33944,8 @@
       "speaker_component": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/noisemaker.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "number_plate",
@@ -33685,7 +34006,8 @@
       "metal_parts": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/number_plate.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "oil",
@@ -33823,7 +34145,7 @@
           "sr": "Renegade I",
           "tr": "Renegade I",
           "uk": "Ренегат I",
-          "zh-CN": "叛徒 I",
+          "zh-CN": "叛逆 I",
           "zh-TW": "叛徒 I"
         },
         "bench": "weapon_bench",
@@ -33938,7 +34260,8 @@
       "assorted_seeds": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/olives.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "osprey_blueprint",
@@ -33961,7 +34284,7 @@
       "sr": "Osprey Nacrt",
       "tr": "Osprey Planı",
       "uk": "Креслення Osprey",
-      "zh-CN": "Osprey蓝图",
+      "zh-CN": "鱼鹰蓝图",
       "zh-TW": "Osprey藍圖"
     },
     "description": {
@@ -33991,7 +34314,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/osprey_blueprint.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "osprey_i",
@@ -34199,7 +34523,8 @@
       "medium_gun_parts": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/osprey.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "osprey_ii",
@@ -34458,7 +34783,8 @@
     "fireRate": 17.7,
     "range": 80.3,
     "stability": 89.4,
-    "stealth": 12
+    "stealth": 12,
+    "usedIn": []
   },
   {
     "id": "osprey_iii",
@@ -34717,7 +35043,8 @@
     "fireRate": 17.7,
     "range": 80.3,
     "stability": 89.4,
-    "stealth": 12
+    "stealth": 12,
+    "usedIn": []
   },
   {
     "id": "osprey_iv",
@@ -34976,7 +35303,8 @@
     "fireRate": 17.7,
     "range": 80.3,
     "stability": 89.4,
-    "stealth": 12
+    "stealth": 12,
+    "usedIn": []
   },
   {
     "id": "padded_stock",
@@ -35182,7 +35510,8 @@
       "mechanical_components": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/padded_stock.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "padded_stock_blueprint",
@@ -35235,7 +35564,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/padded_stock.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "painted_box",
@@ -35291,7 +35621,8 @@
     "stackSize": 3,
     "recyclesInto": {},
     "imageFilename": "https://cdn.arctracker.io/items/painted_box.png",
-    "updatedAt": "11/03/2025"
+    "updatedAt": "11/03/2025",
+    "usedIn": []
   },
   {
     "id": "patrol_car_key",
@@ -35346,7 +35677,8 @@
     "weightKg": 0.01,
     "stackSize": 1,
     "imageFilename": "https://cdn.arctracker.io/items/patrol_car_key.png",
-    "updatedAt": "12/07/2025"
+    "updatedAt": "12/07/2025",
+    "usedIn": []
   },
   {
     "id": "photoelectric_cloak",
@@ -35436,7 +35768,8 @@
       "advanced_electrical_components": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/photoelectric_cloak.png",
-    "updatedAt": "11/01/2025"
+    "updatedAt": "11/01/2025",
+    "usedIn": []
   },
   {
     "id": "plastic_parts",
@@ -35515,7 +35848,7 @@
           "sr": "Injekcija adrenalina",
           "tr": "Adrenalin İğnesi",
           "uk": "Ін'єкція адреналіну",
-          "zh-CN": "肾上腺素注射剂",
+          "zh-CN": "肾上腺素针剂",
           "zh-TW": "腎上腺素注射劑"
         },
         "bench": "med_station",
@@ -35542,7 +35875,7 @@
           "sr": "Kutna Ručka I",
           "tr": "Açılı Kabza I",
           "uk": "Кутова рукоятка I",
-          "zh-CN": "倾斜握把 I",
+          "zh-CN": "直角握把 I",
           "zh-TW": "斜角握把 I"
         },
         "bench": "weapon_bench",
@@ -35866,7 +36199,7 @@
           "hr": "Mala dimna granata",
           "it": "Piccola granata fumogena",
           "ja": "リトルスモーク・グレネード",
-          "kr": "소형 연막탄",
+          "kr": "꼬마 연막 수류탄",
           "no": "Liten røykgranat",
           "pl": "Mały granat dymny",
           "pt": "Pequena granada de fumaça",
@@ -36048,7 +36381,8 @@
     "stackSize": 3,
     "recyclesInto": {},
     "imageFilename": "https://cdn.arctracker.io/items/playing_cards.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "polluted_air_filter",
@@ -36110,7 +36444,8 @@
       "oil": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/polluted_air_filter.png",
-    "updatedAt": "11/10/2025"
+    "updatedAt": "11/10/2025",
+    "usedIn": []
   },
   {
     "id": "pop_trigger",
@@ -36186,7 +36521,7 @@
           "hr": "Kutija vatrometa",
           "it": "Scatola di fuochi d'artificio",
           "ja": "花火の箱",
-          "kr": "불꽃놀이 상자",
+          "kr": "폭죽 상자",
           "no": "Fyrverkeriboks",
           "pl": "Pudełko fajerwerków",
           "pt": "Caixa de fogos de artifício",
@@ -36263,7 +36598,8 @@
       "wires": 4
     },
     "imageFilename": "https://cdn.arctracker.io/items/portable_tv.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "poster_of_natural_wonders",
@@ -36318,7 +36654,8 @@
     "weightKg": 0.3,
     "stackSize": 3,
     "imageFilename": "https://cdn.arctracker.io/items/poster_of_natural_wonders.png",
-    "updatedAt": "11/01/2025"
+    "updatedAt": "11/01/2025",
+    "usedIn": []
   },
   {
     "id": "pottery",
@@ -36374,7 +36711,8 @@
     "stackSize": 3,
     "recyclesInto": {},
     "imageFilename": "https://cdn.arctracker.io/items/pottery.png",
-    "updatedAt": "11/03/2025"
+    "updatedAt": "11/03/2025",
+    "usedIn": []
   },
   {
     "id": "power_bank",
@@ -36436,7 +36774,8 @@
       "battery": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/power_bank.png",
-    "updatedAt": "11/02/2025"
+    "updatedAt": "11/02/2025",
+    "usedIn": []
   },
   {
     "id": "power_cable",
@@ -36497,7 +36836,8 @@
       "wires": 3
     },
     "imageFilename": "https://cdn.arctracker.io/items/power_cable.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "power_rod",
@@ -36879,7 +37219,7 @@
           "zh-TW": "掠奪 Mk. 3（倖存者）"
         },
         "bench": "equipment_bench",
-        "quantity": 2
+        "quantity": 3
       },
       {
         "id": "tactical_mk3_defensive",
@@ -37024,7 +37364,8 @@
       "processor": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/projector.png",
-    "updatedAt": "11/04/2025"
+    "updatedAt": "11/04/2025",
+    "usedIn": []
   },
   {
     "id": "pulse_mine",
@@ -37116,7 +37457,8 @@
       "chemicals": 3
     },
     "imageFilename": "https://cdn.arctracker.io/items/pulse_mine.png",
-    "updatedAt": "12/31/2025"
+    "updatedAt": "12/31/2025",
+    "usedIn": []
   },
   {
     "id": "pulse_mine_blueprint",
@@ -37169,7 +37511,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/pulse_mine.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "queen_reactor",
@@ -37349,7 +37692,8 @@
       "speaker_component": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/radio.png",
-    "updatedAt": "11/04/2025"
+    "updatedAt": "11/04/2025",
+    "usedIn": []
   },
   {
     "id": "radio_relay",
@@ -37411,7 +37755,8 @@
       "sensors": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/radio_relay.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "radio_renegade",
@@ -37462,7 +37807,8 @@
     "type": "Outfit",
     "rarity": "Common",
     "imageFilename": "https://cdn.arctracker.io/items/radio_renegade.png",
-    "updatedAt": "11/01/2025"
+    "updatedAt": "11/01/2025",
+    "usedIn": []
   },
   {
     "id": "raider_hatch_key",
@@ -37522,7 +37868,8 @@
     },
     "recyclesInto": {},
     "imageFilename": "https://cdn.arctracker.io/items/raider_hatch_key.png",
-    "updatedAt": "12/07/2025"
+    "updatedAt": "12/07/2025",
+    "usedIn": []
   },
   {
     "id": "rattler_i",
@@ -37705,7 +38052,8 @@
       "metal_parts": 4
     },
     "imageFilename": "https://cdn.arctracker.io/items/rattler.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "rattler_ii",
@@ -37893,7 +38241,8 @@
     "fireRate": 33.3,
     "range": 56.2,
     "stability": 72.2,
-    "stealth": 14
+    "stealth": 14,
+    "usedIn": []
   },
   {
     "id": "rattler_iii",
@@ -38100,7 +38449,8 @@
       "simple_gun_parts": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/rattler.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "rattler_iv",
@@ -38290,7 +38640,8 @@
     "fireRate": 33.3,
     "range": 56.2,
     "stability": 72.2,
-    "stealth": 14
+    "stealth": 14,
+    "usedIn": []
   },
   {
     "id": "recorder",
@@ -38304,7 +38655,7 @@
       "hr": "Blok flauta",
       "it": "Flauto dolce",
       "ja": "演奏できるフルート",
-      "kr": "플루트",
+      "kr": "리코더",
       "no": "Blokkfløyte",
       "pl": "Flet prosty",
       "pt": "Flauta doce",
@@ -38326,7 +38677,7 @@
       "hr": "Blok flauta koja se može svirati za privlačenje pažnje ARC-a i impresioniranje drugih Rejdera.",
       "it": "Un flauto dolce suonabile usato per attirare l'attenzione di ARC e impressionare altri Predoni.",
       "ja": "ARCの注意を引き、他のレイダーに感銘を与えるために使用できるリコーダー。",
-      "kr": "아크의 주의를 끌고 다른 레이더들에게 깊은 인상을 주기 위해 사용되는 연주 가능한 플루트.",
+      "kr": "아크의 주의를 끌고 다른 레이더들에게 깊은 인상을 주기 위해 사용되는 연주 가능한 리코더.",
       "no": "En spillbar blokkfløyte brukt til å tiltrekke ARCs oppmerksomhet og imponere andre Raiders.",
       "pl": "Grywalny flet prosty używany do przyciągania uwagi ARC i imponowania innym Rajderom.",
       "pt": "Uma flauta doce tocável usada para atrair a atenção da ARC e impressionar outros Invasores.",
@@ -38375,7 +38726,8 @@
       "plastic_parts": 4
     },
     "imageFilename": "https://cdn.arctracker.io/items/recorder.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "red_coral_jewelry",
@@ -38431,7 +38783,8 @@
     "stackSize": 3,
     "recyclesInto": {},
     "imageFilename": "https://cdn.arctracker.io/items/red_coral_jewelry.png",
-    "updatedAt": "11/04/2025"
+    "updatedAt": "11/04/2025",
+    "usedIn": []
   },
   {
     "id": "red_light_stick",
@@ -38544,7 +38897,8 @@
       "chemicals": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/red_light_stick.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "red_light_stick_blueprint",
@@ -38598,7 +38952,8 @@
     "weightKg": 0,
     "stackSize": 1,
     "imageFilename": "https://cdn.arctracker.io/items/red_light_stick.png",
-    "updatedAt": "12/16/2025"
+    "updatedAt": "12/16/2025",
+    "usedIn": []
   },
   {
     "id": "remote_control",
@@ -38660,7 +39015,8 @@
       "sensors": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/remote_control.png",
-    "updatedAt": "11/03/2025"
+    "updatedAt": "11/03/2025",
+    "usedIn": []
   },
   {
     "id": "remote_raider_flare",
@@ -38726,7 +39082,8 @@
       "chemicals": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/remote_raider_flare.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "remote_raider_flare_blueprint",
@@ -38779,7 +39136,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/remote_raider_flare.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "renegade_i",
@@ -38802,7 +39160,7 @@
       "sr": "Renegade I",
       "tr": "Renegade I",
       "uk": "Ренегат I",
-      "zh-CN": "叛徒 I",
+      "zh-CN": "叛逆 I",
       "zh-TW": "叛徒 I"
     },
     "description": {
@@ -38964,7 +39322,8 @@
       "medium_gun_parts": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/renegade.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "renegade_ii",
@@ -38987,7 +39346,7 @@
       "sr": "Renegade II",
       "tr": "Renegade II",
       "uk": "Renegade II",
-      "zh-CN": "叛徒 II",
+      "zh-CN": "叛逆 II",
       "zh-TW": "叛徒 II"
     },
     "description": {
@@ -39200,7 +39559,8 @@
     "fireRate": 21,
     "range": 68.8,
     "stability": 85.7,
-    "stealth": 16
+    "stealth": 16,
+    "usedIn": []
   },
   {
     "id": "renegade_iii",
@@ -39223,7 +39583,7 @@
       "sr": "Ренегат III",
       "tr": "Renegade III",
       "uk": "Ренегат III",
-      "zh-CN": "叛逆者 III",
+      "zh-CN": "叛逆 III",
       "zh-TW": "叛逆者 III"
     },
     "description": {
@@ -39436,7 +39796,8 @@
     "fireRate": 21,
     "range": 68.8,
     "stability": 85.7,
-    "stealth": 16
+    "stealth": 16,
+    "usedIn": []
   },
   {
     "id": "renegade_iv",
@@ -39459,7 +39820,7 @@
       "sr": "Ренегат IV",
       "tr": "Renegade IV",
       "uk": "Ренегат IV",
-      "zh-CN": "叛逆者 IV",
+      "zh-CN": "叛逆 IV",
       "zh-TW": "叛逆者 IV"
     },
     "description": {
@@ -39672,7 +40033,8 @@
     "fireRate": 21,
     "range": 68.8,
     "stability": 85.7,
-    "stealth": 16
+    "stealth": 16,
+    "usedIn": []
   },
   {
     "id": "resin",
@@ -39799,7 +40161,8 @@
     },
     "recyclesInto": {},
     "imageFilename": "https://cdn.arctracker.io/items/resin.png",
-    "updatedAt": "11/04/2025"
+    "updatedAt": "11/04/2025",
+    "usedIn": []
   },
   {
     "id": "ripped_safety_vest",
@@ -39860,7 +40223,8 @@
       "fabric": 8
     },
     "imageFilename": "https://cdn.arctracker.io/items/ripped_safety_vest.png",
-    "updatedAt": "11/29/2025"
+    "updatedAt": "11/29/2025",
+    "usedIn": []
   },
   {
     "id": "rocket_thruster",
@@ -39922,7 +40286,8 @@
       "synthesized_fuel": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/rocket_thruster.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "rocketeer_driver",
@@ -39984,7 +40349,8 @@
       "arc_circuitry": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/rocketeer_driver.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "roots",
@@ -40045,7 +40411,8 @@
       "assorted_seeds": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/roots.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "rope",
@@ -40217,7 +40584,8 @@
     "weightKg": 0.3,
     "stackSize": 3,
     "imageFilename": "https://cdn.arctracker.io/items/rosary.png",
-    "updatedAt": "11/11/2025"
+    "updatedAt": "11/11/2025",
+    "usedIn": []
   },
   {
     "id": "rotary_encoder",
@@ -40279,7 +40647,8 @@
       "processor": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/rotary_encoder.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "rubber_duck",
@@ -40334,7 +40703,8 @@
     "stackSize": 15,
     "recyclesInto": {},
     "imageFilename": "https://cdn.arctracker.io/items/rubber_duck.png",
-    "updatedAt": "11/04/2025"
+    "updatedAt": "11/04/2025",
+    "usedIn": []
   },
   {
     "id": "rubber_pad",
@@ -40395,7 +40765,8 @@
       "rubber_parts": 9
     },
     "imageFilename": "https://cdn.arctracker.io/items/rubber_pad.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "rubber_parts",
@@ -40582,7 +40953,7 @@
           "sr": "Ferro I",
           "tr": "Ferro I",
           "uk": "Ferro I",
-          "zh-CN": "Ferro I",
+          "zh-CN": "生铁 I",
           "zh-TW": "Ferro I"
         },
         "bench": [
@@ -40865,7 +41236,7 @@
           "sr": "Stitcher I",
           "tr": "Stitcher I",
           "uk": "Зшивач I",
-          "zh-CN": "缝合者 I",
+          "zh-CN": "钉机 I",
           "zh-TW": "縫合者 I"
         },
         "bench": [
@@ -40963,7 +41334,8 @@
       "rubber_parts": 13
     },
     "imageFilename": "https://cdn.arctracker.io/items/ruined_accordion.png",
-    "updatedAt": "11/02/2025"
+    "updatedAt": "11/02/2025",
+    "usedIn": []
   },
   {
     "id": "ruined_augment",
@@ -41022,7 +41394,8 @@
       "rubber_parts": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/ruined_augment.png",
-    "updatedAt": "12/07/2025"
+    "updatedAt": "12/07/2025",
+    "usedIn": []
   },
   {
     "id": "ruined_baton",
@@ -41084,7 +41457,8 @@
       "metal_parts": 4
     },
     "imageFilename": "https://cdn.arctracker.io/items/ruined_baton.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "ruined_handcuffs",
@@ -41145,7 +41519,8 @@
       "metal_parts": 4
     },
     "imageFilename": "https://cdn.arctracker.io/items/ruined_handcuffs.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "ruined_parachute",
@@ -41206,7 +41581,8 @@
       "fabric": 5
     },
     "imageFilename": "https://cdn.arctracker.io/items/ruined_parachute.png",
-    "updatedAt": "12/07/2025"
+    "updatedAt": "12/07/2025",
+    "usedIn": []
   },
   {
     "id": "ruined_riot_shield",
@@ -41268,7 +41644,8 @@
       "plastic_parts": 10
     },
     "imageFilename": "https://cdn.arctracker.io/items/ruined_riot_shield.png",
-    "updatedAt": "12/07/2025"
+    "updatedAt": "12/07/2025",
+    "usedIn": []
   },
   {
     "id": "ruined_tactical_vest",
@@ -41330,7 +41707,8 @@
       "fabric": 5
     },
     "imageFilename": "https://cdn.arctracker.io/items/ruined_tactical_vest.png",
-    "updatedAt": "11/19/2025"
+    "updatedAt": "11/19/2025",
+    "usedIn": []
   },
   {
     "id": "rusted_bolts",
@@ -41391,7 +41769,8 @@
       "metal_parts": 4
     },
     "imageFilename": "https://cdn.arctracker.io/items/rusted_bolts.png",
-    "updatedAt": "11/01/2025"
+    "updatedAt": "11/01/2025",
+    "usedIn": []
   },
   {
     "id": "rusted_gear",
@@ -41453,7 +41832,8 @@
       "metal_parts": 12
     },
     "imageFilename": "https://cdn.arctracker.io/items/rusted_gear.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "rusted_shut_medical_kit",
@@ -41515,7 +41895,8 @@
       "syringe": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/rusted_shut_medical_kit.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "rusted_tools",
@@ -41576,7 +41957,8 @@
       "metal_parts": 7
     },
     "imageFilename": "https://cdn.arctracker.io/items/rusted_tools.png",
-    "updatedAt": "10/30/2025"
+    "updatedAt": "10/30/2025",
+    "usedIn": []
   },
   {
     "id": "rusty_arc_steel",
@@ -41637,7 +42019,8 @@
       "metal_parts": 3
     },
     "imageFilename": "https://cdn.arctracker.io/items/rusty_arc_steel.png",
-    "updatedAt": "11/17/2025"
+    "updatedAt": "11/17/2025",
+    "usedIn": []
   },
   {
     "id": "sample_cleaner",
@@ -41699,7 +42082,8 @@
       "assorted_seeds": 12
     },
     "imageFilename": "https://cdn.arctracker.io/items/sample_cleaner.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "seeker_grenade",
@@ -41814,7 +42198,8 @@
       "chemicals": 3
     },
     "imageFilename": "https://cdn.arctracker.io/items/seeker_grenade.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "seeker_grenade_blueprint",
@@ -41867,7 +42252,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/seeker_grenade.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "sensors",
@@ -42074,7 +42460,8 @@
       "mechanical_components": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/sentinel_firing_core.png",
-    "updatedAt": "10/30/2025"
+    "updatedAt": "10/30/2025",
+    "usedIn": []
   },
   {
     "id": "shaker",
@@ -42135,7 +42522,8 @@
       "plastic_parts": 4
     },
     "imageFilename": "https://cdn.arctracker.io/items/shaker.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "shield_recharger",
@@ -42275,7 +42663,8 @@
       "rubber_parts": 3
     },
     "imageFilename": "https://cdn.arctracker.io/items/shield_recharger.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "shotgun_ammo",
@@ -42339,7 +42728,8 @@
       "metal_parts": 3
     },
     "imageFilename": "https://cdn.arctracker.io/items/shotgun_ammo.png",
-    "updatedAt": "12/07/2025"
+    "updatedAt": "12/07/2025",
+    "usedIn": []
   },
   {
     "id": "shotgun_choke_i",
@@ -42428,7 +42818,8 @@
       "metal_parts": 3
     },
     "imageFilename": "https://cdn.arctracker.io/items/shotgun_choke_i.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "shotgun_choke_ii",
@@ -42524,7 +42915,8 @@
       "mechanical_components": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/shotgun_choke_ii.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "shotgun_choke_ii_blueprint",
@@ -42577,7 +42969,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/shotgun_choke_ii.png",
-    "updatedAt": "12/07/2025"
+    "updatedAt": "12/07/2025",
+    "usedIn": []
   },
   {
     "id": "shotgun_choke_iii",
@@ -42715,7 +43108,8 @@
       "mechanical_components": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/shotgun_choke_iii.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "shotgun_choke_iii_blueprint",
@@ -42768,7 +43162,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/shotgun_choke_iii.png",
-    "updatedAt": "12/07/2025"
+    "updatedAt": "12/07/2025",
+    "usedIn": []
   },
   {
     "id": "shotgun_silencer",
@@ -42860,7 +43255,8 @@
       "mechanical_components": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/shotgun_silencer.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "shotgun_silencer_blueprint",
@@ -42913,7 +43309,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/shotgun_silencer.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "showstopper",
@@ -43052,7 +43449,8 @@
       "battery": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/showstopper.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "showstopper_blueprint",
@@ -43105,7 +43503,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/showstopper.png",
-    "updatedAt": "12/07/2025"
+    "updatedAt": "12/07/2025",
+    "usedIn": []
   },
   {
     "id": "shrapnel_grenade",
@@ -43219,7 +43618,8 @@
       "crude_explosives": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/shrapnel_grenade.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "shredder_gyro",
@@ -43281,7 +43681,8 @@
       "mechanical_components": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/shredder_gyro.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "signal_amplifier",
@@ -43343,7 +43744,8 @@
       "voltage_converter": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/signal_amplifier.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "silencer_i",
@@ -43434,7 +43836,8 @@
       "mechanical_components": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/silencer_i.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "silencer_i_blueprint",
@@ -43487,7 +43890,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/silencer_i.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "silencer_ii",
@@ -43578,7 +43982,8 @@
       "mechanical_components": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/silencer_ii.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "silencer_ii_blueprint",
@@ -43631,7 +44036,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/silencer_ii.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "silencer_iii",
@@ -43748,7 +44154,62 @@
       "mod_components": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/silencer_iii.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
+  },
+  {
+    "id": "silencer_iii_blueprint",
+    "name": {
+      "da": "Lyddæmper III Tegning",
+      "de": "Bauplan: Schalldämpfer III",
+      "en": "Silencer III Blueprint",
+      "es": "Plano de Silenciador III",
+      "fr": "Schéma Silencieux III",
+      "he": "שרטוט משתיק III",
+      "hr": "Nacrt za Prigušivač III",
+      "it": "Progetto Silenziatore III",
+      "ja": "サイレンサー III 設計図",
+      "kr": "소음기 III 설계도",
+      "no": "Lyddemper III Tegning",
+      "pl": "Projekt Tłumika III",
+      "pt": "Projeto de Silenciador III",
+      "pt-BR": "Esquema de Silenciador III",
+      "ru": "Чертёж глушителя III",
+      "sr": "Nacrt za Prigušivač III",
+      "tr": "Susturucu III Planı",
+      "uk": "Креслення глушника III",
+      "zh-CN": "消音器 III 蓝图",
+      "zh-TW": "消音器 III 藍圖"
+    },
+    "description": {
+      "da": "En tegning til at lave Lyddæmper III.",
+      "de": "Ein Bauplan zur Herstellung des Schalldämpfers III.",
+      "en": "A blueprint to craft the Silencer III.",
+      "es": "Un plano para fabricar el Silenciador III.",
+      "fr": "Un schéma pour fabriquer le Silencieux III.",
+      "he": "שרטוט ליצירת משתיק III.",
+      "hr": "Nacrt za izradu Prigušivača III.",
+      "it": "Un progetto per creare il Silenziatore III.",
+      "ja": "サイレンサー III を製作するための設計図。",
+      "kr": "소음기 III을 제작하기 위한 설계도.",
+      "no": "En tegning for å lage Lyddemper III.",
+      "pl": "Projekt do wytworzenia Tłumika III.",
+      "pt": "Um projeto para fabricar o Silenciador III.",
+      "pt-BR": "Um esquema para fabricar o Silenciador III.",
+      "ru": "Чертёж для создания глушителя III.",
+      "sr": "Nacrt za izradu Prigušivača III.",
+      "tr": "Susturucu III üretmek için bir plan.",
+      "uk": "Креслення для створення глушника III.",
+      "zh-CN": "用于制作消音器 III 的蓝图。",
+      "zh-TW": "用於製作消音器 III 的藍圖。"
+    },
+    "type": "Blueprint",
+    "rarity": "Legendary",
+    "value": 5000,
+    "weightKg": 0,
+    "imageFilename": "https://cdn.arctracker.io/items/silencer_iii.png",
+    "updatedAt": "01/19/2026",
+    "usedIn": []
   },
   {
     "id": "silver_teaspoon_set",
@@ -43804,7 +44265,8 @@
     "stackSize": 3,
     "recyclesInto": {},
     "imageFilename": "https://cdn.arctracker.io/items/silver_teaspoon_set.png",
-    "updatedAt": "12/07/2025"
+    "updatedAt": "12/07/2025",
+    "usedIn": []
   },
   {
     "id": "simple_gun_parts",
@@ -43915,7 +44377,7 @@
           "sr": "Arpeđo I",
           "tr": "Arpej I",
           "uk": "Арпеджіо I",
-          "zh-CN": "琶音 I",
+          "zh-CN": "三连奏 I",
           "zh-TW": "琶音 I"
         },
         "bench": "weapon_bench",
@@ -43942,7 +44404,7 @@
           "sr": "Burletta I",
           "tr": "Burletta I",
           "uk": "Бурлетта I",
-          "zh-CN": "布雷塔 I",
+          "zh-CN": "布尔莱塔 I",
           "zh-TW": "布雷塔 I"
         },
         "bench": "weapon_bench",
@@ -43996,7 +44458,7 @@
           "sr": "Il Toro I",
           "tr": "Il Toro I",
           "uk": "Il Toro I",
-          "zh-CN": "Il Toro I",
+          "zh-CN": "公牛 I",
           "zh-TW": "Il Toro I"
         },
         "bench": "weapon_bench",
@@ -44254,7 +44716,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/smoke_grenade.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "smoke_grenade_trap",
@@ -44362,7 +44825,8 @@
       "wires": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/smoke_grenade_trap.png",
-    "updatedAt": "12/19/2025"
+    "updatedAt": "12/19/2025",
+    "usedIn": []
   },
   {
     "id": "snap_blast_grenade",
@@ -44476,7 +44940,8 @@
       "chemicals": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/snap_blast_grenade.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "snap_hook",
@@ -44590,7 +45055,8 @@
       "advanced_electrical_components": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/snap_hook.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "snap_hook_blueprint",
@@ -44643,7 +45109,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/snap_hook.png",
-    "updatedAt": "11/14/2025"
+    "updatedAt": "11/14/2025",
+    "usedIn": []
   },
   {
     "id": "snitch_scanner",
@@ -44705,7 +45172,8 @@
       "electrical_components": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/snitch_scanner.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "snowball",
@@ -44761,7 +45229,8 @@
     "stackSize": 5,
     "recyclesInto": {},
     "imageFilename": "https://cdn.arctracker.io/items/snowball.png",
-    "updatedAt": "12/17/2025"
+    "updatedAt": "12/17/2025",
+    "usedIn": []
   },
   {
     "id": "spaceport_container_storage_key",
@@ -44816,7 +45285,8 @@
     "stackSize": 1,
     "imageFilename": "https://cdn.arctracker.io/items/spaceport_control_tower_key.png",
     "updatedAt": "11/08/2025",
-    "_note": "not_in_serverslam"
+    "_note": "not_in_serverslam",
+    "usedIn": []
   },
   {
     "id": "spaceport_control_tower_key",
@@ -44869,7 +45339,8 @@
     "value": 100,
     "weightKg": 0.25,
     "imageFilename": "https://cdn.arctracker.io/items/spaceport_control_tower_key.png",
-    "updatedAt": "11/04/2025"
+    "updatedAt": "11/04/2025",
+    "usedIn": []
   },
   {
     "id": "spaceport_trench_tower_key",
@@ -44922,7 +45393,8 @@
     "value": 100,
     "weightKg": 0.25,
     "imageFilename": "https://cdn.arctracker.io/items/spaceport_trench_tower_key.png",
-    "updatedAt": "11/07/2025"
+    "updatedAt": "11/07/2025",
+    "usedIn": []
   },
   {
     "id": "spaceport_warehouse_key",
@@ -44975,7 +45447,8 @@
     "value": 100,
     "weightKg": 0.25,
     "imageFilename": "https://cdn.arctracker.io/items/spaceport_trench_tower_key.png",
-    "updatedAt": "11/16/2025"
+    "updatedAt": "11/16/2025",
+    "usedIn": []
   },
   {
     "id": "speaker_component",
@@ -45182,7 +45655,8 @@
       "electrical_components": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/spectrometer.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "spectrum_analyzer",
@@ -45243,7 +45717,8 @@
       "processor": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/spectrum_analyzer.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "spotter_relay",
@@ -45302,7 +45777,8 @@
       "electrical_components": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/spotter_relay.png",
-    "updatedAt": "10/31/2025"
+    "updatedAt": "10/31/2025",
+    "usedIn": []
   },
   {
     "id": "spring_cushion",
@@ -45364,7 +45840,8 @@
       "steel_spring": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/spring_cushion.png",
-    "updatedAt": "11/04/2025"
+    "updatedAt": "11/04/2025",
+    "usedIn": []
   },
   {
     "id": "stable_stock_i",
@@ -45483,7 +45960,8 @@
       "rubber_parts": 3
     },
     "imageFilename": "https://cdn.arctracker.io/items/stable_stock_i.png",
-    "updatedAt": "11/03/2025"
+    "updatedAt": "11/03/2025",
+    "usedIn": []
   },
   {
     "id": "stable_stock_ii",
@@ -45628,7 +46106,8 @@
       "mechanical_components": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/stable_stock_ii.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "stable_stock_ii_blueprint",
@@ -45681,7 +46160,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/stable_stock_ii.png",
-    "updatedAt": "12/07/2025"
+    "updatedAt": "12/07/2025",
+    "usedIn": []
   },
   {
     "id": "stable_stock_iii",
@@ -45842,7 +46322,8 @@
       "mechanical_components": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/stable_stock_iii.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "stable_stock_iii_blueprint",
@@ -45895,7 +46376,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/stable_stock_iii.png",
-    "updatedAt": "12/07/2025"
+    "updatedAt": "12/07/2025",
+    "usedIn": []
   },
   {
     "id": "statuette",
@@ -45951,7 +46433,8 @@
     "stackSize": 3,
     "recyclesInto": {},
     "imageFilename": "https://cdn.arctracker.io/items/statuette.png",
-    "updatedAt": "11/01/2025"
+    "updatedAt": "11/01/2025",
+    "usedIn": []
   },
   {
     "id": "steel_spring",
@@ -46035,7 +46518,7 @@
           "sr": "Napredne Mehaničke Komponente",
           "tr": "Gelişmiş Mekanik Bileşenler",
           "uk": "Просунуті механічні компоненти",
-          "zh-CN": "高级机械零件",
+          "zh-CN": "高级机械元件",
           "zh-TW": "進階機械元件"
         },
         "bench": "refiner",
@@ -46332,8 +46815,8 @@
           "sr": "Torrente I",
           "tr": "Torrente I",
           "uk": "Torrente I",
-          "zh-CN": "Torrente I",
-          "zh-TW": "奔流藍圖 I"
+          "zh-CN": "奔流 I",
+          "zh-TW": "奔流 I"
         },
         "bench": "weapon_bench",
         "quantity": 6
@@ -46417,7 +46900,8 @@
       }
     },
     "imageFilename": "https://cdn.arctracker.io/items/stella_montis_archives_key.png",
-    "updatedAt": "12/07/2025"
+    "updatedAt": "12/07/2025",
+    "usedIn": []
   },
   {
     "id": "stella_montis_assembly_admin_key",
@@ -46470,7 +46954,8 @@
     "value": 100,
     "weightKg": 0.25,
     "imageFilename": "https://cdn.arctracker.io/items/stella_montis_assembly_admin_key.png",
-    "updatedAt": "11/13/2025"
+    "updatedAt": "11/13/2025",
+    "usedIn": []
   },
   {
     "id": "stella_montis_medical_storage_key",
@@ -46549,7 +47034,8 @@
       }
     },
     "imageFilename": "https://cdn.arctracker.io/items/stella_montis_medical_storage_key.png",
-    "updatedAt": "12/07/2025"
+    "updatedAt": "12/07/2025",
+    "usedIn": []
   },
   {
     "id": "stella_montis_security_checkpoint_key",
@@ -46602,7 +47088,8 @@
     "value": 100,
     "weightKg": 0.25,
     "imageFilename": "https://cdn.arctracker.io/items/stella_montis_security_checkpoint_key.png",
-    "updatedAt": "11/13/2025"
+    "updatedAt": "11/13/2025",
+    "usedIn": []
   },
   {
     "id": "sterilized_bandage",
@@ -46739,7 +47226,8 @@
       "durable_cloth": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/sterilized_bandage.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "stitcher_i",
@@ -46762,7 +47250,7 @@
       "sr": "Stitcher I",
       "tr": "Stitcher I",
       "uk": "Зшивач I",
-      "zh-CN": "缝合者 I",
+      "zh-CN": "钉机 I",
       "zh-TW": "縫合者 I"
     },
     "description": {
@@ -46925,7 +47413,8 @@
       "metal_parts": 3
     },
     "imageFilename": "https://cdn.arctracker.io/items/stitcher.png",
-    "updatedAt": "11/20/2025"
+    "updatedAt": "11/20/2025",
+    "usedIn": []
   },
   {
     "id": "stitcher_ii",
@@ -46948,7 +47437,7 @@
       "sr": "Stitcher II",
       "tr": "Stitcher II",
       "uk": "Зшивач II",
-      "zh-CN": "缝合者 II",
+      "zh-CN": "钉机 II",
       "zh-TW": "縫合者 II"
     },
     "description": {
@@ -47153,7 +47642,8 @@
       "rubber_parts": 12
     },
     "imageFilename": "https://cdn.arctracker.io/items/stitcher.png",
-    "updatedAt": "11/20/2025"
+    "updatedAt": "11/20/2025",
+    "usedIn": []
   },
   {
     "id": "stitcher_iii",
@@ -47176,7 +47666,7 @@
       "sr": "Stitcher III",
       "tr": "Stitcher III",
       "uk": "Зшивач III",
-      "zh-CN": "缝合者 III",
+      "zh-CN": "钉机 III",
       "zh-TW": "縫合者 III"
     },
     "description": {
@@ -47381,7 +47871,8 @@
       "simple_gun_parts": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/stitcher.png",
-    "updatedAt": "11/20/2025"
+    "updatedAt": "11/20/2025",
+    "usedIn": []
   },
   {
     "id": "stitcher_iv",
@@ -47404,7 +47895,7 @@
       "sr": "Stitcher IV",
       "tr": "Stitcher IV",
       "uk": "Зшивач IV",
-      "zh-CN": "缝合者 IV",
+      "zh-CN": "钉机 IV",
       "zh-TW": "縫合者 IV"
     },
     "description": {
@@ -47609,7 +48100,8 @@
       "simple_gun_parts": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/stitcher.png",
-    "updatedAt": "11/20/2025"
+    "updatedAt": "11/20/2025",
+    "usedIn": []
   },
   {
     "id": "surge_shield_recharger",
@@ -47722,7 +48214,8 @@
       "plastic_parts": 5
     },
     "imageFilename": "https://cdn.arctracker.io/items/surge_shield_recharger.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "surveyor_vault",
@@ -47784,7 +48277,8 @@
       "mechanical_components": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/surveyor_vault.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "synthesized_fuel",
@@ -47963,7 +48457,7 @@
           "zh-CN": "活力注射剂",
           "zh-TW": "活力注射劑"
         },
-        "bench": null,
+        "bench": "Unknown",
         "quantity": 1
       }
     ]
@@ -48018,6 +48512,7 @@
     "rarity": "Uncommon",
     "value": 640,
     "weightKg": 2,
+    "stackSize": 1,
     "effects": {
       "Durability": {
         "value": "100/100",
@@ -48102,7 +48597,8 @@
       "plastic_parts": 3
     },
     "imageFilename": "https://cdn.arctracker.io/items/tactical_i.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/20/2026",
+    "usedIn": []
   },
   {
     "id": "tactical_mk2",
@@ -48154,6 +48650,7 @@
     "rarity": "Rare",
     "value": 2000,
     "weightKg": 2,
+    "stackSize": 1,
     "effects": {
       "Durability": {
         "value": "100/100",
@@ -48238,7 +48735,8 @@
       "electrical_components": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/tactical_i.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/20/2026",
+    "usedIn": []
   },
   {
     "id": "tactical_mk3_defensive",
@@ -48290,6 +48788,7 @@
     "rarity": "Epic",
     "value": 5000,
     "weightKg": 5,
+    "stackSize": 1,
     "blueprintLocked": true,
     "effects": {
       "Durability": {
@@ -48376,7 +48875,8 @@
       "electrical_components": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/tactical_mk3_defensive.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/20/2026",
+    "usedIn": []
   },
   {
     "id": "tactical_mk3_defensive_blueprint",
@@ -48429,7 +48929,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/tactical_mk3_defensive.png",
-    "updatedAt": "12/07/2025"
+    "updatedAt": "12/07/2025",
+    "usedIn": []
   },
   {
     "id": "tactical_mk3_healing",
@@ -48481,6 +48982,8 @@
     "rarity": "Epic",
     "value": 5000,
     "weightKg": 4,
+    "stackSize": 1,
+    "blueprintLocked": true,
     "effects": {
       "Durability": {
         "value": "100/100",
@@ -48566,7 +49069,8 @@
       "electrical_components": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/tactical_mk3_healing.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/20/2026",
+    "usedIn": []
   },
   {
     "id": "tactical_mk3_healing_blueprint",
@@ -48619,7 +49123,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/tactical_mk3_healing_blueprint.png",
-    "updatedAt": "11/11/2025"
+    "updatedAt": "11/11/2025",
+    "usedIn": []
   },
   {
     "id": "tagging_grenade",
@@ -48735,7 +49240,8 @@
       "sensors": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/tagging_grenade.png",
-    "updatedAt": "11/10/2025"
+    "updatedAt": "11/10/2025",
+    "usedIn": []
   },
   {
     "id": "tagging_grenade_blueprint",
@@ -48788,7 +49294,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/tagging_grenade.png",
-    "updatedAt": "12/07/2025"
+    "updatedAt": "12/07/2025",
+    "usedIn": []
   },
   {
     "id": "tattered_arc_lining",
@@ -48849,7 +49356,8 @@
       "fabric": 5
     },
     "imageFilename": "https://cdn.arctracker.io/items/tattered_arc_lining.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "tattered_clothes",
@@ -48908,7 +49416,8 @@
       "fabric": 5
     },
     "imageFilename": "https://cdn.arctracker.io/items/tattered_clothes.png",
-    "updatedAt": "12/07/2025"
+    "updatedAt": "12/07/2025",
+    "usedIn": []
   },
   {
     "id": "telemetry_transceiver",
@@ -48970,7 +49479,8 @@
       "electrical_components": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/telemetry_transceiver.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "tempest_blueprint",
@@ -49023,7 +49533,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/tempest.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "tempest_i",
@@ -49209,7 +49720,8 @@
       "medium_gun_parts": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/tempest.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "tempest_ii",
@@ -49438,7 +49950,8 @@
       "medium_gun_parts": 3
     },
     "imageFilename": "https://cdn.arctracker.io/items/tempest.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "tempest_iii",
@@ -49667,7 +50180,8 @@
       "medium_gun_parts": 4
     },
     "imageFilename": "https://cdn.arctracker.io/items/tempest.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "tempest_iv",
@@ -49896,7 +50410,8 @@
       "medium_gun_parts": 3
     },
     "imageFilename": "https://cdn.arctracker.io/items/tempest.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "thermostat",
@@ -49958,7 +50473,8 @@
       "sensors": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/thermostat.png",
-    "updatedAt": "12/07/2025"
+    "updatedAt": "12/07/2025",
+    "usedIn": []
   },
   {
     "id": "tick_pod",
@@ -50020,7 +50536,8 @@
       "arc_alloy": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/tick_pod.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "toaster",
@@ -50082,7 +50599,8 @@
       "wires": 3
     },
     "imageFilename": "https://cdn.arctracker.io/items/toaster.png",
-    "updatedAt": "11/03/2025"
+    "updatedAt": "11/03/2025",
+    "usedIn": []
   },
   {
     "id": "torn_blanket",
@@ -50143,7 +50661,8 @@
       "fabric": 5
     },
     "imageFilename": "https://cdn.arctracker.io/items/torn_blanket.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "torn_book",
@@ -50199,7 +50718,8 @@
     "stackSize": 5,
     "recyclesInto": {},
     "imageFilename": "https://cdn.arctracker.io/items/torn_book.png",
-    "updatedAt": "11/04/2025"
+    "updatedAt": "11/04/2025",
+    "usedIn": []
   },
   {
     "id": "torrente_blueprint",
@@ -50222,8 +50742,8 @@
       "sr": "Torrente Nacrt",
       "tr": "Torrente Planı",
       "uk": "Креслення Torrente",
-      "zh-CN": "Torrente蓝图",
-      "zh-TW": "Torrente藍圖"
+      "zh-CN": "奔流蓝图",
+      "zh-TW": "奔流藍圖"
     },
     "description": {
       "da": "Har stor ammunitionskapacitet, men er kun præcis når man sidder på hug.",
@@ -50252,7 +50772,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/torrente.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "torrente_i",
@@ -50275,8 +50796,8 @@
       "sr": "Torrente I",
       "tr": "Torrente I",
       "uk": "Torrente I",
-      "zh-CN": "Torrente I",
-      "zh-TW": "奔流藍圖 I"
+      "zh-CN": "奔流 I",
+      "zh-TW": "奔流 I"
     },
     "description": {
       "da": "Har stor ammunitionskapacitet, men er kun præcis, når du sidder på hug.",
@@ -50436,7 +50957,8 @@
       "medium_gun_parts": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/torrente.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "torrente_ii",
@@ -50459,8 +50981,8 @@
       "sr": "Torrente II",
       "tr": "Torrente II",
       "uk": "Torrente II",
-      "zh-CN": "Torrente II",
-      "zh-TW": "奔流藍圖 II"
+      "zh-CN": "奔流 II",
+      "zh-TW": "奔流 II"
     },
     "description": {
       "da": "Har en stor ammunitionskapacitet, men er kun præcis i hugsiddende stilling.",
@@ -50641,7 +51163,8 @@
       "medium_gun_parts": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/torrente.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "torrente_iii",
@@ -50664,8 +51187,8 @@
       "sr": "Torrente III",
       "tr": "Torrente III",
       "uk": "Torrente III",
-      "zh-CN": "Torrente III",
-      "zh-TW": "奔流藍圖 III"
+      "zh-CN": "奔流 III",
+      "zh-TW": "奔流 III"
     },
     "description": {
       "da": "Har en stor ammunitionskapacitet, men er kun præcis i hugsiddende stilling.",
@@ -50846,7 +51369,8 @@
       "medium_gun_parts": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/torrente.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "torrente_iv",
@@ -50869,8 +51393,8 @@
       "sr": "Torrente IV",
       "tr": "Torrente IV",
       "uk": "Torrente IV",
-      "zh-CN": "Torrente IV",
-      "zh-TW": "奔流藍圖 IV"
+      "zh-CN": "奔流 IV",
+      "zh-TW": "奔流 IV"
     },
     "description": {
       "da": "Har en stor ammunitionskapacitet, men er kun præcis i hugsiddende stilling.",
@@ -51051,7 +51575,8 @@
       "medium_gun_parts": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/torrente.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "trailblazer",
@@ -51165,7 +51690,8 @@
       "crude_explosives": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/trailblazer.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "trailblazer_blueprint",
@@ -51218,7 +51744,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/trailblazer.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "trigger_nade",
@@ -51332,7 +51859,8 @@
       "processor": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/trigger_nade.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "trigger_nade_blueprint",
@@ -51386,7 +51914,8 @@
     "weightKg": 0,
     "stackSize": 1,
     "imageFilename": "https://cdn.arctracker.io/items/trigger_nade_blueprint.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "turbo_pump",
@@ -51448,7 +51977,8 @@
       "steel_spring": 3
     },
     "imageFilename": "https://cdn.arctracker.io/items/turbo_pump.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "unusable_weapon",
@@ -51462,7 +51992,7 @@
       "hr": "Neupotrebljivo oružje",
       "it": "Arma inutilizzabile",
       "ja": "使い物にならない武器",
-      "kr": "사용 불가능한 무기",
+      "kr": "망가진 무기",
       "no": "Ubrukelig våpen",
       "pl": "Niezdatna broń",
       "pt": "Arma inutilizável",
@@ -51509,7 +52039,8 @@
       "simple_gun_parts": 3
     },
     "imageFilename": "https://cdn.arctracker.io/items/unusable_weapon.png",
-    "updatedAt": "11/09/2025"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "vase",
@@ -51565,7 +52096,8 @@
     "stackSize": 3,
     "recyclesInto": {},
     "imageFilename": "https://cdn.arctracker.io/items/vase.png",
-    "updatedAt": "11/04/2025"
+    "updatedAt": "11/04/2025",
+    "usedIn": []
   },
   {
     "id": "venator_blueprint",
@@ -51588,8 +52120,8 @@
       "sr": "Venator Nacrt",
       "tr": "Venator Planı",
       "uk": "Креслення Venator",
-      "zh-CN": "Venator蓝图",
-      "zh-TW": "Venator藍圖"
+      "zh-CN": "复仇者蓝图",
+      "zh-TW": "复仇者藍圖"
     },
     "description": {
       "da": "Affyrer to skud ad gangen.",
@@ -51617,7 +52149,8 @@
     "rarity": "Legendary",
     "value": 5000,
     "imageFilename": "https://cdn.arctracker.io/items/venator.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "venator_i",
@@ -51640,8 +52173,8 @@
       "sr": "Venator I",
       "tr": "Venator I",
       "uk": "Venator I",
-      "zh-CN": "Venator I",
-      "zh-TW": "Venator I"
+      "zh-CN": "复仇者 I",
+      "zh-TW": "复仇者 I"
     },
     "description": {
       "da": "Halvautomatisk pistol. Affyrer to skud ad gangen.",
@@ -51825,7 +52358,8 @@
       "medium_gun_parts": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/venator.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "venator_ii",
@@ -51848,8 +52382,8 @@
       "sr": "Venator II",
       "tr": "Venator II",
       "uk": "Venator II",
-      "zh-CN": "Venator II",
-      "zh-TW": "Venator II"
+      "zh-CN": "复仇者 II",
+      "zh-TW": "复仇者 II"
     },
     "description": {
       "da": "Halvautomatisk pistol. Affyrer to skud ad gangen.",
@@ -52077,7 +52611,8 @@
       "medium_gun_parts": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/venator.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "venator_iii",
@@ -52100,8 +52635,8 @@
       "sr": "Venator III",
       "tr": "Venator III",
       "uk": "Venator III",
-      "zh-CN": "Venator III",
-      "zh-TW": "Venator III"
+      "zh-CN": "复仇者 III",
+      "zh-TW": "复仇者 III"
     },
     "description": {
       "da": "Halvautomatisk pistol. Affyrer to skud ad gangen.",
@@ -52329,7 +52864,8 @@
       "medium_gun_parts": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/venator.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "venator_iv",
@@ -52352,8 +52888,8 @@
       "sr": "Venator IV",
       "tr": "Venator IV",
       "uk": "Venator IV",
-      "zh-CN": "Venator IV",
-      "zh-TW": "Venator IV"
+      "zh-CN": "复仇者 IV",
+      "zh-TW": "复仇者 IV"
     },
     "description": {
       "da": "Halvautomatisk pistol. Affyrer to skud ad gangen.",
@@ -52581,7 +53117,8 @@
       "medium_gun_parts": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/venator.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "vertical_grip_i",
@@ -52670,7 +53207,8 @@
       "plastic_parts": 3
     },
     "imageFilename": "https://cdn.arctracker.io/items/vertical_grip_i.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "vertical_grip_ii",
@@ -52769,7 +53307,8 @@
       "mechanical_components": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/vertical_grip_ii.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "vertical_grip_ii_blueprint",
@@ -52823,7 +53362,8 @@
     "weightKg": 0,
     "stackSize": 1,
     "imageFilename": "https://cdn.arctracker.io/items/vertical_grip_ii.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "vertical_grip_iii",
@@ -52936,7 +53476,8 @@
       "mechanical_components": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/vertical_grip_iii.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "vertical_grip_iii_blueprint",
@@ -52990,7 +53531,8 @@
     "weightKg": 0,
     "stackSize": 1,
     "imageFilename": "https://cdn.arctracker.io/items/vertical_grip_iii_blueprint.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "very_comfortable_pillow",
@@ -53045,7 +53587,8 @@
     "weightKg": 0.3,
     "stackSize": 3,
     "imageFilename": "https://cdn.arctracker.io/items/very_comfortable_pillow.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "vita_shot",
@@ -53159,7 +53702,8 @@
       "syringe": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/vita_shot.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "vita_shot_blueprint",
@@ -53212,7 +53756,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/vita_shot.png",
-    "updatedAt": "01/13/2026"
+    "updatedAt": "01/13/2026",
+    "usedIn": []
   },
   {
     "id": "vita_spray",
@@ -53349,7 +53894,8 @@
       "antiseptic": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/vita_spray.png",
-    "updatedAt": "10/30/2025"
+    "updatedAt": "10/30/2025",
+    "usedIn": []
   },
   {
     "id": "vita_spray_blueprint",
@@ -53401,7 +53947,8 @@
     "rarity": "Legendary",
     "value": 5000,
     "imageFilename": "https://cdn.arctracker.io/items/vita_spray.png",
-    "updatedAt": "11/12/2025"
+    "updatedAt": "11/12/2025",
+    "usedIn": []
   },
   {
     "id": "volcanic_rock",
@@ -53482,7 +54029,8 @@
     },
     "recyclesInto": {},
     "imageFilename": "https://cdn.arctracker.io/items/volcanic_rock.png",
-    "updatedAt": "10/30/2025"
+    "updatedAt": "10/30/2025",
+    "usedIn": []
   },
   {
     "id": "voltage_converter",
@@ -53623,8 +54171,8 @@
       "sr": "Vulcano Nacrt",
       "tr": "Vulcano Plani",
       "uk": "Креслення Vulcano",
-      "zh-CN": "Vulcano 蓝图",
-      "zh-TW": "Vulcano 藍圖"
+      "zh-CN": "火山 蓝图",
+      "zh-TW": "火山 藍圖"
     },
     "description": {
       "da": "Halvautomatisk haglgevaer med god spredning men skarpt fald.",
@@ -53653,7 +54201,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/vulcano.png",
-    "updatedAt": "12/07/2025"
+    "updatedAt": "12/07/2025",
+    "usedIn": []
   },
   {
     "id": "vulcano_i",
@@ -53676,8 +54225,8 @@
       "sr": "Vulcano I",
       "tr": "Vulcano I",
       "uk": "Vulcano I",
-      "zh-CN": "Vulcano I",
-      "zh-TW": "Vulcano I"
+      "zh-CN": "火山 I",
+      "zh-TW": "火山 I"
     },
     "description": {
       "da": "Halvautomatisk haglgevær med god spredning men skarpt fald.",
@@ -53848,7 +54397,8 @@
     "reducedDurabilityBurnRate": 23,
     "reducedReloadTime": 13,
     "stability": 70.3,
-    "stealth": 15
+    "stealth": 15,
+    "usedIn": []
   },
   {
     "id": "vulcano_ii",
@@ -53871,8 +54421,8 @@
       "sr": "Vulcano II",
       "tr": "Vulcano II",
       "uk": "Vulcano II",
-      "zh-CN": "Vulcano II",
-      "zh-TW": "Vulcano II"
+      "zh-CN": "火山 II",
+      "zh-TW": "火山 II"
     },
     "description": {
       "da": "Har god spredning men skarpt fald.",
@@ -54088,7 +54638,8 @@
     "reducedDurabilityBurnRate": 46,
     "reducedReloadTime": 26,
     "stability": 70.3,
-    "stealth": 15
+    "stealth": 15,
+    "usedIn": []
   },
   {
     "id": "vulcano_iii",
@@ -54111,8 +54662,8 @@
       "sr": "Vulcano III",
       "tr": "Vulcano III",
       "uk": "Vulcano III",
-      "zh-CN": "Vulcano III",
-      "zh-TW": "Vulcano III"
+      "zh-CN": "火山 III",
+      "zh-TW": "火山 III"
     },
     "description": {
       "da": "Har god kuglespredning, men kraftigt fald.",
@@ -54364,7 +54915,8 @@
       "heavy_gun_parts": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/vulcano.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "vulcano_iv",
@@ -54387,8 +54939,8 @@
       "sr": "Vulcano IV",
       "tr": "Vulcano IV",
       "uk": "Vulcano IV",
-      "zh-CN": "Vulcano IV",
-      "zh-TW": "Vulcano IV"
+      "zh-CN": "火山 IV",
+      "zh-TW": "火山 IV"
     },
     "description": {
       "da": "Halvautomatisk haglgevær med god spredning men kraftigt skadefald",
@@ -54600,7 +55152,8 @@
     "fireRate": 26.3,
     "range": 26,
     "stability": 68.6,
-    "stealth": 15
+    "stealth": 15,
+    "usedIn": []
   },
   {
     "id": "wasp_driver",
@@ -54711,7 +55264,8 @@
     },
     "imageFilename": "https://cdn.arctracker.io/items/wasp_driver.png",
     "updatedAt": "01/13/2026",
-    "tip": "The Wasp Driver is a rare item is dropped by Wasps that can be recycled into crafting materials."
+    "tip": "The Wasp Driver is a rare item is dropped by Wasps that can be recycled into crafting materials.",
+    "usedIn": []
   },
   {
     "id": "water_filter",
@@ -54773,7 +55327,8 @@
       "canister": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/water_filter.png",
-    "updatedAt": "11/1/2025"
+    "updatedAt": "11/1/2025",
+    "usedIn": []
   },
   {
     "id": "water_pump",
@@ -54835,7 +55390,8 @@
       "oil": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/water_pump.png",
-    "updatedAt": "11/03/2025"
+    "updatedAt": "11/03/2025",
+    "usedIn": []
   },
   {
     "id": "wires",
@@ -54871,7 +55427,7 @@
       "hr": "Koristi se za izradu širokog spektra predmeta. Može se reciklirati u materijale za izradu. Koristi se za izradu: Vatrena Zamka s Granatom, Dimna Zamka s Granatom, Zamka s Mamcem, Plinska Zamka s Granatom, Usporivač Cijevi I",
       "it": "Si usa per creare un'ampia gamma di oggetti. Si può riciclare in materiali da creazione. Si usa per creare: Trappola laser: Fuoco, Trappola laser: Fumogeno, Trappola laser: Esca, Trappola laser: Gas, Freno di bocca I",
       "ja": "幅広いアイテムの作成に使用。クラフト素材にリサイクル可能。作成可能: ブレイズグレネードトラップ、スモークグレネードトラップ、ルアーグレネードトラップ、ガスグレネードトラップ、マズルブレーキI",
-      "kr": "다양한 아이템 제작에 사용됩니다. 제작 재료로 재활용 가능. 제작 가능: 화염 수류탄 함정, 연막 수류탄 함정, 미끼 수류탄 함정, 가스 수류탄 함정, 총구 제동기 I",
+      "kr": "다양한 아이템 제작에 사용됩니다. 제작 재료로 재활용 가능. 제작 가능: 화염 수류탄 함정, 연막 수류탄 함정, 유인 수류탄 함정, 가스 수류탄 함정, 총구 제동기 I",
       "no": "Brukes til å lage et bredt spekter av gjenstander. Kan resirkuleres til håndverksmateriell. Brukes til å lage: Flammegranatfelle, Røykgranatfelle, Lokkemiddelgranatfelle, Gassgranatfelle, Munningsbrems I",
       "pl": "Używany do wytwarzania szerokiej gamy przedmiotów. Może być przetworzony na materiały rzemieślnicze. Używany do wytwarzania: Pułapka z granatem zapalającym, Pułapka z granatem dymnym, Pułapka z granatem wabik, Pułapka z granatem gazowym, Hamulec wylotowy I",
       "pt": "Usado para fabricar uma ampla gama de itens. Pode ser reciclado em materiais de fabricação. Usado para fabricar: Armadilha de granada incendiária, Armadilha de granada de fumaça, Armadilha de granada isca, Armadilha de granada de gás, Freio de boca I",
@@ -54890,13 +55446,13 @@
     "weightKg": 0.25,
     "stackSize": 15,
     "recyclesInto": {
-      "rubber_parts": 3
+      "rubber_parts": 2
     },
     "salvagesInto": {
       "rubber_parts": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/wires.png",
-    "updatedAt": "01/09/2026",
+    "updatedAt": "01/20/2026",
     "tip": "Wires are an uncommon item used to craft weapon mods that can be recycled into crafting materials.",
     "usedIn": [
       {
@@ -55100,7 +55656,7 @@
           "hr": "Zamka s mamac granatom",
           "it": "Trappola granata esca",
           "ja": "レーザートラップ：ルアー",
-          "kr": "미끼 수류탄 함정",
+          "kr": "유인 수류탄 함정",
           "no": "Lokkegranатfelle",
           "pl": "Pułapka z granatem wabik",
           "pt": "Armadilha de granada isca",
@@ -55553,7 +56109,8 @@
       "explosive_compound": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/wolfpack.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "wolfpack_blueprint",
@@ -55606,7 +56163,8 @@
     "value": 5000,
     "weightKg": 0,
     "imageFilename": "https://cdn.arctracker.io/items/wolfpack_blueprint.png",
-    "updatedAt": "11/12/2025"
+    "updatedAt": "11/12/2025",
+    "usedIn": []
   },
   {
     "id": "yellow_light_stick",
@@ -55707,7 +56265,7 @@
         "zh-TW": "照明範圍"
       }
     },
-    "craftBench": "explosives_bench",
+    "craftBench": "utility_bench",
     "stationLevelRequired": 3,
     "recipe": {
       "chemicals": 3
@@ -55719,7 +56277,8 @@
       "chemicals": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/yellow_light_stick.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   },
   {
     "id": "yellow_light_stick_blueprint",
@@ -55773,7 +56332,8 @@
     "weightKg": 0,
     "stackSize": 1,
     "imageFilename": "https://cdn.arctracker.io/items/yellow_light_stick.png",
-    "updatedAt": "11/13/2025"
+    "updatedAt": "11/13/2025",
+    "usedIn": []
   },
   {
     "id": "zipline",
@@ -55838,6 +56398,7 @@
       "rope": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/zipline.png",
-    "updatedAt": "01/09/2026"
+    "updatedAt": "01/09/2026",
+    "usedIn": []
   }
 ]

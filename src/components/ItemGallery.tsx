@@ -20,7 +20,9 @@ interface Item {
     foundIn?: string;
     recyclesInto?: any;
     salvagesInto?: any;
-    craftBench?: any;
+    craftBench?: string;
+    recipe?: { [key: string]: number };
+    usedIn?: Array<{ id: string; name: { [key: string]: string }; bench: string | null; quantity: number | null }>;
 }
 
 interface ItemGalleryProps {
@@ -447,7 +449,7 @@ export default function ItemGallery({ items }: ItemGalleryProps) {
                         />
                         <motion.div
                             layoutId={`card-${selectedItem.id}`}
-                            className="relative w-full max-w-2xl bg-arc-card border-2 border-arc-green rounded-3xl p-8 shadow-2xl z-10 overflow-hidden max-h-[90vh] overflow-y-auto"
+                            className="relative w-full max-w-2xl bg-arc-card border-2 border-arc-green rounded-3xl shadow-2xl z-10 overflow-hidden max-h-[90vh] flex flex-col"
                         >
                             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-arc-green to-transparent opacity-50" />
 
@@ -458,7 +460,29 @@ export default function ItemGallery({ items }: ItemGalleryProps) {
                                 <X className="w-5 h-5 text-white" />
                             </button>
 
-                            <div className="flex flex-col md:flex-row gap-8">
+                            <div className="overflow-y-auto flex-1 p-8 scrollbar-hide">
+                                <style>{`
+                                    .scrollbar-hide {
+                                        -ms-overflow-style: none;
+                                        scrollbar-width: thin;
+                                        scrollbar-color: rgba(255, 107, 53, 0.3) transparent;
+                                    }
+                                    .scrollbar-hide::-webkit-scrollbar {
+                                        width: 6px;
+                                    }
+                                    .scrollbar-hide::-webkit-scrollbar-track {
+                                        background: transparent;
+                                    }
+                                    .scrollbar-hide::-webkit-scrollbar-thumb {
+                                        background: rgba(255, 107, 53, 0.4);
+                                        border-radius: 3px;
+                                    }
+                                    .scrollbar-hide::-webkit-scrollbar-thumb:hover {
+                                        background: rgba(255, 107, 53, 0.6);
+                                    }
+                                `}</style>
+
+                                <div className="flex flex-col md:flex-row gap-8">
                                 <div className="flex-shrink-0 mx-auto md:mx-0">
                                     <div className={`w-48 h-48 rounded-2xl flex items-center justify-center bg-black/30 border border-white/10 relative overflow-hidden group`}>
                                         {/* Rarity Glow */}
@@ -506,34 +530,107 @@ export default function ItemGallery({ items }: ItemGalleryProps) {
                                                     <div className="text-lg font-medium text-arc-orange-light">{selectedItem.foundIn}</div>
                                                 </div>
                                             )}
+
+                                        {/* Recipe/Ingredients Section */}
+                                        {selectedItem.recipe && typeof selectedItem.recipe === 'object' && Object.keys(selectedItem.recipe).length > 0 && (
+                                            <div className="col-span-2">
+                                                <div className="text-xs text-gray-500 uppercase tracking-wider font-bold mb-3">
+                                                    Ingredientes {selectedItem.craftBench && `(${selectedItem.craftBench})`}
+                                                </div>
+                                                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 max-h-80 overflow-y-auto pr-2">
+                                                    {Object.entries(selectedItem.recipe).map(([ingredientId, qty]: [string, any]) => {
+                                                        const ingredient = items.find(it => it.id === ingredientId);
+                                                        const ingredientName = ingredient?.name ? (ingredient.name[language] || ingredient.name.en || ingredientId) : ingredientId;
+                                                        const ingredientRarity = ingredient?.rarity || 'Common';
+                                                        const rarityColor = ingredient ? getRarityColor(ingredient.rarity) : 'gray';
+                                                        return (
+                                                            <button
+                                                                key={ingredientId}
+                                                                onClick={() => ingredient ? setSelectedItem(ingredient) : null}
+                                                                className={`relative group rounded-lg overflow-hidden border-2 border-${rarityColor}-500/30 hover:border-${rarityColor}-500/80 bg-black/30 hover:bg-black/50 transition-all duration-300 flex flex-col h-32`}
+                                                            >
+                                                                {/* Image Container */}
+                                                                <div className="flex-1 flex items-center justify-center bg-black/40 overflow-hidden relative">
+                                                                    {ingredient?.imageFilename ? (
+                                                                        <img
+                                                                            src={ingredient.imageFilename}
+                                                                            alt={ingredientName}
+                                                                            className="w-full h-full object-contain p-2 group-hover:scale-110 transition-transform duration-300"
+                                                                        />
+                                                                    ) : (
+                                                                        <div className="w-4 h-4 rounded-full bg-gray-600" />
+                                                                    )}
+                                                                </div>
+
+                                                                {/* Info Bottom */}
+                                                                <div className="p-2 bg-black/60 border-t border-white/5 space-y-1">
+                                                                    <div className="text-[10px] font-bold text-gray-200 line-clamp-2 leading-tight">
+                                                                        {ingredientName}
+                                                                    </div>
+                                                                    <div className="flex items-center gap-1 justify-between">
+                                                                        <div className="text-[10px] text-arc-green font-bold bg-arc-green/10 px-1.5 py-0.5 rounded font-mono">
+                                                                            ×{qty}
+                                                                        </div>
+                                                                        <div className="text-[10px] text-gray-300 bg-black/40 px-1.5 py-0.5 rounded uppercase font-mono">
+                                                                            {ingredientRarity.slice(0, 3)}
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                        );
+                                                    })}
+                                                </div>
+                                            </div>
+                                        )}
                                         
                                         {/* Used In Section */}
                                         {selectedItem.usedIn && selectedItem.usedIn.length > 0 && (
-                                            <div className="bg-black/40 p-3 rounded-xl border border-white/5 col-span-2">
-                                                <div className="flex items-center justify-between mb-2">
-                                                    <div className="text-xs text-gray-500 uppercase tracking-wider">Usado Para</div>
-                                                    <div className="text-xs font-mono text-gray-400">{selectedItem.usedIn.length} lugares</div>
+                                            <div className="col-span-2">
+                                                <div className="text-xs text-gray-500 uppercase tracking-wider font-bold mb-3">
+                                                    Usado Para ({selectedItem.usedIn.length})
                                                 </div>
-                                                <div className="flex flex-col gap-2">
+                                                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 max-h-80 overflow-y-auto pr-2">
                                                     {selectedItem.usedIn.map((u: any) => {
                                                         const target = items.find(it => it.id === u.id);
                                                         const localizedName = u.name ? (u.name[language] || u.name.en || u.id) : u.id;
+                                                        const rarityColor = target ? getRarityColor(target.rarity) : 'gray';
                                                         return (
                                                             <button
                                                                 key={u.id}
                                                                 onClick={() => target ? setSelectedItem(target) : null}
-                                                                className="w-full text-left p-2 rounded-lg hover:bg-white/5 transition-colors flex items-center justify-between"
+                                                                className={`relative group rounded-lg overflow-hidden border-2 border-${rarityColor}-500/30 hover:border-${rarityColor}-500/80 bg-black/30 hover:bg-black/50 transition-all duration-300 flex flex-col h-32`}
                                                             >
-                                                                <div className="flex items-center gap-3">
-                                                                    <div className="text-sm font-medium text-gray-100">{localizedName}</div>
-                                                                    <div className="flex items-center gap-2">
-                                                                        {u.bench && <div className="text-[11px] text-gray-400 bg-black/20 px-2 py-0.5 rounded uppercase font-mono">{u.bench}</div>}
+                                                                {/* Image Container */}
+                                                                <div className="flex-1 flex items-center justify-center bg-black/40 overflow-hidden relative">
+                                                                    {target?.imageFilename ? (
+                                                                        <img
+                                                                            src={target.imageFilename}
+                                                                            alt={localizedName}
+                                                                            className="w-full h-full object-contain p-2 group-hover:scale-110 transition-transform duration-300"
+                                                                        />
+                                                                    ) : (
+                                                                        <div className="w-4 h-4 rounded-full bg-gray-600" />
+                                                                    )}
+                                                                </div>
+
+                                                                {/* Info Bottom */}
+                                                                <div className="p-2 bg-black/60 border-t border-white/5 space-y-1">
+                                                                    <div className="text-[10px] font-bold text-gray-200 line-clamp-2 leading-tight">
+                                                                        {localizedName}
+                                                                    </div>
+                                                                    <div className="flex items-center gap-1 flex-wrap">
+                                                                        {u.bench && typeof u.bench === 'string' && (
+                                                                            <div className="text-[10px] text-gray-300 bg-black/40 px-1.5 py-0.5 rounded uppercase font-mono border border-white/10">
+                                                                                {u.bench.split('_')[0]}
+                                                                            </div>
+                                                                        )}
                                                                         {u.quantity != null && (
-                                                                            <div className="text-[11px] text-gray-300 bg-black/30 px-2 py-0.5 rounded font-mono">x{u.quantity}</div>
+                                                                            <div className="text-[10px] text-arc-green font-bold bg-arc-green/10 px-1.5 py-0.5 rounded font-mono">
+                                                                                ×{u.quantity}
+                                                                            </div>
                                                                         )}
                                                                     </div>
                                                                 </div>
-                                                                <div className="text-xs text-gray-500">ver</div>
                                                             </button>
                                                         );
                                                     })}
@@ -543,6 +640,7 @@ export default function ItemGallery({ items }: ItemGalleryProps) {
                                         </div>
                                     </div>
                                 </div>
+                            </div>
                             </div>
                         </motion.div>
                     </div>
