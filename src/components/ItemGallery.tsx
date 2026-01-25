@@ -527,7 +527,12 @@ export default function ItemGallery({ items }: ItemGalleryProps) {
                                                         const ingredientName = ingredient?.name ? (ingredient.name[language] || ingredient.name.en || ingredientId) : ingredientId;
                                                         const rarityStyle = getRarityStyle(ingredient?.rarity || 'Common');
                                                         return (
-                                                            <div key={ingredientId} className="flex items-center gap-2 p-2 rounded-lg bg-black/30 border" style={{ borderColor: rarityStyle.borderColor, boxShadow: `0 6px 18px ${rarityStyle.glow}` }}>
+                                                            <button
+                                                                key={ingredientId}
+                                                                onClick={() => ingredient ? setSelectedItem(ingredient) : null}
+                                                                className={`relative group rounded-lg overflow-hidden border-2 bg-black/30 hover:bg-black/50 transition-all duration-300 flex gap-2 p-2`}
+                                                                style={{ borderColor: rarityStyle.borderColor, boxShadow: `0 8px 24px ${rarityStyle.glow}` }}
+                                                            >
                                                                 <div className="w-10 h-10 bg-black/40 flex items-center justify-center rounded">
                                                                     {ingredient?.imageFilename ? <img src={ingredient.imageFilename} alt={ingredientName} className="w-full h-full object-contain p-1" /> : <div className="w-3 h-3 rounded-full bg-gray-600" />}
                                                                 </div>
@@ -535,7 +540,7 @@ export default function ItemGallery({ items }: ItemGalleryProps) {
                                                                     <div className="text-[12px] font-bold text-gray-200 truncate">{ingredientName}</div>
                                                                     <div className="text-[10px] text-gray-300">×{qty} • { (ingredient?.rarity || 'Common').slice(0,3) }</div>
                                                                 </div>
-                                                            </div>
+                                                            </button>
                                                         );
                                                     })}
                                                 </div>
@@ -551,7 +556,12 @@ export default function ItemGallery({ items }: ItemGalleryProps) {
                                                         const localizedName = u.name ? (u.name[language] || u.name.en || u.id) : u.id;
                                                         const rarityStyle = getRarityStyle(target?.rarity || 'Common');
                                                         return (
-                                                            <div key={u.id} className="flex items-center gap-2 p-2 rounded-lg bg-black/30 border" style={{ borderColor: rarityStyle.borderColor, boxShadow: `0 6px 18px ${rarityStyle.glow}` }}>
+                                                            <button
+                                                                key={u.id}
+                                                                onClick={() => target ? setSelectedItem(target) : null}
+                                                                className={`relative group rounded-lg overflow-hidden border-2 bg-black/30 hover:bg-black/50 transition-all duration-300 flex gap-2 p-2`}
+                                                                style={{ borderColor: rarityStyle.borderColor, boxShadow: `0 8px 24px ${rarityStyle.glow}` }}
+                                                            >
                                                                 <div className="w-10 h-10 bg-black/40 flex items-center justify-center rounded">
                                                                     {target?.imageFilename ? <img src={target.imageFilename} alt={localizedName} className="w-full h-full object-contain p-1" /> : <div className="w-3 h-3 rounded-full bg-gray-600" />}
                                                                 </div>
@@ -559,7 +569,7 @@ export default function ItemGallery({ items }: ItemGalleryProps) {
                                                                     <div className="text-[12px] font-bold text-gray-200 truncate">{localizedName}</div>
                                                                     <div className="text-[10px] text-gray-300">{typeof u.bench === 'string' ? u.bench.split('_')[0] : ''} {u.quantity != null ? `• ×${u.quantity}` : ''}</div>
                                                                 </div>
-                                                            </div>
+                                                            </button>
                                                         );
                                                     })}
                                                 </div>
