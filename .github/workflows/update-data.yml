@@ -2,8 +2,8 @@ name: Update data from RaidTheory
 
 on:
   schedule:
-    # Runs daily at 03:00 UTC (adjust cron as needed)
-    - cron: '0 3 * * *'
+    # Runs weekly on Monday at 00:00 UTC
+    - cron: '0 0 * * 1'
   workflow_dispatch: {}
 
 jobs:
@@ -18,7 +18,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'
           cache: 'npm'
 
       - name: Install dependencies
@@ -42,7 +42,8 @@ jobs:
           # Stage metadata + consolidated files
           git add src/data/update-metadata.json || true
           git add src/data/arc_raiders_all_items.json || true
-          git add src/data/arc_raiders_categorized.json || true
+          git add src/data/hideout/*.json || true
+          git add public/data/*.json || true
 
           # Choose branch: main if update succeeded (exit code 0), otherwise push to data branch
           BRANCH=main
