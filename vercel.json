@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://arc-riders-database.minim-labs.app/$1",
+      "permanent": true
+    }
+  ]
+}
