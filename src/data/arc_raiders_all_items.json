@@ -205,6 +205,11 @@
       "med_station"
     ],
     "stationLevelRequired": 1,
+    "craftSkills": {
+      "in_raid": [
+        "surv_3r"
+      ]
+    },
     "recipe": {
       "chemicals": 3,
       "plastic_parts": 3
@@ -217,7 +222,7 @@
       "chemicals": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/v2/adrenaline_shot.png",
-    "updatedAt": "02/24/2026",
+    "updatedAt": "05/30/2026",
     "addedIn": "base",
     "vendors": [
       {
@@ -925,8 +930,26 @@
       {
         "id": "rascal_i",
         "name": {
+          "da": "Rascal I",
+          "de": "Rascal I",
           "en": "Rascal I",
-          "zh-CN": "无赖 I"
+          "es": "Rascal I",
+          "fr": "Rascal I",
+          "he": "Rascal I",
+          "hr": "Rascal I",
+          "it": "Rascal I",
+          "ja": "ラスカル I",
+          "ko-KR": "라스칼 I",
+          "no": "Rascal I",
+          "pl": "Rascal I",
+          "pt": "Rascal I",
+          "pt-BR": "Rascal I",
+          "ru": "Раскал I",
+          "sr": "Rascal I",
+          "tr": "Rascal I",
+          "uk": "Раскал I",
+          "zh-CN": "无赖 I",
+          "zh-TW": "無賴 I"
         },
         "bench": "weapon_bench",
         "quantity": 2
@@ -1322,6 +1345,11 @@
       }
     },
     "craftBench": "in_raid",
+    "craftSkills": {
+      "in_raid": [
+        "surv_3r"
+      ]
+    },
     "recipe": {
       "agave": 1,
       "empty_wine_bottle": 1
@@ -1330,7 +1358,7 @@
       "empty_wine_bottle": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/v2/agave_juice.png",
-    "updatedAt": "03/17/2026",
+    "updatedAt": "05/30/2026",
     "addedIn": "base",
     "usedIn": []
   },
@@ -6080,6 +6108,11 @@
       "workbench"
     ],
     "stationLevelRequired": 1,
+    "craftSkills": {
+      "in_raid": [
+        "surv_3r"
+      ]
+    },
     "recipe": {
       "fabric": 5
     },
@@ -6090,7 +6123,7 @@
       "fabric": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/v2/bandage.png",
-    "updatedAt": "02/24/2026",
+    "updatedAt": "05/30/2026",
     "addedIn": "base",
     "vendors": [
       {
@@ -8104,12 +8137,21 @@
       "workbench"
     ],
     "stationLevelRequired": 1,
+    "craftSkills": {
+      "in_raid": [
+        "surv_5c",
+        "surv_3r"
+      ],
+      "workbench": [
+        "surv_5c"
+      ]
+    },
     "recipe": {
       "blaze_grenade": 1,
       "wires": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/v2/blaze_grenade_trap.png",
-    "updatedAt": "03/17/2026",
+    "updatedAt": "05/30/2026",
     "addedIn": "base",
     "usedIn": []
   },
@@ -11970,8 +12012,26 @@
       {
         "id": "rascal_i",
         "name": {
+          "da": "Rascal I",
+          "de": "Rascal I",
           "en": "Rascal I",
-          "zh-CN": "无赖 I"
+          "es": "Rascal I",
+          "fr": "Rascal I",
+          "he": "Rascal I",
+          "hr": "Rascal I",
+          "it": "Rascal I",
+          "ja": "ラスカル I",
+          "ko-KR": "라스칼 I",
+          "no": "Rascal I",
+          "pl": "Rascal I",
+          "pt": "Rascal I",
+          "pt-BR": "Rascal I",
+          "ru": "Раскал I",
+          "sr": "Rascal I",
+          "tr": "Rascal I",
+          "uk": "Раскал I",
+          "zh-CN": "无赖 I",
+          "zh-TW": "無賴 I"
         },
         "bench": "weapon_bench",
         "quantity": 5
@@ -15402,7 +15462,7 @@
       "sr": "Podloga za sletanje",
       "tr": "İniş Minderi",
       "uk": "Посадковий мат",
-      "zh-CN": "着陆垫",
+      "zh-CN": "缓冲垫",
       "zh-TW": "降落墊"
     },
     "description": {
@@ -15424,7 +15484,7 @@
       "sr": "Bacivi uređaj za hitno sletanje koji ublažava teška prizemljenja",
       "tr": "Bazı sert inişleri yumuşatmak için fırlatılabilen acil iniş cihazı",
       "uk": "Кидальний пристрій аварійної посадки, що пом'якшує важкі приземлення",
-      "zh-CN": "一种可投掷的紧急着陆装置，用于缓冲部分重着陆冲击",
+      "zh-CN": "可投掷紧急着陆装置，用于缓冲沉重的坠落冲击。",
       "zh-TW": "一種可投擲的緊急降落裝置，用來緩和部分重著陸衝擊"
     },
     "type": "Quick Use",
@@ -15494,7 +15554,7 @@
       "sr": "Bacivi uređaj za hitno sletanje koji ublažava teška prizemljenja",
       "tr": "Bazı sert inişleri yumuşatmak için fırlatılabilen acil iniş cihazı",
       "uk": "Кидальний пристрій аварійної посадки, що пом'якшує важкі приземлення",
-      "zh-CN": "一种可投掷的紧急着陆装置，用于缓冲部分重着陆冲击",
+      "zh-CN": "可投掷紧急着陆装置，用于缓冲沉重的坠落冲击。",
       "zh-TW": "一種可投擲的緊急降落裝置，用來緩和部分重著陸衝擊"
     },
     "type": "Blueprint",
@@ -16202,7 +16262,7 @@
       "sr": "Oštećeno ARC jezgro pokreta",
       "tr": "Hasarlı ARC Hareket Çekirdeği",
       "uk": "Пошкоджене ядро руху ARC",
-      "zh-CN": "损坏的ARC运动核心",
+      "zh-CN": "受损的ARC运动核心",
       "zh-TW": "損壞的ARC動力核心"
     },
     "description": {
@@ -16518,7 +16578,7 @@
       "sr": "Oštećeni Rocketeer Pokretač",
       "tr": "Hasarlı Roketçi Sürücüsü",
       "uk": "Пошкоджений ракетний драйвер",
-      "zh-CN": "损坏的火箭手引擎",
+      "zh-CN": "受损的“火箭手”引擎",
       "zh-TW": "損壞的火箭手驅動器"
     },
     "description": {
@@ -17433,10 +17493,35 @@
     "value": 1000,
     "weightKg": 1,
     "stackSize": 1,
+    "effects": {
+      "Durability": {
+        "value": "100/100",
+        "da": "Holdbarhed",
+        "de": "Haltbarkeit",
+        "en": "Durability",
+        "es": "Durabilidad",
+        "fr": "Durabilité",
+        "he": "עמידות",
+        "hr": "Izdržljivost",
+        "it": "Tenuta",
+        "ja": "耐久性",
+        "ko-KR": "내구도",
+        "no": "Holdbarhet",
+        "pl": "Wytrzymałość",
+        "pt": "Durabilidade",
+        "pt-BR": "Durabilidade",
+        "ru": "Прочность",
+        "sr": "Izdržljivost",
+        "tr": "Dayanıklılık",
+        "uk": "Міцність",
+        "zh-CN": "耐久度",
+        "zh-TW": "耐久度"
+      }
+    },
     "imageFilename": "https://cdn.arctracker.io/items/v2/dockmasters_detector.png",
     "updatedAt": "04/28/2026",
     "addedIn": "1.26",
-    "durability": 100,
+    "repairDurability": 0.5,
     "usedIn": []
   },
   {
@@ -18345,7 +18430,7 @@
           "sr": "Podloga za sletanje",
           "tr": "İniş Minderi",
           "uk": "Посадковий мат",
-          "zh-CN": "着陆垫",
+          "zh-CN": "缓冲垫",
           "zh-TW": "降落墊"
         },
         "bench": "utility_bench",
@@ -18611,7 +18696,7 @@
           "sr": "Podloga za sletanje",
           "tr": "İniş Minderi",
           "uk": "Посадковий мат",
-          "zh-CN": "着陆垫",
+          "zh-CN": "缓冲垫",
           "zh-TW": "降落墊"
         },
         "bench": "utility_bench",
@@ -24287,6 +24372,11 @@
       }
     },
     "craftBench": "in_raid",
+    "craftSkills": {
+      "in_raid": [
+        "surv_3r"
+      ]
+    },
     "recipe": {
       "air_freshener": 1,
       "fireball_burner": 1
@@ -24299,7 +24389,7 @@
       "fireball_burner": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/v2/flame_spray.png",
-    "updatedAt": "02/24/2026",
+    "updatedAt": "05/30/2026",
     "addedIn": "base",
     "repairCost": {
       "canister": 1,
@@ -24506,7 +24596,7 @@
       "sr": "Fosilizovana munja",
       "tr": "Fosilleşmiş Şimşek",
       "uk": "Скам'яніла блискавка",
-      "zh-CN": "化石闪电",
+      "zh-CN": "闪电管石",
       "zh-TW": "化石閃電"
     },
     "description": {
@@ -24528,7 +24618,7 @@
       "sr": "Predmet koji ima šansu da se pojavi nakon udara munje.",
       "tr": "Yıldırım düştükten sonra ortaya çıkma şansı olan bir eşya.",
       "uk": "Предмет, який має шанс з'явитися після удару блискавки.",
-      "zh-CN": "在雷击后有几率生成的物品。",
+      "zh-CN": "可回收为制作材料。在雷击后有概率生成的物品。",
       "zh-TW": "在雷擊後有機會生成的物品。"
     },
     "type": "Topside Material",
@@ -24886,13 +24976,18 @@
       }
     },
     "craftBench": "in_raid",
+    "craftSkills": {
+      "in_raid": [
+        "surv_3r"
+      ]
+    },
     "recipe": {
       "apricot": 1,
       "lemon": 1,
       "prickly_pear": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/v2/fruit_mix.png",
-    "updatedAt": "02/24/2026",
+    "updatedAt": "05/30/2026",
     "addedIn": "base",
     "usedIn": []
   },
@@ -25331,12 +25426,21 @@
       "workbench"
     ],
     "stationLevelRequired": 1,
+    "craftSkills": {
+      "in_raid": [
+        "surv_5c",
+        "surv_3r"
+      ],
+      "workbench": [
+        "surv_5c"
+      ]
+    },
     "recipe": {
       "gas_grenade": 1,
       "wires": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/v2/gas_grenade_trap.png",
-    "updatedAt": "03/17/2026",
+    "updatedAt": "05/30/2026",
     "addedIn": "base",
     "usedIn": []
   },
@@ -27439,8 +27543,26 @@
       {
         "id": "rascal_i",
         "name": {
+          "da": "Rascal I",
+          "de": "Rascal I",
           "en": "Rascal I",
-          "zh-CN": "无赖 I"
+          "es": "Rascal I",
+          "fr": "Rascal I",
+          "he": "Rascal I",
+          "hr": "Rascal I",
+          "it": "Rascal I",
+          "ja": "ラスカル I",
+          "ko-KR": "라스칼 I",
+          "no": "Rascal I",
+          "pl": "Rascal I",
+          "pt": "Rascal I",
+          "pt-BR": "Rascal I",
+          "ru": "Раскал I",
+          "sr": "Rascal I",
+          "tr": "Rascal I",
+          "uk": "Раскал I",
+          "zh-CN": "无赖 I",
+          "zh-TW": "無賴 I"
         },
         "bench": "weapon_bench",
         "quantity": 3
@@ -27840,6 +27962,12 @@
       "med_station"
     ],
     "stationLevelRequired": 1,
+    "craftSkills": {
+      "in_raid": [
+        "surv_5c",
+        "surv_3r"
+      ]
+    },
     "recipe": {
       "durable_cloth": 1,
       "great_mullein": 1
@@ -27852,7 +27980,7 @@
       "fabric": 8
     },
     "imageFilename": "https://cdn.arctracker.io/items/v2/herbal_bandage.png",
-    "updatedAt": "03/22/2026",
+    "updatedAt": "05/30/2026",
     "addedIn": "base",
     "vendors": [
       {
@@ -30513,7 +30641,7 @@
       "sr": "Nečisto ARC rashladivo sredstvo",
       "tr": "Kirli ARC Soğutma Sıvısı",
       "uk": "Нечистий охолоджувач ARC",
-      "zh-CN": "不纯ARC冷却液",
+      "zh-CN": "不纯净的ARC冷却剂",
       "zh-TW": "不純ARC冷卻液"
     },
     "description": {
@@ -32373,7 +32501,7 @@
       "sr": "Lens je lično rasporedio nekoliko ovih po Pojasu Hrđe, iz nekog razloga.",
       "tr": "Lance, bir nedenden dolayı bunlardan bir dizi tanesini Pas Kuşağı'nın etrafına bizzat yerleştirmiş.",
       "uk": "Ленс особисто розмістив декілька таких по всьому Іржавому Поясу, з якоїсь причини.",
-      "zh-CN": "兰斯出于某种原因，亲自在锈带各处放置了许多这些东西。",
+      "zh-CN": "出于某种原因，兰斯亲自在锈带周围放了不少这种磁带。",
       "zh-TW": "蘭斯出於某種原因，親自在鏽帶各處放置了許多這些東西。"
     },
     "type": "Trinket",
@@ -33291,6 +33419,11 @@
       "workbench"
     ],
     "stationLevelRequired": 1,
+    "craftSkills": {
+      "in_raid": [
+        "surv_3r"
+      ]
+    },
     "recipe": {
       "chemicals": 3,
       "plastic_parts": 2
@@ -33303,7 +33436,7 @@
       "chemicals": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/v2/light_impact_grenade.png",
-    "updatedAt": "02/24/2026",
+    "updatedAt": "05/30/2026",
     "addedIn": "base",
     "vendors": [
       {
@@ -33837,6 +33970,11 @@
       "utility_bench"
     ],
     "stationLevelRequired": 1,
+    "craftSkills": {
+      "in_raid": [
+        "surv_3r"
+      ]
+    },
     "recipe": {
       "chemicals": 5,
       "plastic_parts": 1
@@ -33849,7 +33987,7 @@
       "chemicals": 2
     },
     "imageFilename": "https://cdn.arctracker.io/items/v2/lil_smoke_grenade.png",
-    "updatedAt": "02/24/2026",
+    "updatedAt": "05/30/2026",
     "addedIn": "base",
     "usedIn": []
   },
@@ -34983,12 +35121,21 @@
       "workbench"
     ],
     "stationLevelRequired": 1,
+    "craftSkills": {
+      "in_raid": [
+        "surv_5c",
+        "surv_3r"
+      ],
+      "workbench": [
+        "surv_5c"
+      ]
+    },
     "recipe": {
       "lure_grenade": 1,
       "wires": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/v2/lure_grenade_trap.png",
-    "updatedAt": "03/17/2026",
+    "updatedAt": "05/30/2026",
     "addedIn": "base",
     "usedIn": []
   },
@@ -35866,7 +36013,7 @@
       "sr": "Mehaničke Komponente",
       "tr": "Mekanik Bileşenler",
       "uk": "Механічні компоненти",
-      "zh-CN": "机械零件",
+      "zh-CN": "机械元件",
       "zh-TW": "機械零件"
     },
     "description": {
@@ -35888,7 +36035,7 @@
       "sr": "Koristi se za pravljenje širokog spektra predmeta. Može se reciklirati u materijale za pravljenje. Koristi se za pravljenje: Il Toro, Burletta, Anvil, Muzzle Brake II, Extended Medium Mag II",
       "tr": "Çok çeşitli eşyaları üretmek için kullanılır. Üretim malzemelerine geri dönüştürülebilir. Üretim için kullanılır: Il Toro, Burletta, Anvil, Namlu Freni II, Uzatılmış Orta Şarjör II",
       "uk": "Використовується для створення широкого спектру предметів. Можна переробити на матеріали для крафту. Використовується для створення: Il Toro, Burletta, Anvil, дульний гальмо II, розширений середній магазин II",
-      "zh-CN": "用于制作各种物品。可回收成制作材料。用于制作：Il Toro、Burletta、Anvil、枪口制退器II、中型扩容弹匣II",
+      "zh-CN": "用于制作各种物品。可回收为制作材料。用于制作：公牛、布尔莱塔、铁砧、枪口制退器II、中型扩容弹匣II",
       "zh-TW": "用於製作各種物品。可回收成製作材料。用於製作：Il Toro、Burletta、Anvil、槍口制退器II、延長中型彈匣II"
     },
     "type": "Refined Material",
@@ -37388,7 +37535,7 @@
           "sr": "Mehaničke Komponente",
           "tr": "Mekanik Bileşenler",
           "uk": "Механічні компоненти",
-          "zh-CN": "机械零件",
+          "zh-CN": "机械元件",
           "zh-TW": "機械零件"
         },
         "bench": "refiner",
@@ -39345,6 +39492,12 @@
       }
     },
     "craftBench": "in_raid",
+    "craftSkills": {
+      "in_raid": [
+        "surv_5c",
+        "surv_3r"
+      ]
+    },
     "recipe": {
       "plastic_parts": 2,
       "speaker_component": 1
@@ -39356,7 +39509,7 @@
       "speaker_component": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/v2/noisemaker.png",
-    "updatedAt": "01/13/2026",
+    "updatedAt": "05/30/2026",
     "addedIn": "base",
     "vendors": [
       {
@@ -42495,7 +42648,7 @@
       "sr": "Prenosni TV",
       "tr": "Portatif Televizyon",
       "uk": "Портативний телевізор",
-      "zh-CN": "便携式电视",
+      "zh-CN": "便携电视",
       "zh-TW": "攜帶型電視"
     },
     "description": {
@@ -42708,7 +42861,7 @@
       "sr": "Punjiva Baterija",
       "tr": "Taşınabilir Şarj Aleti",
       "uk": "Зовнішній акумулятор",
-      "zh-CN": "充电宝",
+      "zh-CN": "移动电源",
       "zh-TW": "行動電源"
     },
     "description": {
@@ -44165,10 +44318,11 @@
     "type": "Trinket",
     "rarity": "Common",
     "weightKg": 0.5,
+    "value": 100,
     "stackSize": 1,
     "questItem": true,
     "imageFilename": "https://cdn.arctracker.io/items/v2/raider_flag.png",
-    "updatedAt": "05/04/2026",
+    "updatedAt": "05/23/2026",
     "addedIn": "base",
     "usedIn": []
   },
@@ -44228,12 +44382,18 @@
       "utility_bench"
     ],
     "stationLevelRequired": 2,
+    "craftSkills": {
+      "in_raid": [
+        "surv_5c",
+        "surv_3r"
+      ]
+    },
     "recipe": {
       "advanced_electrical_components": 1,
       "sensors": 3
     },
     "imageFilename": "https://cdn.arctracker.io/items/v2/raider_hatch_key.png",
-    "updatedAt": "03/22/2026",
+    "updatedAt": "05/30/2026",
     "addedIn": "base",
     "vendors": [
       {
@@ -44307,12 +44467,48 @@
   {
     "id": "rascal_blueprint",
     "name": {
+      "da": "Rascal-skabelon",
+      "de": "Rascal-Blaupause",
       "en": "Rascal Blueprint",
-      "zh-CN": "无赖蓝图"
+      "es": "Planos de Rascal",
+      "fr": "Plan Rascal",
+      "he": "שרטוט Rascal",
+      "hr": "Rascal nacrt",
+      "it": "Disegno tecnico Rascal",
+      "ja": "ラスカル設計図",
+      "ko-KR": "라스칼 도면",
+      "no": "Rascal-tegning",
+      "pl": "Projekt Rascala",
+      "pt": "Plano do Rascal",
+      "pt-BR": "Plano do Rascal",
+      "ru": "Чертеж Раскала",
+      "sr": "Rascal nacrt",
+      "tr": "Rascal Planı",
+      "uk": "Креслення Раскала",
+      "zh-CN": "无赖蓝图",
+      "zh-TW": "無賴藍圖"
     },
     "description": {
+      "da": "Skyder eksplosive projektiler, der kun detonerer ved at ramme ARC.",
+      "de": "Feuert explosive Geschosse, die nur beim Treffen von ARC detonieren.",
       "en": "Fires explosive projectiles that only detonate when hitting ARC.",
-      "zh-CN": "可发射爆炸式射弹，仅当命中ARC时，射弹才会引爆。"
+      "es": "Dispara proyectiles explosivos que solo detonan al impactar contra ARC.",
+      "fr": "Tire des projectiles explosifs qui ne détonent qu'en frappant ARC.",
+      "he": "יוציר פרויקטיילים מתפוצצים שפוצצים רק כשפוגעים ב-ARC.",
+      "hr": "Pucava eksplozivne projektele koji detoniraju samo pri udaru u ARC.",
+      "it": "Spara proiettili esplosivi che detonano solo colpendo ARC.",
+      "ja": "爆発的な投射弾を発射し、ARCに命中した時のみ炸裂する。",
+      "ko-KR": "ARC에 충돌했을 때만 폭발하는 폭발投射물을 발사합니다.",
+      "no": "Skyter eksplosive prosjektiler som bare detonerer ved å treffe ARC.",
+      "pl": "Strzelał wybuchowymi pociskami, które eksplodują tylko po trafieniu ARC.",
+      "pt": "Dispara projéteis explosivos que só detonam ao atingir o ARC.",
+      "pt-BR": "Dispara projéteis explosivos que só detonam ao atingir o ARC.",
+      "ru": "Стреляет взрывными снарядами, которые взрываются только при попадании в ARC.",
+      "sr": "Pucava eksplozivne projektile koji detoniraju samo pri udarcu u ARC.",
+      "tr": "ARC'ye vurduğunda patlayan patlayıcı mermiler fırlatır.",
+      "uk": "Стріляє вибуховими снарядами, які вибухають лише при попаданні в ARC.",
+      "zh-CN": "可发射爆炸式射弹，仅当命中ARC时，射弹才会引爆。",
+      "zh-TW": "可發射爆炸式射彈，僅當命中ARC時，射彈才會引爆。"
     },
     "type": "Blueprint",
     "rarity": "Common",
@@ -44327,12 +44523,48 @@
   {
     "id": "rascal_i",
     "name": {
+      "da": "Rascal I",
+      "de": "Rascal I",
       "en": "Rascal I",
-      "zh-CN": "无赖 I"
+      "es": "Rascal I",
+      "fr": "Rascal I",
+      "he": "Rascal I",
+      "hr": "Rascal I",
+      "it": "Rascal I",
+      "ja": "ラスカル I",
+      "ko-KR": "라스칼 I",
+      "no": "Rascal I",
+      "pl": "Rascal I",
+      "pt": "Rascal I",
+      "pt-BR": "Rascal I",
+      "ru": "Раскал I",
+      "sr": "Rascal I",
+      "tr": "Rascal I",
+      "uk": "Раскал I",
+      "zh-CN": "无赖 I",
+      "zh-TW": "無賴 I"
     },
     "description": {
+      "da": "Skyder eksplosive projektiler, der kun detonerer ved at ramme ARC.",
+      "de": "Feuert explosive Geschosse, die nur beim Treffen von ARC detonieren.",
       "en": "Fires explosive projectiles that only detonate when hitting ARC.",
-      "zh-CN": "可发射爆炸式射弹，仅当命中ARC时，射弹才会引爆。"
+      "es": "Dispara proyectiles explosivos que solo detonan al impactar contra ARC.",
+      "fr": "Tire des projectiles explosifs qui ne détonent qu'en frappant ARC.",
+      "he": "יוציר פרויקטיילים מתפוצצים שפוצצים רק כשפוגעים ב-ARC.",
+      "hr": "Pucava eksplozivne projektele koji detoniraju samo pri udaru u ARC.",
+      "it": "Spara proiettili esplosivi che detonano solo colpendo ARC.",
+      "ja": "爆発的な投射弾を発射し、ARCに命中した時のみ炸裂する。",
+      "ko-KR": "ARC에 충돌했을 때만 폭발하는 폭발投射물을 발사합니다.",
+      "no": "Skyter eksplosive prosjektiler som bare detonerer ved å treffe ARC.",
+      "pl": "Strzelał wybuchowymi pociskami, które eksplodują tylko po trafieniu ARC.",
+      "pt": "Dispara projéteis explosivos que só detonam ao atingir o ARC.",
+      "pt-BR": "Dispara projéteis explosivos que só detonam ao atingir o ARC.",
+      "ru": "Стреляет взрывными снарядами, которые взрываются только при попадании в ARC.",
+      "sr": "Pucava eksplozivne projektile koji detoniraju samo pri udarcu u ARC.",
+      "tr": "ARC'ye vurduğunda patlayan patlayıcı mermiler fırlatır.",
+      "uk": "Стріляє вибуховими снарядами, які вибухають лише при попаданні в ARC.",
+      "zh-CN": "可发射爆炸式射弹，仅当命中ARC时，射弹才会引爆。",
+      "zh-TW": "可發射爆炸式射彈，僅當命中ARC時，射彈才會引爆。"
     },
     "type": "Special",
     "rarity": "Rare",
@@ -44479,12 +44711,48 @@
   {
     "id": "rascal_ii",
     "name": {
+      "da": "Rascal II",
+      "de": "Rascal II",
       "en": "Rascal II",
-      "zh-CN": "无赖 II"
+      "es": "Rascal II",
+      "fr": "Rascal II",
+      "he": "Rascal II",
+      "hr": "Rascal II",
+      "it": "Rascal II",
+      "ja": "ラスカル II",
+      "ko-KR": "라스칼 II",
+      "no": "Rascal II",
+      "pl": "Rascal II",
+      "pt": "Rascal II",
+      "pt-BR": "Rascal II",
+      "ru": "Раскал II",
+      "sr": "Rascal II",
+      "tr": "Rascal II",
+      "uk": "Раскал II",
+      "zh-CN": "无赖 II",
+      "zh-TW": "無賴 II"
     },
     "description": {
+      "da": "Skyder eksplosive projektiler, der kun detonerer ved at ramme ARC.",
+      "de": "Feuert explosive Geschosse, die nur beim Treffen von ARC detonieren.",
       "en": "Fires explosive projectiles that only detonate when hitting ARC.",
-      "zh-CN": "可发射爆炸式射弹，仅当命中ARC时，射弹才会引爆。"
+      "es": "Dispara proyectiles explosivos que solo detonan al impactar contra ARC.",
+      "fr": "Tire des projectiles explosifs qui ne détonent qu'en frappant ARC.",
+      "he": "יוציר פרויקטיילים מתפוצצים שפוצצים רק כשפוגעים ב-ARC.",
+      "hr": "Pucava eksplozivne projektele koji detoniraju samo pri udaru u ARC.",
+      "it": "Spara proiettili esplosivi che detonano solo colpendo ARC.",
+      "ja": "爆発的な投射弾を発射し、ARCに命中した時のみ炸裂する。",
+      "ko-KR": "ARC에 충돌했을 때만 폭발하는 폭발投射물을 발사합니다.",
+      "no": "Skyter eksplosive prosjektiler som bare detonerer ved å treffe ARC.",
+      "pl": "Strzelał wybuchowymi pociskami, które eksplodują tylko po trafieniu ARC.",
+      "pt": "Dispara projéteis explosivos que só detonam ao atingir o ARC.",
+      "pt-BR": "Dispara projéteis explosivos que só detonam ao atingir o ARC.",
+      "ru": "Стреляет взрывными снарядами, которые взрываются только при попадании в ARC.",
+      "sr": "Pucava eksplozivne projektile koji detoniraju samo pri udarcu u ARC.",
+      "tr": "ARC'ye vurduğunda patlayan patlayıcı mermiler fırlatır.",
+      "uk": "Стріляє вибуховими снарядами, які вибухають лише при попаданні в ARC.",
+      "zh-CN": "可发射爆炸式射弹，仅当命中ARC时，射弹才会引爆。",
+      "zh-TW": "可發射爆炸式射彈，僅當命中ARC時，射彈才會引爆。"
     },
     "type": "Special",
     "rarity": "Rare",
@@ -44511,12 +44779,48 @@
   {
     "id": "rascal_iii",
     "name": {
+      "da": "Rascal III",
+      "de": "Rascal III",
       "en": "Rascal III",
-      "zh-CN": "无赖 III"
+      "es": "Rascal III",
+      "fr": "Rascal III",
+      "he": "Rascal III",
+      "hr": "Rascal III",
+      "it": "Rascal III",
+      "ja": "ラスカル III",
+      "ko-KR": "라스칼 III",
+      "no": "Rascal III",
+      "pl": "Rascal III",
+      "pt": "Rascal III",
+      "pt-BR": "Rascal III",
+      "ru": "Раскал III",
+      "sr": "Rascal III",
+      "tr": "Rascal III",
+      "uk": "Раскал III",
+      "zh-CN": "无赖 III",
+      "zh-TW": "無賴 III"
     },
     "description": {
+      "da": "Skyder eksplosive projektiler, der kun detonerer ved at ramme ARC.",
+      "de": "Feuert explosive Geschosse, die nur beim Treffen von ARC detonieren.",
       "en": "Fires explosive projectiles that only detonate when hitting ARC.",
-      "zh-CN": "可发射爆炸式射弹，仅当命中ARC时，射弹才会引爆。"
+      "es": "Dispara proyectiles explosivos que solo detonan al impactar contra ARC.",
+      "fr": "Tire des projectiles explosifs qui ne détonent qu'en frappant ARC.",
+      "he": "יוציר פרויקטיילים מתפוצצים שפוצצים רק כשפוגעים ב-ARC.",
+      "hr": "Pucava eksplozivne projektele koji detoniraju samo pri udaru u ARC.",
+      "it": "Spara proiettili esplosivi che detonano solo colpendo ARC.",
+      "ja": "爆発的な投射弾を発射し、ARCに命中した時のみ炸裂する。",
+      "ko-KR": "ARC에 충돌했을 때만 폭발하는 폭발投射물을 발사합니다.",
+      "no": "Skyter eksplosive prosjektiler som bare detonerer ved å treffe ARC.",
+      "pl": "Strzelał wybuchowymi pociskami, które eksplodują tylko po trafieniu ARC.",
+      "pt": "Dispara projéteis explosivos que só detonam ao atingir o ARC.",
+      "pt-BR": "Dispara projéteis explosivos que só detonam ao atingir o ARC.",
+      "ru": "Стреляет взрывными снарядами, которые взрываются только при попадании в ARC.",
+      "sr": "Pucava eksplozivne projektile koji detoniraju samo pri udarcu u ARC.",
+      "tr": "ARC'ye vurduğunda patlayan patlayıcı mermiler fırlatır.",
+      "uk": "Стріляє вибуховими снарядами, які вибухають лише при попаданні в ARC.",
+      "zh-CN": "可发射爆炸式射弹，仅当命中ARC时，射弹才会引爆。",
+      "zh-TW": "可發射爆炸式射彈，僅當命中ARC時，射彈才會引爆。"
     },
     "type": "Special",
     "rarity": "Rare",
@@ -44543,12 +44847,48 @@
   {
     "id": "rascal_iv",
     "name": {
+      "da": "Rascal IV",
+      "de": "Rascal IV",
       "en": "Rascal IV",
-      "zh-CN": "无赖 IV"
+      "es": "Rascal IV",
+      "fr": "Rascal IV",
+      "he": "Rascal IV",
+      "hr": "Rascal IV",
+      "it": "Rascal IV",
+      "ja": "ラスカル IV",
+      "ko-KR": "라스칼 IV",
+      "no": "Rascal IV",
+      "pl": "Rascal IV",
+      "pt": "Rascal IV",
+      "pt-BR": "Rascal IV",
+      "ru": "Раскал IV",
+      "sr": "Rascal IV",
+      "tr": "Rascal IV",
+      "uk": "Раскал IV",
+      "zh-CN": "无赖 IV",
+      "zh-TW": "無賴 IV"
     },
     "description": {
+      "da": "Skyder eksplosive projektiler, der kun detonerer ved at ramme ARC.",
+      "de": "Feuert explosive Geschosse, die nur beim Treffen von ARC detonieren.",
       "en": "Fires explosive projectiles that only detonate when hitting ARC.",
-      "zh-CN": "可发射爆炸式射弹，仅当命中ARC时，射弹才会引爆。"
+      "es": "Dispara proyectiles explosivos que solo detonan al impactar contra ARC.",
+      "fr": "Tire des projectiles explosifs qui ne détonent qu'en frappant ARC.",
+      "he": "יוציר פרויקטיילים מתפוצצים שפוצצים רק כשפוגעים ב-ARC.",
+      "hr": "Pucava eksplozivne projektele koji detoniraju samo pri udaru u ARC.",
+      "it": "Spara proiettili esplosivi che detonano solo colpendo ARC.",
+      "ja": "爆発的な投射弾を発射し、ARCに命中した時のみ炸裂する。",
+      "ko-KR": "ARC에 충돌했을 때만 폭발하는 폭발投射물을 발사합니다.",
+      "no": "Skyter eksplosive prosjektiler som bare detonerer ved å treffe ARC.",
+      "pl": "Strzelał wybuchowymi pociskami, które eksplodują tylko po trafieniu ARC.",
+      "pt": "Dispara projéteis explosivos que só detonam ao atingir o ARC.",
+      "pt-BR": "Dispara projéteis explosivos que só detonam ao atingir o ARC.",
+      "ru": "Стреляет взрывными снарядами, которые взрываются только при попадании в ARC.",
+      "sr": "Pucava eksplozivne projektile koji detoniraju samo pri udarcu u ARC.",
+      "tr": "ARC'ye vurduğunda patlayan patlayıcı mermiler fırlatır.",
+      "uk": "Стріляє вибуховими снарядами, які вибухають лише при попаданні в ARC.",
+      "zh-CN": "可发射爆炸式射弹，仅当命中ARC时，射弹才会引爆。",
+      "zh-TW": "可發射爆炸式射彈，僅當命中ARC時，射彈才會引爆。"
     },
     "type": "Special",
     "rarity": "Rare",
@@ -48841,7 +49181,7 @@
           "sr": "Mehaničke Komponente",
           "tr": "Mekanik Bileşenler",
           "uk": "Механічні компоненти",
-          "zh-CN": "机械零件",
+          "zh-CN": "机械元件",
           "zh-TW": "機械零件"
         },
         "bench": "refiner",
@@ -49740,7 +50080,7 @@
       "sr": "Zahrđali ARC čelik",
       "tr": "Paslı ARC Çeliği",
       "uk": "Іржава сталь ARC",
-      "zh-CN": "生锈的ARC钢铁",
+      "zh-CN": "生锈的ARC钢材",
       "zh-TW": "生鏽的ARC鋼鐵"
     },
     "description": {
@@ -49762,7 +50102,7 @@
       "sr": "Dobija se od ARC neprijatelja i aktivnosti. Može se reciklirati u otpadni metal.",
       "tr": "ARC düşmanlarından ve etkinliklerinden elde edilir. Hurda metale geri dönüştürülebilir.",
       "uk": "Отримується зворогів ARC та активностей. Можна переробити на металобрухт.",
-      "zh-CN": "从ARC敌人和活动中获得。可以回收成废金属。",
+      "zh-CN": "可回收为制作材料。",
       "zh-TW": "從ARC敵人和活動中獲得。可以回收成廢金屬。"
     },
     "type": "Recyclable",
@@ -50505,6 +50845,11 @@
     "weightKg": 0.2,
     "stackSize": 1,
     "craftBench": "in_raid",
+    "craftSkills": {
+      "in_raid": [
+        "surv_3r"
+      ]
+    },
     "recipe": {
       "assorted_seeds": 7,
       "canister": 1
@@ -50516,7 +50861,7 @@
       "plastic_parts": 4
     },
     "imageFilename": "https://cdn.arctracker.io/items/v2/shaker.png",
-    "updatedAt": "03/22/2026",
+    "updatedAt": "05/30/2026",
     "addedIn": "1.7",
     "repairCost": {
       "plastic_parts": 4
@@ -50662,6 +51007,11 @@
       "workbench"
     ],
     "stationLevelRequired": 1,
+    "craftSkills": {
+      "in_raid": [
+        "surv_3r"
+      ]
+    },
     "recipe": {
       "arc_powercell": 1,
       "rubber_parts": 5
@@ -50673,7 +51023,7 @@
       "rubber_parts": 3
     },
     "imageFilename": "https://cdn.arctracker.io/items/v2/shield_recharger.png",
-    "updatedAt": "02/24/2026",
+    "updatedAt": "05/30/2026",
     "addedIn": "base",
     "vendors": [
       {
@@ -53038,12 +53388,21 @@
       "workbench"
     ],
     "stationLevelRequired": 1,
+    "craftSkills": {
+      "in_raid": [
+        "surv_5c",
+        "surv_3r"
+      ],
+      "workbench": [
+        "surv_5c"
+      ]
+    },
     "recipe": {
       "smoke_grenade": 1,
       "wires": 1
     },
     "imageFilename": "https://cdn.arctracker.io/items/v2/smoke_grenade_trap.png",
-    "updatedAt": "03/17/2026",
+    "updatedAt": "05/30/2026",
     "addedIn": "base",
     "usedIn": []
   },
@@ -60148,7 +60507,7 @@
       "sr": "Poderana Knjiga",
       "tr": "Parçalanmış Kitap",
       "uk": "Порвана книга",
-      "zh-CN": "破损的书",
+      "zh-CN": "旧书",
       "zh-TW": "破損的書"
     },
     "description": {
@@ -60170,7 +60529,7 @@
       "sr": "Preostale stranice govore o herojima, vampirima i mnogo pogleda.",
       "tr": "Geriye kalan sayfalarda seçilmiş kahramanlardan, vampirlerden ve özlem dolu bakışlardan bahsediliyor.",
       "uk": "Сторінки, що залишилися, розповідають про героїв, вампірів та безліч поглядів.",
-      "zh-CN": "残存的书页讲述着英雄、吸血鬼和许多目光的故事。",
+      "zh-CN": "残存的书页中提到了被命运选中的英雄、吸血的怪物，以及许多描述众人景仰的场面。",
       "zh-TW": "殘存的書頁講述著英雄、吸血鬼和許多目光的故事。"
     },
     "type": "Trinket",
@@ -65785,6 +66144,11 @@
       "in_raid"
     ],
     "stationLevelRequired": 1,
+    "craftSkills": {
+      "in_raid": [
+        "surv_3r"
+      ]
+    },
     "recipe": {
       "fabric": 10,
       "plastic_parts": 3
@@ -65797,7 +66161,7 @@
       "fabric": 3
     },
     "imageFilename": "https://cdn.arctracker.io/items/v2/white_flag.png",
-    "updatedAt": "04/28/2026",
+    "updatedAt": "05/30/2026",
     "addedIn": "1.26",
     "usedIn": []
   },
