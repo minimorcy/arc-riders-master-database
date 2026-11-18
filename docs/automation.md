@@ -3,7 +3,7 @@
 This document explains the `Update data from RaidTheory` GitHub Actions workflow, how to run it manually, and alternatives (webhook / repository_dispatch). It also documents the commit strategy used by the workflow.
 
 - **Workflow file:** `.github/workflows/update-data.yml`
-- **Schedule:** daily at 03:00 UTC (cron: `0 3 * * *`) and `workflow_dispatch` manual runs.
+- **Schedule:** weekly on Mondays at 00:00 UTC (cron: `0 0 * * 1`) and `workflow_dispatch` manual runs.
 
 What the workflow does
 - Checkout repository (full history, `fetch-depth: 0`).

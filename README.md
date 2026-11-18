@@ -45,7 +45,7 @@ This project is a complete overhaul of the ARC Raiders database, built to provid
     *   See quest progression for all traders (Celeste, Shani, Tian Wen, Lance).
 
 *   **⚙️ Automatic Data Updates**:
-    *   **GitHub Actions Workflow**: Automatically fetches latest data from RaidTheory repository daily at 03:00 UTC.
+    *   **GitHub Actions Workflow**: Automatically fetches latest data from RaidTheory repository weekly (Mondays at 00:00 UTC).
     *   **Update Badge**: Displays last update timestamp in the header (non-interactive for public safety).
     *   **Metadata Tracking**: Stores update history in `update-metadata.json` for audit trails.
     *   **Smart Branching**: Successful updates push to `main`, failed runs branch to `data` for inspection.
